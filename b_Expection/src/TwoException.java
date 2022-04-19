@@ -4,10 +4,9 @@ import java.io.FileInputStream;
 public class TwoException {
     public static void main(String[] args) {
         try {
-            FileInputStream fis=new FileInputStream("GPS.fps");
+            FileInputStream fis = new FileInputStream("GPS.fps");
         }catch (Exception e){
             System.out.println("error");
         }
-
     }
 }

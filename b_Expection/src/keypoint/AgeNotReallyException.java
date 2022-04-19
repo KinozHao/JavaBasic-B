@@ -17,7 +17,8 @@ class AgeNotReallyException extends Exception{
         super(cause);
     }
 
-    public AgeNotReallyException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+    public AgeNotReallyException(String message, Throwable cause,
+                                 boolean enableSuppression, boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }
 }
