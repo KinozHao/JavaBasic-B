@@ -1,5 +1,9 @@
-package keypoint;
-
+package throwsus;
+/** @apiNote
+ * Throwable本身是一个接口，它的实现类
+ * error和exception是开发中常用的异常类
+ * 它的内部也定义了一些常用方法去供实现类去调用
+ * */
 public class ThrowableBasic {
     public static void main(String[] args) {
         int [] arr={12,34,54,64};

@@ -3,7 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/a_NormalClass/src/array_us/ArraysOverview.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/a_NormalClass/src/string_us/stringOtherMethod/OtherMethod.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/b_Expection/src/keypoint/FinallyBasic.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/b_Exception/src/trycatchus/NewFeatures.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/b_Exception/src/trycatchus/TryCatchBasicII.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/c_PackageGroup/src/BaseView.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Multithread/src/synchronizedss/SynchronizedBasic.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_Assemble/src/GenericStudy/GenericBasic.java" charset="GBK" />

@@ -1,4 +1,4 @@
-package keypoint;
+package throwsus;
 
 //自定义一个异常继承了父类(Exception) 里面为Exception实现的方法
 class AgeNotReallyException extends Exception{

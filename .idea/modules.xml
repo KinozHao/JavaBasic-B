@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/a_NormalClass/a_NormalClass.iml" filepath="$PROJECT_DIR$/a_NormalClass/a_NormalClass.iml" />
-      <module fileurl="file://$PROJECT_DIR$/b_Expection/b_Expection.iml" filepath="$PROJECT_DIR$/b_Expection/b_Expection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/b_Exception/b_Exception.iml" filepath="$PROJECT_DIR$/b_Exception/b_Exception.iml" />
       <module fileurl="file://$PROJECT_DIR$/c_PackageGroup/c_PackageGroup.iml" filepath="$PROJECT_DIR$/c_PackageGroup/c_PackageGroup.iml" />
       <module fileurl="file://$PROJECT_DIR$/d_Multithread/d_Multithread.iml" filepath="$PROJECT_DIR$/d_Multithread/d_Multithread.iml" />
       <module fileurl="file://$PROJECT_DIR$/f_Assemble/f_Assemble.iml" filepath="$PROJECT_DIR$/f_Assemble/f_Assemble.iml" />

@@ -1,14 +1,13 @@
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Scanner;
-/*
+/** @apiNote
 题目要求:
-键盘录入int类型整数,求其二进制格式
-如果过大给提示,并重新录入个BigInteger整数
-如果是小数给提示,并重新录入个整数
-如果是其他字符给提示,并重新录入个整数
-*/
-/*
+1. 键盘录入int类型整数,求其二进制格式
+2. 如果过大给提示,并重新录入个BigInteger整数
+3. 如果是小数给提示,并重新录入个整数
+4. 如果是其他字符给提示,并重新录入个整数
+解题思路:
 1创建键盘录入对象
 2录入的结果存放在String类型中,存储int类型的话如果条件不符合容易报错,后续无法进行判断
 3键盘录入的结果转换为int类型,true or false

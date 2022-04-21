@@ -1,4 +1,4 @@
-package keypoint;
+package throwsus;
 
 public class ThrowsBasic {
     public static void main(String[] args) throws AgeNotReallyException {
