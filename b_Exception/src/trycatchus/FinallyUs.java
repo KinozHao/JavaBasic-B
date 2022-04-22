@@ -42,6 +42,7 @@ public class FinallyUs {
     }
 
     @Test
+    //编译时异常finally的体现
     public void methodThree(){
         //都需要用的时候要把类进行初始化
         FileInputStream fis = null;
@@ -60,7 +61,7 @@ public class FinallyUs {
         } catch (IOException e) {
             //打印异常信息
             e.printStackTrace();
-            System.out.println("以上红色异常为我们编写方法让控制台执行输出的。");
+            System.out.println("可能文件的路径存在一定问题。");
         } finally {
             try {
                 //if的判断是为了以防释放流时候，再次出现IO异常

@@ -3,23 +3,24 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/a_NormalClass/src/array_us/ArraysOverview.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/a_NormalClass/src/string_us/stringOtherMethod/OtherMethod.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/b_Exception/src/throwsus/StudentTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/b_Exception/src/trycatchus/NewFeatures.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/b_Exception/src/trycatchus/TryCatchBasicII.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/c_PackageGroup/src/BaseView.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Multithread/src/synchronizedss/SynchronizedBasic.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_Assemble/src/GenericStudy/GenericBasic.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_Assemble/src/GenericStudy/Traversing.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_Assemble/src/IteratorStudy/ConvertTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_Assemble/src/ListStudy/ArrayListStudy/AITravers.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_Assemble/src/MapStudy/HashMapStudy/HashMapAndHashtable.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_Assemble/src/MapStudy/TreeMapStudy/MapEntry的解释.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_Assemble/src/MapStudy/maptest/BillionsHeros.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_Assemble/src/MapStudy/maptest/InformTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_Assemble/src/MapStudy/maptest/Poker.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_Assemble/src/MapStudy/maptest/PokerPlus.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/h_IOStream/src/FileClass/文件名称过滤器.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/i_Reflex/src/Reflects/Demo2_Reflex.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/i_Reflex/src/Reflects/config.properties.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/b_Exception/src/trycatchus/TryCatchBasic.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/c_Multithread/src/synchronizedss/SynchronizedBasic.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/GenericStudy/GenericBasic.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/GenericStudy/Traversing.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/IteratorStudy/ConvertTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/ListStudy/ArrayListStudy/AITravers.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/MapStudy/HashMapStudy/HashMapAndHashtable.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/MapStudy/TreeMapStudy/MapEntry的解释.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/MapStudy/maptest/BillionsHeros.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/MapStudy/maptest/InformTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/MapStudy/maptest/Poker.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/MapStudy/maptest/PokerPlus.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/e_PackageGroup/src/BaseView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/FileClass/文件名称过滤器.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/g_Reflex/src/Reflects/Demo2_Reflex.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/g_Reflex/src/Reflects/config.properties.txt" charset="GBK" />
     <file url="PROJECT" charset="GBK" />
   </component>
 </project>

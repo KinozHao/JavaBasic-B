@@ -11,7 +11,7 @@ import java.io.IOException;
 *
 * */
 
-public class TryCatchBasicII {
+public class TryCatchBasic {
     @Test
     //运行时异常体会
     public void method1(){

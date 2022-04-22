@@ -1,43 +1,47 @@
 package throwsus;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+/**
+ * @author kinoz
+ * @date 2022/4/22 - 10:12
+ * @apiNote throwsµÄ¾ßÌåÊ¹ÓÃ£¬Ïàµ±ÓÚË¦¹ø£¬½â¾ö²»ÁËµÄÎÊÌâÒ»Ö±ÍùÉÏÅ×
+ */
 public class ThrowsBasic {
-    public static void main(String[] args) throws AgeNotReallyException {
 
-    }
-}
-class student {
-    private String name;
-    private int age;
-
-    public student(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    public student() {
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) throws AgeNotReallyException {   //æŠ›å‡ºå¼‚å¸¸
-        if (age>=0 && age<=150) {   //åˆ¤æ–­å¹´é¾„çš„å–å€¼èŒƒå›´
-            this.age = age;
-        }else {
-            try {
-                throw new AgeNotReallyException("å¹´é¾„å¼‚å¸¸");        //æŠ›ä¸€ä¸ªè‡ªå·±å®šä¹‰çš„å¼‚å¸¸å¹¶åŠ å…¥æç¤ºå€¼
-            }catch (Exception e){
-                System.out.println("Nothing~~~~");
-            }
+    public static void main(String[] args) {
+        //Ë¦µ½main·½·¨¾ÍÃ»·¨Ë¦ÁË±ØĞë×ö³ö´¦Àí
+        try {
+            method2();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }finally {
+            System.out.println("¿ÉÄÜÎÄ¼şµÄÂ·¾¶´æÔÚÒ»¶¨ÎÊÌâ");
         }
+    }
+
+    //method2½ÓÅÌmethod1·¢ÏÖÃ»¾È¼ÌĞøË¦¹ø
+    public static void method2() throws IOException{
+        method1();
+    }
+
+
+    public static void method1() throws FileNotFoundException, IOException {
+        File file = new File("b_Exception/hello.txt");
+        //¶ÁÈ¡ÎÒÃÇ´´½¨ÎÄ¼şµÄĞÅÏ¢
+        FileInputStream fis = new FileInputStream(file);
+        //»ñÈ¡ĞÅÏ¢
+        int data = fis.read();
+        while (data != -1) {
+            //°ÑintÀàĞÍ×ª»»Îªchar×Ö·û
+            System.out.print((char) data);
+            //Êä³öÁ÷
+            data = fis.read();
+        }
+        fis.close();
+
     }
 }
