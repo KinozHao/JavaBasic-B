@@ -6,4 +6,5 @@ package domain.equipment;
  * @apiNote
  */
 public interface Equipment {
+    String getDescription();
 }
