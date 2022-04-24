@@ -10,7 +10,11 @@ import service.Status;
  */
 public class Programmer extends Employee{
     private int memberId;//开发团队中的id
-    private Status status;
+    /*所有人Status默认状态为free
+    NameLitService中项目并没有要求加入status元素
+    是通过后期的TeamService调用时再进行修改的
+     */
+    private Status status = Status.FREE;
     private Equipment equipment;
 
     public Programmer() {
@@ -44,5 +48,11 @@ public class Programmer extends Employee{
 
     public void setEquipment(Equipment equipment) {
         this.equipment = equipment;
+    }
+
+    @Override
+    public String toString() {
+        //调用getDescription()方法来返回具体的信息，若不调用则返回地址值
+        return getDetails()+"\t程序员\t"+status+"\t\t\t\t\t"+equipment.getDescription();
     }
 }

@@ -3,9 +3,10 @@ package service;
 /**
  * @author kinoz
  * @date 2022/4/22 - 20:49
- * @apiNote
+ * @apiNote 自定义Team异常类
  */
 public class TeamException extends Exception {
+    static final long serialVersionUID = -1000000000L;
     public TeamException() {
         super();
     }

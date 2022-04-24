@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="GBK">
     <file url="file://$PROJECT_DIR$/a_NormalClass/src/array_us/ArraysOverview.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/a_NormalClass/src/string_us/stringOtherMethod/OtherMethod.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/b_Exception/src/throwsus/StudentTest.java" charset="GBK" />
@@ -21,6 +21,8 @@
     <file url="file://$PROJECT_DIR$/f_IOStream/src/FileClass/文件名称过滤器.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/g_Reflex/src/Reflects/Demo2_Reflex.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/g_Reflex/src/Reflects/config.properties.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/h_Programer_Project/src/domain/equipment/Equipment.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/h_Programer_Project/src/junit/NameListServiceTest.java" charset="GBK" />
     <file url="PROJECT" charset="GBK" />
   </component>
 </project>

@@ -1,6 +1,7 @@
 package domain.human;
 
 import domain.equipment.Equipment;
+import service.Status;
 
 /**
  * @author kinoz
@@ -15,10 +16,11 @@ public class Designer extends Programmer{
         super();
     }
 
-    public Designer(int id, String name, int age, double salary, Equipment equipment, double bonus) {
+    public Designer(int id, String name, int age, double salary,Equipment equipment, double bonus) {
         super(id, name, age, salary, equipment);
         this.bonus = bonus;
     }
+
 
     public double getBonus() {
         return bonus;
@@ -26,5 +28,12 @@ public class Designer extends Programmer{
 
     public void setBonus(double bonus) {
         this.bonus = bonus;
+    }
+
+    @Override
+    public String toString() {
+        //equipment定义在programmer中是私有的，子类获取就需要使用get方法
+        //status同理
+        return getDetails()+"\t设计师\t"+getStatus()+"\t"+bonus+"\t\t\t"+getEquipment().getDescription();
     }
 }

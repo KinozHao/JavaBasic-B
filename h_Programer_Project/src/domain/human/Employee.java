@@ -54,4 +54,17 @@ public class Employee {
     public void setSalary(double salary) {
         this.salary = salary;
     }
+
+    @Override
+    public String toString() {
+        return getDetails();
+    }
+    /*
+    * 子类的子类需要调用时候可能会遇到参数重复问题
+    * 直接把toString包装为方法，子类的子类调用时候
+    * 直接调用此方法即可，就不用super.toString()了
+    * */
+    public String getDetails() {
+        return id +"\t" + name + "\t" + age + "\t" + salary;
+    }
 }
