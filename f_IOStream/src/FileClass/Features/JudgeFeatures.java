@@ -9,22 +9,22 @@ public class JudgeFeatures {
         JudgeDirectoryOrFile();
         System.out.println("Part2>>>>>>");
         File a=new File("a.txt");
-        a.setReadable(false);   //è®¾ç½®ä¸ºä¸å¯è¯»
-        System.out.println("å¯ä¸å¯è¯»?"+a.canRead());    //windows default all of the document can read
-        a.setWritable(false);   //è®¾ç½®ä¸å¯å†™
-        System.out.println("å¯ä¸å¯å†™?"+a.canWrite());   //windows can setting dontWrite
+        a.setReadable(false);   //ÉèÖÃÎª²»¿É¶Á
+        System.out.println("¿É²»¿É¶Á?"+a.canRead());    //windows default all of the document can read
+        a.setWritable(false);   //ÉèÖÃ²»¿ÉĞ´
+        System.out.println("¿É²»¿ÉĞ´?"+a.canWrite());   //windows can setting dontWrite
 
         File b=new File("I:\\CodeProject\\wenjian");
-        System.out.println("æ˜¯ä¸æ˜¯è—èµ·æ¥äº†?"+b.isHidden());
+        System.out.println("ÊÇ²»ÊÇ²ØÆğÀ´ÁË?"+b.isHidden());
     }
 
     private static void JudgeDirectoryOrFile() {
-        File a=new File("a.txt");   //æŠŠa.txtå°è£…ä¸ºaå¯¹è±¡
+        File a=new File("a.txt");   //°Ña.txt·â×°Îªa¶ÔÏó
         File b=new File("wenjian");
-        //åˆ¤æ–­æ˜¯ä¸æ˜¯ä¸€ä¸ªæ ¹ç›®å½•æ–‡ä»¶
+        //ÅĞ¶ÏÊÇ²»ÊÇÒ»¸ö¸ùÄ¿Â¼ÎÄ¼ş
         System.out.println(b.isDirectory());
         System.out.println(a.isDirectory());
-        //åˆ¤æ–­æ˜¯ä¸æ˜¯ä¸€ä¸ªæ–‡ä»¶
+        //ÅĞ¶ÏÊÇ²»ÊÇÒ»¸öÎÄ¼ş
         System.out.println(a.isFile());
     }
 }

@@ -12,7 +12,7 @@ public class CopyMethod3 {
         FileOutputStream fos=new FileOutputStream("copys.mp3");
         byte [] arr=new byte[1024 * 8];
         int len;
-        while ((len=fis.read(arr)) !=-1){   //å¦‚æœå¿˜è®°åŠ arr,è¿”å›çš„å°±ä¸æ˜¯è¯»å–çš„ä¸ªæ•°,è€Œæ˜¯å­—èŠ‚çš„ç è¡¨å€¼
+        while ((len=fis.read(arr)) !=-1){   //Èç¹ûÍü¼Ç¼Óarr,·µ»ØµÄ¾Í²»ÊÇ¶ÁÈ¡µÄ¸öÊı,¶øÊÇ×Ö½ÚµÄÂë±íÖµ
             fos.write(arr,0,len);
         }
         fis.close();
@@ -22,23 +22,23 @@ public class CopyMethod3 {
     private static void Demo2() throws IOException {
         FileInputStream fis=new FileInputStream("a.txt");
         FileOutputStream fos=new FileOutputStream("c.txt");
-        byte [] arr=new byte[3];        //å®šä¹‰ä¸€ä¸ªå­—èŠ‚æ•°ç»„
+        byte [] arr=new byte[3];        //¶¨ÒåÒ»¸ö×Ö½ÚÊı×é
         int len;
         while ((len=fis.read(arr)) !=-1) {
-            fos.write(arr,0,len);   //read(byte[] b,int off,int len);   ä»è¯¥è¾“å…¥æµè¯»å–æœ€å¤š lenå­—èŠ‚çš„æ•°æ®ä¸ºå­—èŠ‚æ•°ç»„
+            fos.write(arr,0,len);   //read(byte[] b,int off,int len);   ´Ó¸ÃÊäÈëÁ÷¶ÁÈ¡×î¶à len×Ö½ÚµÄÊı¾İÎª×Ö½ÚÊı×é
         }
-        fis.close();        //å…³é—­æµé‡Šæ”¾å†…å­˜
+        fis.close();        //¹Ø±ÕÁ÷ÊÍ·ÅÄÚ´æ
         fos.close();
     }
 
     private static void Demo1() throws IOException {
-        FileInputStream fis=new FileInputStream("a.txt");   //è¾“å…¥æµ
-        byte[] arr=new byte[3];     //å®šä¹‰ä¸€ä¸ªå­—èŠ‚æ•°ç»„
-        int a=fis.read(arr);        //æŠŠæ–‡ä»¶ä¸Šçš„å­—èŠ‚è¯»å–åˆ°å­—èŠ‚æ•°ç»„ä¸­
+        FileInputStream fis=new FileInputStream("a.txt");   //ÊäÈëÁ÷
+        byte[] arr=new byte[3];     //¶¨ÒåÒ»¸ö×Ö½ÚÊı×é
+        int a=fis.read(arr);        //°ÑÎÄ¼şÉÏµÄ×Ö½Ú¶ÁÈ¡µ½×Ö½ÚÊı×éÖĞ
 
-        System.out.println(a);      //è¯»å–åˆ°æœ‰æ•ˆå­—èŠ‚æ•°ç»„
+        System.out.println(a);      //¶ÁÈ¡µ½ÓĞĞ§×Ö½ÚÊı×é
         for (byte b : arr) {
-            System.out.println(b);  //è·å–é”®ç›˜ä¸Šçš„abc
+            System.out.println(b);  //»ñÈ¡¼üÅÌÉÏµÄabc
         }
         System.out.println("-----------------------------");
         int c=fis.read(arr);

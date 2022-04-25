@@ -17,15 +17,15 @@ public class CollectionsMethod {
         al.add("g");
         al.add("e");
         al.add("c");
-        System.out.println(Collections.max(al));    //maxæœ€å¤§å¤§å…ƒç´ 
-        System.out.println(Collections.min(al));    //minæœ€å°çš„å…ƒç´ 
-        Collections.reverse(al);                    //æ•°ç»„åè½¬
+        System.out.println(Collections.max(al));    //max×î´ó´óÔªËØ
+        System.out.println(Collections.min(al));    //min×îĞ¡µÄÔªËØ
+        Collections.reverse(al);                    //Êı×é·´×ª
         System.out.println(al);
-        Collections.shuffle(al);                    //æ•°ç»„éšæœºæ”¹å˜ä½ç½®
+        Collections.shuffle(al);                    //Êı×éËæ»ú¸Ä±äÎ»ÖÃ
         System.out.println(al);
     }
 
-    private static void binarySearch() {    //æŸ¥æ‰¾æ–¹æ³•
+    private static void binarySearch() {    //²éÕÒ·½·¨
         ArrayList<String> al=new ArrayList<>();
         al.add("a");
         al.add("c");
@@ -35,15 +35,15 @@ public class CollectionsMethod {
         System.out.println(Collections.binarySearch(al,"g"));
     }
 
-    private static void SortMethod() {      //æ’åºæ–¹æ³•
+    private static void SortMethod() {      //ÅÅĞò·½·¨
         ArrayList<String> al=new ArrayList<>();
         al.add("a");
         al.add("c");
         al.add("g");
         al.add("e");
         al.add("c");
-        System.out.println(al); //åˆå§‹
-        Collections.sort(al);   //æ’åº
-        System.out.println(al); //æ’åºå
+        System.out.println(al); //³õÊ¼
+        Collections.sort(al);   //ÅÅĞò
+        System.out.println(al); //ÅÅĞòºó
     }
 }

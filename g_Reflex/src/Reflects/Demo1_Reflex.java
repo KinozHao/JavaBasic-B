@@ -1,15 +1,15 @@
 package Reflects;
 
 import Bean.Person;
-//é€šè¿‡ä¸‰ç§æ–¹å¼è·å–å­—èŠ‚ç å¯¹è±¡
+//Í¨¹ıÈıÖÖ·½Ê½»ñÈ¡×Ö½ÚÂë¶ÔÏó
 public class Demo1_Reflex {
     public static void main(String[] args) throws ClassNotFoundException {
-        //æºæ–‡ä»¶é˜¶æ®µåˆ›å»º   è¯»å–é…ç½®æ–‡ä»¶
+        //Ô´ÎÄ¼ş½×¶Î´´½¨   ¶ÁÈ¡ÅäÖÃÎÄ¼ş
         Class c1 = Class.forName("Bean.Person");
-        //å­—èŠ‚ç é˜¶æ®µåˆ›å»º   å½“ä½œé™æ€æ–¹æ³•çš„é”å¯¹è±¡
+        //×Ö½ÚÂë½×¶Î´´½¨   µ±×÷¾²Ì¬·½·¨µÄËø¶ÔÏó
         Class c2 = Person.class;
 
-        //åˆ›å»ºå¯¹è±¡    åˆ¤æ–­æ˜¯å¦æ˜¯åŒä¸€ä¸ªå­—èŠ‚ç å¯¹è±¡
+        //´´½¨¶ÔÏó    ÅĞ¶ÏÊÇ·ñÊÇÍ¬Ò»¸ö×Ö½ÚÂë¶ÔÏó
         Person p = new Person();
         Class c3 = p.getClass();
 

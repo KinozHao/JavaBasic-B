@@ -2,32 +2,32 @@ package CharacterStream.Text;
 
 import java.io.*;
 import java.util.TreeMap;
-//è·å–æ–‡æœ¬ä¸Šå­—ç¬¦å‡ºç°çš„æ¬¡æ•°
+//»ñÈ¡ÎÄ±¾ÉÏ×Ö·û³öÏÖµÄ´ÎÊı
 public class Text2 {
     public static void main(String[] args) throws IOException {
-        //åˆ›å»ºå¸¦Bufferedçš„è¾“å…¥æµå¯¹è±¡
+        //´´½¨´øBufferedµÄÊäÈëÁ÷¶ÔÏó
         BufferedReader br =new BufferedReader(new FileReader("xxx.txt"));
-        //åˆ›å»ºåŒåˆ—é›†åˆTreeMap
+        //´´½¨Ë«ÁĞ¼¯ºÏTreeMap
         TreeMap<Character,Integer> tm =new TreeMap<>();
-        //å°†è¯»å–åˆ°çš„å­—ç¬¦å­˜å‚¨åœ¨åŒåˆ—é›†åˆä¸­,å­˜å‚¨çš„æ—¶å€™è¦åšåˆ¤æ–­ å¦‚æœä¸åŒ…å«è¿™ä¸ªé”® å°±è®²é”®å’Œ1å­˜å‚¨ å¦‚æœåŒ…å«å°±è®²è¿™ä¸ªé”®+1å­˜å‚¨
+        //½«¶ÁÈ¡µ½µÄ×Ö·û´æ´¢ÔÚË«ÁĞ¼¯ºÏÖĞ,´æ´¢µÄÊ±ºòÒª×öÅĞ¶Ï Èç¹û²»°üº¬Õâ¸ö¼ü ¾Í½²¼üºÍ1´æ´¢ Èç¹û°üº¬¾Í½²Õâ¸ö¼ü+1´æ´¢
         int ch;
         while ((ch =br.read()) !=-1){
-            char c=(char)ch;    //å¼ºåˆ¶ç±»å‹è½¬æ¢
+            char c=(char)ch;    //Ç¿ÖÆÀàĞÍ×ª»»
             /*if (!tm.containsKey(c)){
                 tm.put(c,1);
             }else {
                 tm.put(c,tm.get(c) +1 );
             }*/
-            //ä¸‰å…ƒè¿ç®—ç¬¦ ç®€å†™
+            //ÈıÔªÔËËã·û ¼òĞ´
             tm.put(c,!tm.containsKey(c) ? 1: tm.get(c) +1);
         }
-        //å…³é—­è¾“å…¥æµ
+        //¹Ø±ÕÊäÈëÁ÷
         br.close();
-        //åˆ›å»ºå¸¦Bufferedçš„è¾“å‡ºæµå¯¹è±¡
+        //´´½¨´øBufferedµÄÊä³öÁ÷¶ÔÏó
         BufferedWriter bw =new BufferedWriter(new FileWriter("ggg.txt"));
-        //éå†é›†åˆé‡Œçš„å†…å®¹ å†™åˆ°ggg.txtå½“ä¸­
+        //±éÀú¼¯ºÏÀïµÄÄÚÈİ Ğ´µ½ggg.txtµ±ÖĞ
         for (Character key : tm.keySet()){
-            switch (key){       //è¿›è¡Œä»£ç çš„è§„èŒƒ
+            switch (key){       //½øĞĞ´úÂëµÄ¹æ·¶
                 case '\t':
                     bw.write("\\t"+"="+tm.get(key));
                     break;
@@ -38,11 +38,11 @@ public class Text2 {
                     bw.write("\\r"+"="+tm.get(key));
                     break;
                     default:
-                        bw.write(key+"="+tm.get(key));  //å†™å‡ºé”®å’Œå€¼
+                        bw.write(key+"="+tm.get(key));  //Ğ´³ö¼üºÍÖµ
                         break;
             }
-            bw.newLine();       //æ¢è¡Œ
+            bw.newLine();       //»»ĞĞ
         }
-        bw.close(); //è¾“å‡ºæµçš„é‡Šæ”¾
+        bw.close(); //Êä³öÁ÷µÄÊÍ·Å
     }
 }

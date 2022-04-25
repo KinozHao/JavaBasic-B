@@ -3,11 +3,15 @@ package CharacterStream;
 import java.io.*;
 
 public class Demo8TransIO {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args){
             /*NoBufffer();
             Buffered();*/
+        try {
             Normal();
-}
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     private static void Normal() throws IOException {
         FileReader fr = new FileReader("xxx.txt");

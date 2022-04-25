@@ -3,14 +3,14 @@ package CharacterStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.LineNumberReader;
-//ç¼“å†²å­—ç¬¦è¾“å…¥æµ,è·Ÿè¸ªè¡Œå·
+//»º³å×Ö·ûÊäÈëÁ÷,¸ú×ÙĞĞºÅ
 public class Demo6LineNumberReader {
     public static void main(String[] args) throws IOException {
         LineNumberReader lnr =new LineNumberReader(new FileReader("ggg.txt"));
         String line;
-        lnr.setLineNumber(10);      //è®¾ç½®ä»å“ªä¸ªæ•°å­—å¼€å§‹
+        lnr.setLineNumber(10);      //ÉèÖÃ´ÓÄÄ¸öÊı×Ö¿ªÊ¼
         while ((line = lnr.readLine()) != null){
-            System.out.println(lnr.getLineNumber()+":"+line);   //ç»™æ¯ä¸€è¡Œä»£ç åŠ ä¸Šæ•°å­—
+            System.out.println(lnr.getLineNumber()+":"+line);   //¸øÃ¿Ò»ĞĞ´úÂë¼ÓÉÏÊı×Ö
         }
         lnr.close();
     }

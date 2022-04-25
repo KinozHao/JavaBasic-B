@@ -5,13 +5,13 @@ import java.io.IOException;
 
 public class MakeFeatures {
     public static void main(String[] args) throws IOException {
-        File a=new File("Go.txt");  //åˆ›å»ºä¸€ä¸ªtxtç±»å‹çš„æ–‡ä»¶
+        File a=new File("Go.txt");  //´´½¨Ò»¸ötxtÀàĞÍµÄÎÄ¼ş
         System.out.println(a.createNewFile());
 
-        File b=new File("Kinoz");   //åˆ›å»ºä¸€ä¸ªæ–‡ä»¶å¤¹
+        File b=new File("Kinoz");   //´´½¨Ò»¸öÎÄ¼ş¼Ğ
         System.out.println(b.mkdir());
 
-        File c=new File("é“ ç”²å‹‡å£«\\ç¬¬ä¸€å­£");   //åˆ›å»ºæ–‡ä»¶å¤¹ å¦‚æœçˆ¶æ–‡ä»¶å¤¹ä¸å­˜åœ¨,ä¼šå¸®ä½ åˆ›å»ºå‡ºæ¥
+        File c=new File("îø¼×ÓÂÊ¿\\µÚÒ»¼¾");   //´´½¨ÎÄ¼ş¼Ğ Èç¹û¸¸ÎÄ¼ş¼Ğ²»´æÔÚ,»á°ïÄã´´½¨³öÀ´
         System.out.println(c.mkdirs());
     }
 }

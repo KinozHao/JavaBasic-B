@@ -1,13 +1,13 @@
 package ByteStream.Text;
 
-//æ‹·è´æ–‡ä»¶
+//¿½±´ÎÄ¼ş
 import java.io.*;
 import java.util.Scanner;
 
 public class TextB {
     public static void main(String[] args) throws IOException {
-        File file =method();    //è°ƒç”¨æ–¹æ³•
-        //ä¸‹é¢ä¸ºioæ ¸å¿ƒä»£ç 
+        File file =method();    //µ÷ÓÃ·½·¨
+        //ÏÂÃæÎªioºËĞÄ´úÂë
         BufferedInputStream bis=new BufferedInputStream(new FileInputStream(file));
         BufferedOutputStream bos=new BufferedOutputStream(new FileOutputStream(file.getName()));
         int len;
@@ -19,15 +19,15 @@ public class TextB {
 
     }
     public static File method(){
-        Scanner sc=new Scanner(System.in);  //åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
-        System.out.println("è¯·è¾“å…¥è¦æ‹·è´çš„æ–‡ä»¶:");   //æç¤º
+        Scanner sc=new Scanner(System.in);  //´´½¨¼üÅÌÂ¼Èë¶ÔÏó
+        System.out.println("ÇëÊäÈëÒª¿½±´µÄÎÄ¼ş:");   //ÌáÊ¾
         while (true) {
-            String line=sc.nextLine();      //æ¥å—é”®ç›˜å½•å…¥çš„è·¯å¾„
-            File file=new File(line);       //å°è£…ä¸ºfileå¯¹è±¡å¹¶ä¸”åšåˆ¤æ–­
+            String line=sc.nextLine();      //½ÓÊÜ¼üÅÌÂ¼ÈëµÄÂ·¾¶
+            File file=new File(line);       //·â×°Îªfile¶ÔÏó²¢ÇÒ×öÅĞ¶Ï
             if (!file.exists()){
-                System.out.println("å½•å…¥ç›®æ ‡æ— æ•ˆ");
+                System.out.println("Â¼ÈëÄ¿±êÎŞĞ§");
             }else if (file.isDirectory()){
-                System.out.println("å½•å…¥çš„æ˜¯ä¸€ä¸ªæ–‡ä»¶å¤¹");
+                System.out.println("Â¼ÈëµÄÊÇÒ»¸öÎÄ¼ş¼Ğ");
             }else {
                 return file;
             }

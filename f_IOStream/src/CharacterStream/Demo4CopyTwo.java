@@ -20,8 +20,8 @@ public class Demo4CopyTwo {
         FileWriter fw=new FileWriter("yyy.txt");
         char[] arr=new char[1024];
         int in;
-        while ((in=fr.read(arr)) !=-1){ //å°†æ–‡ä»¶ä¸Šçš„æ•°æ®è¯»å–åˆ°å­—ç¬¦æ•°ç»„ä¸­
-            fw.write(arr,0,in);     //å°†å­—ç¬¦æ•°ç»„ä¸­çš„æ•°æ®å†™åˆ°æ–‡ä»¶ä¸Š
+        while ((in=fr.read(arr)) !=-1){ //½«ÎÄ¼şÉÏµÄÊı¾İ¶ÁÈ¡µ½×Ö·ûÊı×éÖĞ
+            fw.write(arr,0,in);     //½«×Ö·ûÊı×éÖĞµÄÊı¾İĞ´µ½ÎÄ¼şÉÏ
         }
         fr.close();
         fw.close();

@@ -3,10 +3,10 @@ package ByteStream;
 import java.io.*;
 /*
 * flush
-* 具有刷新功能读取完之后还能写
+* ����ˢ�¹��ܶ�ȡ��֮����д
 * close
-* 具有刷新功能,再关闭流之前,就会先刷新一次缓冲区,将缓冲区的字节文件全部刷新到文件上
-* 再关闭,close方法刷新玩之后就不能写了
+* ����ˢ�¹���,�ٹر���֮ǰ,�ͻ���ˢ��һ�λ�����,�����������ֽ��ļ�ȫ��ˢ�µ��ļ���
+* �ٹر�,close����ˢ����֮��Ͳ���д��
 * */
 public class flushAndclose {
     public static void main(String[] args) throws IOException {
@@ -23,8 +23,8 @@ public class flushAndclose {
     int pro;
     while ((pro = bis.read()) !=-1){
         bos.write(pro);
-//        bos.flush();  没读取以后还能继续写
-//        bos.close();  读取一次就直接关闭流了写不了
+//        bos.flush();  û��ȡ�Ժ��ܼ���д
+//        bos.close();  ��ȡһ�ξ�ֱ�ӹر�����д����
     }
     bis.close();
     bos.close();

@@ -4,47 +4,47 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Scanner;
 /** @apiNote
-é¢˜ç›®è¦æ±‚:
-1. é”®ç›˜å½•å…¥intç±»å‹æ•´æ•°,æ±‚å…¶äºŒè¿›åˆ¶æ ¼å¼
-2. å¦‚æœè¿‡å¤§ç»™æç¤º,å¹¶é‡æ–°å½•å…¥ä¸ªBigIntegeræ•´æ•°
-3. å¦‚æœæ˜¯å°æ•°ç»™æç¤º,å¹¶é‡æ–°å½•å…¥ä¸ªæ•´æ•°
-4. å¦‚æœæ˜¯å…¶ä»–å­—ç¬¦ç»™æç¤º,å¹¶é‡æ–°å½•å…¥ä¸ªæ•´æ•°
+ÌâÄ¿ÒªÇó:
+1. ¼üÅÌÂ¼ÈëintÀàĞÍÕûÊı,ÇóÆä¶ş½øÖÆ¸ñÊ½
+2. Èç¹û¹ı´ó¸øÌáÊ¾,²¢ÖØĞÂÂ¼Èë¸öBigIntegerÕûÊı
+3. Èç¹ûÊÇĞ¡Êı¸øÌáÊ¾,²¢ÖØĞÂÂ¼Èë¸öÕûÊı
+4. Èç¹ûÊÇÆäËû×Ö·û¸øÌáÊ¾,²¢ÖØĞÂÂ¼Èë¸öÕûÊı
 */
 public class ExceptionTest {
     public static void main(String[] args) {
 
-        //1.é”®ç›˜å½•å…¥æ•°æ®
+        //1.¼üÅÌÂ¼ÈëÊı¾İ
         Scanner sc=new Scanner(System.in);
         System.out.println("Please enter a normal num:");
         while (true) {
-            //2.å®šä¹‰lineç”¨äºå­˜æ”¾è¾“å…¥æ•°æ®
+            //2.¶¨ÒålineÓÃÓÚ´æ·ÅÊäÈëÊı¾İ
             String line =sc.nextLine();
             try {
-                //3.Stringç±»å‹è½¬æ¢ä¸ºintç±»å‹
+                //3.StringÀàĞÍ×ª»»ÎªintÀàĞÍ
                 int num = Integer.parseInt(line);
-                //4.è‡ªåŠ¨æ‹†ç®±ï¼ŒæŠŠnumé€šè¿‡Integerçš„æ–¹æ³•æ¢ä¸ºäºŒè¿›åˆ¶
-                //è¾“å…¥ç¡®å®šä¸ºå¯è½¬åŒ–ä¸ºintç±»å‹çš„æƒ…å†µä¸‹
+                //4.×Ô¶¯²ğÏä£¬°ÑnumÍ¨¹ıIntegerµÄ·½·¨»»Îª¶ş½øÖÆ
+                //ÊäÈëÈ·¶¨Îª¿É×ª»¯ÎªintÀàĞÍµÄÇé¿öÏÂ
                 System.out.println(Integer.toBinaryString(num));
                 break;
             } catch (Exception e) {
-                //5.å¯¹è¾“å…¥æ•°å­—è¿›è¡Œåˆ¤æ–­
+                //5.¶ÔÊäÈëÊı×Ö½øĞĞÅĞ¶Ï
                 try {
-                    //5.1è¾“å…¥æ•°å­—è¿‡å¤§ï¼Œç»™å‡ºæç¤º
-                    /* BigIntegerç”¨äºæ“ä½œå¤§æ•´æ•°ï¼Œä¹Ÿå¯ä»¥è½¬æ¢è¿›åˆ¶ã€‚
-                     * è‹¥ä¼ å…¥æ•´å‹æ•°æ®è¶…è¿‡æ•´æ•°æœ€å¤§ç±»å‹é•¿åº¦longçš„åˆ™æ­¤æ•°æ®å°±æ— æ³•è£…å…¥ã€‚
-                     * æ­¤æ—¶è¦ä½¿ç”¨BigIntegerç±»è¿›è¡Œæ“ä½œï¼Œè¿™äº›å¤§æ•°éƒ½ä¼šä»¥å­—ç¬¦ä¸²çš„å½¢å¼ä¼ å…¥ã€‚
+                    //5.1ÊäÈëÊı×Ö¹ı´ó£¬¸ø³öÌáÊ¾
+                    /* BigIntegerÓÃÓÚ²Ù×÷´óÕûÊı£¬Ò²¿ÉÒÔ×ª»»½øÖÆ¡£
+                     * Èô´«ÈëÕûĞÍÊı¾İ³¬¹ıÕûÊı×î´óÀàĞÍ³¤¶ÈlongµÄÔò´ËÊı¾İ¾ÍÎŞ·¨×°Èë¡£
+                     * ´ËÊ±ÒªÊ¹ÓÃBigIntegerÀà½øĞĞ²Ù×÷£¬ÕâĞ©´óÊı¶¼»áÒÔ×Ö·û´®µÄĞÎÊ½´«Èë¡£
                      * */
                     new BigInteger(line);
                     System.out.println("enter error,you inter's " +
                             "num too big insert again:");
                 }catch (Exception e1){
-                    //5.2è¾“å…¥æ•°å­—ä¸æ˜¯æ•´æ•°ï¼Œç»™å‡ºæç¤º
+                    //5.2ÊäÈëÊı×Ö²»ÊÇÕûÊı£¬¸ø³öÌáÊ¾
                     try {
                         new BigDecimal(line);
                         System.out.println("enter error,you " +
                                 "inter's a double or float " +
                                 "types num,try again num:");
-                    //5.3è¾“å…¥çš„å¯èƒ½ä¸æ˜¯æ•°æ®ï¼Œç»™å‡ºæç¤º
+                    //5.3ÊäÈëµÄ¿ÉÄÜ²»ÊÇÊı¾İ£¬¸ø³öÌáÊ¾
                     } catch (Exception e2) {
                         System.out.println("enter error,you " +
                                 "inter's mays not a num,try " +

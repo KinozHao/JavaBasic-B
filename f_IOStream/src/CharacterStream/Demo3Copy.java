@@ -13,7 +13,7 @@ public class Demo3Copy {
             fw.write(in);
         }
         fw.close();
-        //Writerç±»ä¸­æœ‰ä¸€ä¸ª2kå·¦å³çš„ç¼“å†²åŒº,å¦‚æžœä¸å…³æµ,å°±ä¼šå°†å†…å®¹å†™åˆ°ç¼“å†²åŒºé‡Œ,å…³æµä¼šå°†ç¼“å†²åŒºå†…å®¹å†™å‡º,åˆ·æ–°å‡ºæ¥
+        //WriterÀàÖÐÓÐÒ»¸ö2k×óÓÒµÄ»º³åÇø,Èç¹û²»¹ØÁ÷,¾Í»á½«ÄÚÈÝÐ´µ½»º³åÇøÀï,¹ØÁ÷»á½«»º³åÇøÄÚÈÝÐ´³ö,Ë¢ÐÂ³öÀ´
         fr.close();
     }
 }

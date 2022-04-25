@@ -2,24 +2,24 @@ package CharacterStream.Text;
 
 import java.io.*;
 
-//è¯•ç”¨ç‰ˆè½¯ä»¶
+//ÊÔÓÃ°æÈí¼ş
 public class Text3 {
     public static void main(String[] args) throws IOException {
-        //åˆ›å»ºå¸¦ç¼“å†²çš„è¾“å‡ºæµå¯¹è±¡,å› ä¸ºè¦ä½¿ç”¨readLineæ–¹æ³•,ä¿è¯æ•°æ®åŸæ ·æ€§
+        //´´½¨´ø»º³åµÄÊä³öÁ÷¶ÔÏó,ÒòÎªÒªÊ¹ÓÃreadLine·½·¨,±£Ö¤Êı¾İÔ­ÑùĞÔ
         BufferedReader BR= new BufferedReader(new FileReader("Nums.txt"));
-        //å­—ç¬¦ä¸²è½¬æ¢ä¸ºintæ•°
+        //×Ö·û´®×ª»»ÎªintÊı
         String line=BR.readLine();
         int times=Integer.parseInt(line);
-        //å¯¹intæ•°è¿›è¡Œåˆ¤æ–­ å¤§äº0 å°±--å›å» ä¸å¤§äºå°±æç¤ºelseé‡Œé¢çš„è¯­å¥
+        //¶ÔintÊı½øĞĞÅĞ¶Ï ´óÓÚ0 ¾Í--»ØÈ¥ ²»´óÓÚ¾ÍÌáÊ¾elseÀïÃæµÄÓï¾ä
         if (times > 0){
-            System.out.println("ä½ è¿˜æœ‰" + times-- + "æ¬¡æœºä¼š");
+            System.out.println("Äã»¹ÓĞ" + times-- + "´Î»ú»á");
             FileWriter fw =new FileWriter("Nums.txt");
             fw.write(times + "");
             fw.close();
         }else {
             System.out.println("Times out buy to using");
         }
-        //å…³é—­æµ
+        //¹Ø±ÕÁ÷
         BR.close();
     }
 }

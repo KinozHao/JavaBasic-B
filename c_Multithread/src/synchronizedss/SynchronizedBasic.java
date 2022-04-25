@@ -2,7 +2,7 @@ package synchronizedss;
 
 public class SynchronizedBasic {
     public static void main(String[] args) {
-        //´òÓ¡»á³öÏÖÊä³ö²»·ûÎÊÌâ
+        //æ‰“å°ä¼šå‡ºç°è¾“å‡ºä¸ç¬¦é—®é¢˜
         final demo dm = new demo();
         new Thread(){
             @Override
@@ -28,21 +28,21 @@ public class SynchronizedBasic {
 class demo{
     Lock suo =new Lock();
     public void pirnt1(){
-        //Ëø¿ÉÒÔÓÃÈÎÒâ¶ÔÏóÀ´ÉèÖÃ
+        //é”å¯ä»¥ç”¨ä»»æ„å¯¹è±¡æ¥è®¾ç½®
         synchronized (suo) {
-            System.out.print("»ú");
-            System.out.print("Æ÷");
-            System.out.print("ÈË");
+            System.out.print("æœº");
+            System.out.print("å™¨");
+            System.out.print("äºº");
             System.out.println();
         }
     }
     public void pirnt2(){
-        //Ëø²»ÄÜÓÃÄäÃû¶ÔÏó ÒòÎªÄäÃû¶ÔÏó²»ÊÇÍ¬Ò»¸ö¶ÔÏó
+        //é”ä¸èƒ½ç”¨åŒ¿åå¯¹è±¡ å› ä¸ºåŒ¿åå¯¹è±¡ä¸æ˜¯åŒä¸€ä¸ªå¯¹è±¡
         synchronized (new Lock()) {
-            System.out.print("Ú¤");
-            System.out.print("Íõ");
-            System.out.print("ĞÇ");
-            System.out.print("Çò");
+            System.out.print("å†¥");
+            System.out.print("ç‹");
+            System.out.print("æ˜Ÿ");
+            System.out.print("çƒ");
             System.out.println();
         }
     }

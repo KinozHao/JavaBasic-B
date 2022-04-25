@@ -6,7 +6,7 @@ import java.io.IOException;
 public class FileOutputStreamUs {
     public static void main(String[] args) throws IOException {
         First();
-        //å¦‚æœæƒ³è¦ç»­å†™çš„è¯éœ€è¦åœ¨FileOutputStreamå‚æ•°åé¢æ·»åŠ trueè¡¨ç¤ºè¿˜è¦è¿›è¡Œæ·»åŠ 
+        //Èç¹ûÏëÒªĞøĞ´µÄ»°ĞèÒªÔÚFileOutputStream²ÎÊıºóÃæÌí¼Ótrue±íÊ¾»¹Òª½øĞĞÌí¼Ó
         FileOutputStream fos2=new FileOutputStream("b.txt",true);
         fos2.write(102);
         fos2.write(103);
@@ -16,12 +16,12 @@ public class FileOutputStreamUs {
     }
 
     private static void First() throws IOException {
-        FileOutputStream fos=new FileOutputStream("b.txt"); //åˆ›å»ºå­—èŠ‚è¾“å‡ºæµå¯¹è±¡,è‹¥æ²¡æœ‰å°±ä¼šè‡ªåŠ¨åˆ›å»ºä¸€ä¸ª
-      /*  fos.write(97);  //å†™å‡ºä¸ºä¸€ä¸ªintæ•°å€¼ ä½†æ˜¯æ–‡ä»¶é‡Œé¢ä¼šåˆ›å»ºå­—ç¬¦,è‡ªåŠ¨å»é™¤å‰ä¸‰ä¸ª8ä½
+        FileOutputStream fos=new FileOutputStream("b.txt"); //´´½¨×Ö½ÚÊä³öÁ÷¶ÔÏó,ÈôÃ»ÓĞ¾Í»á×Ô¶¯´´½¨Ò»¸ö
+      /*  fos.write(97);  //Ğ´³öÎªÒ»¸öintÊıÖµ µ«ÊÇÎÄ¼şÀïÃæ»á´´½¨×Ö·û,×Ô¶¯È¥³ıÇ°Èı¸ö8Î»
         fos.write(98);
         fos.write(99);
         fos.write(100);*/
         fos.write(101);
-        fos.close();    //ç”¨å®Œè®°å¾—å…³é—­æµé‡Šæ”¾å†…å­˜
+        fos.close();    //ÓÃÍê¼ÇµÃ¹Ø±ÕÁ÷ÊÍ·ÅÄÚ´æ
     }
 }

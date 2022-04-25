@@ -1,6 +1,6 @@
 package MapStudy.HashMapStudy;
 
-public class Student implements Comparable<Student> {   //瑕佹兂鐢═reeMap杩涜鎺掑簭瀛愮被闇�瑕佸疄鐜癈omparable鏂规硶
+public class Student implements Comparable<Student> {   //要想用TreeMap进行排序子类需要实现Comparable方法
         private String name;
         private int age;
 
@@ -56,7 +56,7 @@ public class Student implements Comparable<Student> {   //瑕佹兂鐢═reeMap杩涜
 
     @Override
     public int compareTo(Student o) {
-        int num=this.age -o.age;    //浠ュ勾榫勪负涓昏鏉′欢
+        int num=this.age -o.age;    //以年龄为主要条件
         return num == 0 ? this.name.compareTo(o.name):num;
     }
 }

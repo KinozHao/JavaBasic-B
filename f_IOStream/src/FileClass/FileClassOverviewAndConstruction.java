@@ -12,22 +12,22 @@ public class FileClassOverviewAndConstruction {
         Part3();
     }
 
-    private static void Part3() {   //根据一个父file对象和一个子文件/目录得到file对象
+    private static void Part3() {   //����һ����file�����һ�����ļ�/Ŀ¼�õ�file����
         File parent =new File("I:\\CodeProject\\JavaIntermedate\\Day19Expection\\src\\FileClass");
         String child="div.css";
         File file=new File(parent,child);
         System.out.println(file.exists());
     }
 
-    private static void Part2() {   //根据一个目录一个子文件/目录得到的file对象
+    private static void Part2() {   //����һ��Ŀ¼һ�����ļ�/Ŀ¼�õ���file����
         String parent="I:\\CodeProject\\JavaIntermedate\\Day19Expection\\src\\FileClass";
         String child="div.css";
         File file=new File(parent,child);
         System.out.println(file.exists());
     }
 
-    private static void Part1() {   //exists方法是用来判断路径存不存在的
-        //获取一个文件的位置包装成一个file对象
+    private static void Part1() {   //exists�����������ж�·���治���ڵ�
+        //��ȡһ���ļ���λ�ð�װ��һ��file����
         File file1=new File("I:\\CodeProject\\JavaIntermedate\\Day19Expection\\src\\FileClass\\div.css");
         System.out.println(file1.exists());
 

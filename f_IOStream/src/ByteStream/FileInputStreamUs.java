@@ -5,25 +5,25 @@ import java.io.IOException;
 
 public class FileInputStreamUs {
     public static void main(String[] args) throws IOException {
-        System.out.println("ç¬¬ä¸€ç§åŸºç¡€å†™æ³•");
+        System.out.println("µÚÒ»ÖÖ»ù´¡Ğ´·¨");
         MethodOne();
-        System.out.println("ç¬¬äºŒç§å¾ªç¯å†™æ³•");
+        System.out.println("µÚ¶şÖÖÑ­»·Ğ´·¨");
         FileInputStream Files = new FileInputStream("a.txt");
-        int one;            //oneç›¸å½“äºç¬¬ä¸€ç§æ–¹æ³•ä¸­çš„x y z
-        while ((one=Files.read()) != -1){   //å¾ªç¯åˆ¤æ–­å¦‚æœè¯»å–çš„å­—èŠ‚æ•°æ®ä¸ä¸º-1å°±æ‰§è¡Œ
+        int one;            //oneÏàµ±ÓÚµÚÒ»ÖÖ·½·¨ÖĞµÄx y z
+        while ((one=Files.read()) != -1){   //Ñ­»·ÅĞ¶ÏÈç¹û¶ÁÈ¡µÄ×Ö½ÚÊı¾İ²»Îª-1¾ÍÖ´ĞĞ
             System.out.println(one);
         }
     }
 
-    private static void MethodOne() throws IOException {    //å¯èƒ½è¯»å–æ–‡ä»¶æœ‰å¼‚å¸¸ æŠ›å‡ºä¸€ä¸‹
-        FileInputStream file = new FileInputStream("a.txt");    //åˆ›å»ºæµæ–‡ä»¶
-        int x = file.read();        //readæ–¹æ³•ä»è¯¥è¾“å…¥æµä¸­è¯»å–ä¸€ä¸ªå­—èŠ‚çš„æ•°æ®
+    private static void MethodOne() throws IOException {    //¿ÉÄÜ¶ÁÈ¡ÎÄ¼şÓĞÒì³£ Å×³öÒ»ÏÂ
+        FileInputStream file = new FileInputStream("a.txt");    //´´½¨Á÷ÎÄ¼ş
+        int x = file.read();        //read·½·¨´Ó¸ÃÊäÈëÁ÷ÖĞ¶ÁÈ¡Ò»¸ö×Ö½ÚµÄÊı¾İ
         System.out.println(x);
         int y = file.read();
         System.out.println(y);
         int z = file.read();
         System.out.println(z);
-        int o = file.read();        //å¦‚æœè¯»å–çš„å­—èŠ‚æ•°æ®ä¸å­˜åœ¨ å°±è¾“å‡º-1äº†
+        int o = file.read();        //Èç¹û¶ÁÈ¡µÄ×Ö½ÚÊı¾İ²»´æÔÚ ¾ÍÊä³ö-1ÁË
         System.out.println(o);
     }
 }

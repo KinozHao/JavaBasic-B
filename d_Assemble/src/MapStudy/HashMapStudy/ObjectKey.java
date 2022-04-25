@@ -1,7 +1,7 @@
 package MapStudy.HashMapStudy;
 
 import java.util.HashMap;
-//é”®ä¸ºå¯¹è±¡çš„æ—¶å€™é”®çš„å”¯ä¸€æ€§è¿˜å­˜åœ¨ä¸å­˜åœ¨
+//¼üÎª¶ÔÏóµÄÊ±ºò¼üµÄÎ¨Ò»ĞÔ»¹´æÔÚ²»´æÔÚ
 public class ObjectKey {
     public static void main(String[] args) {
         HashMap<Student,String> in=new HashMap<>();

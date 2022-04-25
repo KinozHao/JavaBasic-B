@@ -10,29 +10,29 @@ public class HashMapMethod {
         Collections();
     }
 
-    private static void Collections() {     //è·å–
+    private static void Collections() {     //»ñÈ¡
         HashMap<String,Integer> j=new HashMap<>();
-        j.put("Po",13);        //é”®å¯¹å€¼
+        j.put("Po",13);        //¼ü¶ÔÖµ
         j.put("Lo",14);
         j.put("Ho",15);
-        Collection<Integer> in=j.values();  //è·å–é›†åˆä¸­æ‰€æœ‰å€¼çš„é›†åˆ
+        Collection<Integer> in=j.values();  //»ñÈ¡¼¯ºÏÖĞËùÓĞÖµµÄ¼¯ºÏ
         System.out.println(in);
     }
 
-    private static void Judge() {   //åˆ¤æ–­
+    private static void Judge() {   //ÅĞ¶Ï
         HashMap<String,Integer> po=new HashMap<>();
-        po.put("Po",13);        //é”®å¯¹å€¼
+        po.put("Po",13);        //¼ü¶ÔÖµ
         po.put("Lo",14);
         po.put("Ho",15);
-        //åˆ¤æ–­æ˜¯å¦åŒ…å«
+        //ÅĞ¶ÏÊÇ·ñ°üº¬
         System.out.println(po.containsKey("Po"));
         System.out.println(po.containsValue(15));
-        System.out.println(po.isEmpty());   //åˆ¤æ–­æ˜¯å¦ä¸ºç©º
+        System.out.println(po.isEmpty());   //ÅĞ¶ÏÊÇ·ñÎª¿Õ
     }
 
-    private static void putAndclear() { //æ·»åŠ 
+    private static void putAndclear() { //Ìí¼Ó
         HashMap<String,Integer> go=new HashMap<>();
-        go.put("Po",13);        //é”®å¯¹å€¼
+        go.put("Po",13);        //¼ü¶ÔÖµ
         go.put("Lo",14);
         go.put("Ho",15);
         System.out.println(go);

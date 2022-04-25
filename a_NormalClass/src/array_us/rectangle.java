@@ -4,25 +4,25 @@ QUESTION:
 Get the Rectangle's length and the Square
 
 Function:
-1:å®šä¹‰é•¿æ–¹å½¢çš„é•¿å’Œå®½å±æ€§
-2:ä¸‰ä¸ªæ„é€ æ–¹æ³• ç¬¬ä¸€ä¸ªç©ºå‚ å®šä¹‰é•¿å’Œå®½   ç¬¬äºŒä¸ªä¸€ä¸ªå‚æ•° å®½é«˜ä¸ºå‚æ•°å€¼   ç¬¬ä¸‰ä¸ª ä¸¤ä¸ªå‚æ•°å€¼ å®½é«˜å‡ä¸ºå‚è€ƒæ•°å€¼
-3:ä¸¤ä¸ªæ–¹æ³• å‘¨é•¿æ–¹æ³•(length+width)*2     é¢ç§¯æ–¹æ³•length*width
+1:¶¨Òå³¤·½ĞÎµÄ³¤ºÍ¿íÊôĞÔ
+2:Èı¸ö¹¹Ôì·½·¨ µÚÒ»¸ö¿Õ²Î ¶¨Òå³¤ºÍ¿í   µÚ¶ş¸öÒ»¸ö²ÎÊı ¿í¸ßÎª²ÎÊıÖµ   µÚÈı¸ö Á½¸ö²ÎÊıÖµ ¿í¸ß¾ùÎª²Î¿¼ÊıÖµ
+3:Á½¸ö·½·¨ ÖÜ³¤·½·¨(length+width)*2     Ãæ»ı·½·¨length*width
 * */
 
 //Answer:
 public class rectangle {
     public static void main(String[] args) {
         things s1=new things();
-        System.out.println("é»˜è®¤å‘¨é•¿"+s1.getLength());
-        System.out.println("é»˜è®¤é¢ç§¯"+s1.getSquare());
+        System.out.println("Ä¬ÈÏÖÜ³¤"+s1.getLength());
+        System.out.println("Ä¬ÈÏÃæ»ı"+s1.getSquare());
 
         things s2=new things(2);
-        System.out.println("ä¸¤ä¸ªå‚æ•°å‘¨é•¿"+s2.getLength());
-        System.out.println("ä¸¤ä¸ªå‚æ•°é¢ç§¯"+s2.getSquare());
+        System.out.println("Á½¸ö²ÎÊıÖÜ³¤"+s2.getLength());
+        System.out.println("Á½¸ö²ÎÊıÃæ»ı"+s2.getSquare());
         things s3=new things(4);
 
-        System.out.println("ä¸‰ä¸ªå‚æ•°å‘¨é•¿"+s3.getLength());
-        System.out.println("ä¸‰ä¸ªå‚æ•°é¢ç§¯"+s3.getSquare());
+        System.out.println("Èı¸ö²ÎÊıÖÜ³¤"+s3.getLength());
+        System.out.println("Èı¸ö²ÎÊıÃæ»ı"+s3.getSquare());
     }
 }
 class things{

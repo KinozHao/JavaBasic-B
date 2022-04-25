@@ -10,15 +10,15 @@ Ect:{element@element@element}
 public class DemoArrayListPrint {
     public static void main(String[] args) {
         ArrayList<String> list=new ArrayList<>();
-        list.add("灏忕背");
-        list.add("鍗庝负");
-        list.add("璋锋瓕");
-        list.add("涓夋槦");
+        list.add("小米");
+        list.add("华为");
+        list.add("谷歌");
+        list.add("三星");
         System.out.println(list);
         printArraylist(list);
     }
     public static void printArraylist(ArrayList<String>list){
-        //{灏忕背@鍗庝负@璋锋瓕@涓夋槦}
+        //{小米@华为@谷歌@三星}
         System.out.print("{");
         for (int king = 0; king < list.size(); king++) {
             String name=list.get(king);

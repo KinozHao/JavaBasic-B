@@ -1,19 +1,19 @@
 package Test;
-//åœ¨ä¸€ä¸ªå¸¦æœ‰integeræ³›å‹çš„é›†åˆä¸­æ·»åŠ ä¸€ä¸ªå­—ç¬¦ä¸²å…ƒç´  ç”¨åå°„å®ç°
+//ÔÚÒ»¸ö´øÓĞinteger·ºĞÍµÄ¼¯ºÏÖĞÌí¼ÓÒ»¸ö×Ö·û´®ÔªËØ ÓÃ·´ÉäÊµÏÖ
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 
 public class TestOne {
     public static void main(String[] args) throws Exception {
-        ArrayList<Integer> ay =new ArrayList<>();       //å®šä¹‰ä¸€ä¸ªæ•°ç»„
-        ay.add(10);             //æ·»åŠ å‚æ•°
+        ArrayList<Integer> ay =new ArrayList<>();       //¶¨ÒåÒ»¸öÊı×é
+        ay.add(10);             //Ìí¼Ó²ÎÊı
         ay.add(20);
 
         System.out.println("Before:"+ay);
-        Class clz = Class.forName("java.util.ArrayList");   //åŸæ–‡ä»¶åˆ›å»º è¯»å–é…ç½®æ–‡ä»¶ è·å–å­—èŠ‚ç å¯¹è±¡
+        Class clz = Class.forName("java.util.ArrayList");   //Ô­ÎÄ¼ş´´½¨ ¶ÁÈ¡ÅäÖÃÎÄ¼ş »ñÈ¡×Ö½ÚÂë¶ÔÏó
 
-        Method m = clz.getMethod("add",Object.class);       //è·å–addæ–¹æ³•
-        m.invoke(ay,"è¿™æ˜¯ä¸ªå­—ç¬¦ä¸²");                          //æ·»åŠ å­—ç¬¦ä¸²è¿›å»
+        Method m = clz.getMethod("add",Object.class);       //»ñÈ¡add·½·¨
+        m.invoke(ay,"ÕâÊÇ¸ö×Ö·û´®");                          //Ìí¼Ó×Ö·û´®½øÈ¥
 
         System.out.println("After:"+ay);
     }

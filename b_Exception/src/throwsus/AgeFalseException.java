@@ -1,8 +1,8 @@
 package throwsus;
 
-/** @apiNote è‡ªå®šä¹‰å¼‚å¸¸ä½¿ç”¨
- * 1:ç»§æ‰¿çˆ¶ç±»(Exception)
- * 2:å®šä¹‰æ„é€ å™¨ï¼Œä½¿ç”¨superè°ƒç”¨çˆ¶ç±»æ„é€ å™¨
+/** @apiNote ×Ô¶¨ÒåÒì³£Ê¹ÓÃ
+ * 1:¼Ì³Ğ¸¸Àà(Exception)
+ * 2:¶¨Òå¹¹ÔìÆ÷£¬Ê¹ÓÃsuperµ÷ÓÃ¸¸Àà¹¹ÔìÆ÷
  */
 
 class AgeFalseException extends Exception{

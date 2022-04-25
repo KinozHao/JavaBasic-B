@@ -1,5 +1,5 @@
 package array_us;
-//è¾“å…¥å­—ç¬¦ä¸² æ‰“å°å‡ºæ¥è¿™ä¸ªå­—ç¬¦ä¸²åè½¬åçš„æ ¼å¼
+//ÊäÈë×Ö·û´® ´òÓ¡³öÀ´Õâ¸ö×Ö·û´®·´×ªºóµÄ¸ñÊ½
 import java.util.Scanner;
 
 public class CharacterReverse {
@@ -9,9 +9,9 @@ public class CharacterReverse {
         String str=sc.nextLine();
         System.out.println(Method(str));
     }
-    public static String Method(String str){    //è¿”å›å€¼ç±»å‹String å‚æ•°åˆ—è¡¨String str
-        StringBuffer sbs=new StringBuffer(str); //å­—ç¬¦ä¸²è½¬æ¢ä¸ºStringBufferå¯¹è±¡
-        sbs.reverse();                          //ç¼“å†²åŒºå†…å®¹è¿›è¡Œåè½¬
-        return sbs.toString();                  //è¿”å›ç»“æœ
+    public static String Method(String str){    //·µ»ØÖµÀàĞÍString ²ÎÊıÁĞ±íString str
+        StringBuffer sbs=new StringBuffer(str); //×Ö·û´®×ª»»ÎªStringBuffer¶ÔÏó
+        sbs.reverse();                          //»º³åÇøÄÚÈİ½øĞĞ·´×ª
+        return sbs.toString();                  //·µ»Ø½á¹û
     }
 }

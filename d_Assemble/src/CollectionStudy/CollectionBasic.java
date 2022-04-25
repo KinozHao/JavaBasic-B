@@ -2,32 +2,32 @@ package CollectionStudy;
 
 import java.util.*;
 
-/** @apiNote Collectionæœ¬äº‹æ˜¯ä¸€ä¸ªæ¥å£æ— æ³•è¿›è¡Œåˆå§‹åŒ–
- * Collectionçš„åˆå§‹åŒ–ç”±å®ƒçš„å®ç°ç±»å®Œæˆ
- * ç›´æ¥ç»§æ‰¿å®ƒçš„æ¥å£æœ‰ä¸¤ä¸ª(List Set)
- * å®ç°Listæ¥å£çš„å¸¸ç”¨ç±»(LinkedList ArrayList Vector)
- * å®ç°Setæ¥å£çš„å¸¸ç”¨ç±»(HashSet TreeSet)
+/** @apiNote Collection±¾ÊÂÊÇÒ»¸ö½Ó¿ÚÎŞ·¨½øĞĞ³õÊ¼»¯
+ * CollectionµÄ³õÊ¼»¯ÓÉËüµÄÊµÏÖÀàÍê³É
+ * Ö±½Ó¼Ì³ĞËüµÄ½Ó¿ÚÓĞÁ½¸ö(List Set)
+ * ÊµÏÖList½Ó¿ÚµÄ³£ÓÃÀà(LinkedList ArrayList Vector)
+ * ÊµÏÖSet½Ó¿ÚµÄ³£ÓÃÀà(HashSet TreeSet)
 * */
 public class CollectionBasic {
     public static void main(String[] args) {
-        //é™æ€è°ƒç”¨é™æ€
+        //¾²Ì¬µ÷ÓÃ¾²Ì¬
         methodOne();
         methodTwo();
     }
 
     private static void methodOne(){
-        //åŸºæœ¬æ•°æ®ç±»å‹æ•°ç»„(é™æ€åˆå§‹åŒ–)
+        //»ù±¾Êı¾İÀàĞÍÊı×é(¾²Ì¬³õÊ¼»¯)
         int [] ints = {1,2,3,4,5};
         System.out.println(Arrays.toString(ints));
 
-        //å¼•ç”¨æ•°æ®ç±»å‹æ•°ç»„(åŠ¨æ€åˆå§‹åŒ–)
+        //ÒıÓÃÊı¾İÀàĞÍÊı×é(¶¯Ì¬³õÊ¼»¯)
         StudentView[] arr = new StudentView[5];
-        //å¼•ç”¨æ•°æ®ç±»å‹æ·»åŠ å…ƒç´ 
+        //ÒıÓÃÊı¾İÀàĞÍÌí¼ÓÔªËØ
         arr[0] =new StudentView("Ross",9);
         arr[1] =new StudentView("Jack",11);
         arr[2] =new StudentView("Folk",19);
 
-        //éå†è¿™ä¸ªå­¦ç”Ÿæ•°ç»„
+        //±éÀúÕâ¸öÑ§ÉúÊı×é
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
         }
@@ -35,16 +35,16 @@ public class CollectionBasic {
 
 
     private static void methodTwo() {
-        //å¤šæ€ä½“ç°
+        //¶àÌ¬ÌåÏÖ
         Collection cls = new ArrayList();
         cls.add(new StudentView("Ross",9));
         cls.add(new StudentView("Jam",9));
         cls.add(new StudentView("Walt",9));
 
-        //è½¬æ¢ä¸ºæ•°ç»„
+        //×ª»»ÎªÊı×é
         Object[] obj = cls.toArray();
 
-        //éå†è¿™ä¸ªå­¦ç”Ÿæ•°ç»„
+        //±éÀúÕâ¸öÑ§ÉúÊı×é
         for (int i = 0; i < obj.length; i++) {
             System.out.println(obj[i]);
         }

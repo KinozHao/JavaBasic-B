@@ -13,33 +13,33 @@ public class CollectionMethod {
         s.add("h");
         s.add("e");
         s.add("r");
-        s.remove("h");          //åˆ é™¤å…¶ä¸­æŒ‡å®šå­—ç¬¦
-        s.clear();                  //æ¸…ç©ºå…¨éƒ¨
-        System.out.println(s.contains("r"));    //åˆ¤æ–­æ˜¯å¦åŒ…å«
-        System.out.println(s.isEmpty());        //åˆ¤æ–­æ˜¯å¦ä¸ºç©ºå­—ç¬¦ä¸²
-        System.out.println(s.size());           //åˆ¤æ–­å­—ç¬¦é•¿åº¦
-        System.out.println(s);                  //æ‰“å°
+        s.remove("h");          //É¾³ıÆäÖĞÖ¸¶¨×Ö·û
+        s.clear();                  //Çå¿ÕÈ«²¿
+        System.out.println(s.contains("r"));    //ÅĞ¶ÏÊÇ·ñ°üº¬
+        System.out.println(s.isEmpty());        //ÅĞ¶ÏÊÇ·ñÎª¿Õ×Ö·û´®
+        System.out.println(s.size());           //ÅĞ¶Ï×Ö·û³¤¶È
+        System.out.println(s);                  //´òÓ¡
     }
 
     private static void ADDmethod() {
-        //Set s=new Set();    é”™è¯¯å†™æ³•
-        //ArrayListçˆ¶ç±»çš„çˆ¶ç±»ä¸­é‡å†™äº†toStringæ–¹æ³•,æ‰€ä»¥åœ¨æ‰“å°å¯¹è±¡çš„å¼•ç”¨æ—¶å€™,è¾“å‡ºçš„ä¸æ˜¯objectç±»ä¸­çš„toStringç»“æœ
+        //Set s=new Set();    ´íÎóĞ´·¨
+        //ArrayList¸¸ÀàµÄ¸¸ÀàÖĞÖØĞ´ÁËtoString·½·¨,ËùÒÔÔÚ´òÓ¡¶ÔÏóµÄÒıÓÃÊ±ºò,Êä³öµÄ²»ÊÇobjectÀàÖĞµÄtoString½á¹û
 
-        Collection s=new ArrayList();        //çˆ¶ç±»å¼•ç”¨æŒ‡å‘å­ç±»å¯¹è±¡
-        boolean b1=s.add("hello world");    //ç¼–è¯‘å·¦è¾¹è¿è¡Œå³è¾¹
+        Collection s=new ArrayList();        //¸¸ÀàÒıÓÃÖ¸Ïò×ÓÀà¶ÔÏó
+        boolean b1=s.add("hello world");    //±àÒë×ó±ßÔËĞĞÓÒ±ß
         boolean b2=s.add(true);
         boolean b3=s.add(100);
         boolean b4=s.add(100);
-        boolean b5=s.add(new StudentParam("é«˜éå‡¡",17));
-        System.out.println(b4);             //b4å’Œb3çš„æ‰“å°ç»“æœéƒ½ä¸ºtrue
-        System.out.println(b3);             //ArrayListé›†åˆå…è®¸å­˜å‚¨é‡å¤
+        boolean b5=s.add(new StudentParam("¸ß·Ç·²",17));
+        System.out.println(b4);             //b4ºÍb3µÄ´òÓ¡½á¹û¶¼Îªtrue
+        System.out.println(b3);             //ArrayList¼¯ºÏÔÊĞí´æ´¢ÖØ¸´
         for (int i = 0; i < s.size(); i++) {
-            System.out.print("é›†åˆéå†"+((ArrayList) s).get(i)+" ");
+            System.out.print("¼¯ºÏ±éÀú"+((ArrayList) s).get(i)+" ");
         }
         System.out.println();
         System.out.println(">>>>>>>>>>>>>>>>>>>");
-        Collection k=new HashSet();         //çˆ¶ç±»å¼•ç”¨æŒ‡å‘å­ç±»å¯¹è±¡
-        boolean n1=k.add("h1z1");           //HashSeté›†åˆåˆ™ä¸å…è®¸å­˜å‚¨é‡å¤
+        Collection k=new HashSet();         //¸¸ÀàÒıÓÃÖ¸Ïò×ÓÀà¶ÔÏó
+        boolean n1=k.add("h1z1");           //HashSet¼¯ºÏÔò²»ÔÊĞí´æ´¢ÖØ¸´
         boolean n2=k.add("h1z1");
         System.out.println(n1);
         System.out.println(n2);

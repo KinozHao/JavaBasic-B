@@ -4,7 +4,7 @@ import MapStudy.HashMapStudy.Student;
 
 import java.util.Comparator;
 import java.util.TreeMap;
-//TreeMapé›†åˆé”®æ˜¯Studentå€¼æ˜¯Stringçš„ä¸€ä¸ªæ¡ˆä¾‹
+//TreeMap¼¯ºÏ¼üÊÇStudentÖµÊÇStringµÄÒ»¸ö°¸Àı
 
 public class TreeMapUsing {
     public static void main(String[] args) {
@@ -13,7 +13,7 @@ public class TreeMapUsing {
     }
 
     private static void Key() {
-        //æ¯”è¾ƒé”®
+        //±È½Ï¼ü
         TreeMap<Student,String> tm=new TreeMap<>(new Comparator<Student>() {
             @Override
             public int compare(Student s1, Student s2) {
@@ -22,15 +22,15 @@ public class TreeMapUsing {
             }
         });
         tm.put(new Student("Aniy",20),"Chicago");
-        tm.put(new Student("Fiki",30),"Las Vellges");
-        tm.put(new Student("Nani",70),"Motains City");
+        tm.put(new Student("Fiki",30),"Las Veges");
+        tm.put(new Student("Nani",70),"Matins City");
     }
 
-    private static void Object() {  //æŒ‰ç…§å¯¹è±¡è¿›è¡Œæ’åº
+    private static void Object() {  //°´ÕÕ¶ÔÏó½øĞĞÅÅĞò
         TreeMap<Student,String> tm=new TreeMap<>();
         tm.put(new Student("Aniy",20),"Chicago");
-        tm.put(new Student("Fiki",30),"Las Vellges");
-        tm.put(new Student("Nani",70),"Motains City");
+        tm.put(new Student("Fiki",30),"Las Veges");
+        tm.put(new Student("Nani",70),"Matins City");
         System.out.println(tm);
     }
 }

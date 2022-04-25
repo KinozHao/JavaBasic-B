@@ -3,24 +3,24 @@ package array_us;
 import java.util.Scanner;
 /*
 * Question:
-* æ±‚âšªçš„lengthå’ŒAre
+* ÇóÔ²µÄlengthºÍAre
 *
 * Function:
-* <circleç±»>
-* 1:å®šä¹‰ä¸€ä¸ªradiuså±æ€§;
-* 2:radiusçš„æ„é€ æ–¹æ³• è¿˜æœ‰âšªçš„é¢ç§¯å…¬å¼å’Œå‘¨é•¿å…¬å¼
-* <ä¸»æ–¹æ³•ç±»>
-* 1:é”®ç›˜å½•å…¥ä¸€ä¸ªdouble typeçš„num
-* 2:judgeè¿™ä¸ªnum ifå°äº0çš„è¯ç›´æ¥æŠ¥é”™ ifå¤§äº0åˆ™è¿›è¡Œä¸‹ä¸€æ­¥
-* 3:æ‰ç”¨circleç±»æ–¹æ³• ä¼ å…¥é”®ç›˜å½•å…¥çš„å‚æ•°
-* 4:æ‰“å°å…ƒçš„é¢ç§¯å’Œå‘¨é•¿å³å¯
+* <circleÀà>
+* 1:¶¨ÒåÒ»¸öradiusÊôĞÔ;
+* 2:radiusµÄ¹¹Ôì·½·¨ »¹ÓĞÔ²µÄÃæ»ı¹«Ê½ºÍÖÜ³¤¹«Ê½
+* <Ö÷·½·¨Àà>
+* 1:¼üÅÌÂ¼ÈëÒ»¸ödouble typeµÄnum
+* 2:judgeÕâ¸önum ifĞ¡ÓÚ0µÄ»°Ö±½Ó±¨´í if´óÓÚ0Ôò½øĞĞÏÂÒ»²½
+* 3:µôÓÃcircleÀà·½·¨ ´«Èë¼üÅÌÂ¼ÈëµÄ²ÎÊı
+* 4:´òÓ¡ÔªµÄÃæ»ıºÍÖÜ³¤¼´¿É
 * */
 
 //Answer:
 public class CircleSquare {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.println("è¯·è¾“å…¥âšªçš„åŠå¾„");
+        System.out.println("ÇëÊäÈë?µÄ°ë¾¶");
         double iRadius=sc.nextDouble();
         if (iRadius<0)
         {

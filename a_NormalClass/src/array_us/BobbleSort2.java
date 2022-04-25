@@ -1,5 +1,5 @@
 package array_us;
-//æ•°ç»„é«˜çº§é€‰æ‹©æ’åºä»£ç å®ç°
+//Êı×é¸ß¼¶Ñ¡ÔñÅÅĞò´úÂëÊµÏÖ
 public class BobbleSort2 {
     public static void main(String[] args) {
         int [] arr={23,5,6543,23,6436634,22};
@@ -7,11 +7,11 @@ public class BobbleSort2 {
         print(arr);
     }
     /*
-    * è¿”å›å€¼ç±»å‹void
-    * å‚æ•°ç±»å‹ int [] arr
+    * ·µ»ØÖµÀàĞÍvoid
+    * ²ÎÊıÀàĞÍ int [] arr
     * */
     public static void method(int [] arr){
-        for (int i = 0; i < arr.length -1; i++) {   //äº”ä¸ªæ•°4æ¬¡æå®š-1
+        for (int i = 0; i < arr.length -1; i++) {   //Îå¸öÊı4´Î¸ã¶¨-1
             for (int l = i+1; l < arr.length; l++) {
                 if (arr[i]>arr[l]){
                     swap(arr,i,l);
@@ -20,9 +20,9 @@ public class BobbleSort2 {
         }
     }
     /*
-    * æ¢ä½æ“ä½œ
-    * 1:è¿”å›å€¼ç±»å‹ void
-    * 2:å‚æ•°åˆ—è¡¨ int[] arr,int i,int l
+    * »»Î»²Ù×÷
+    * 1:·µ»ØÖµÀàĞÍ void
+    * 2:²ÎÊıÁĞ±í int[] arr,int i,int l
     * */
     public static void swap(int [] arr,int i,int l){
         int temp=arr[i];

@@ -1,25 +1,25 @@
 package ByteStream.Text;
-//å½•å…¥æ•°æ®æ‹·è´åˆ°æ–‡ä»¶
+//Â¼ÈëÊı¾İ¿½±´µ½ÎÄ¼ş
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Scanner;
 
 public class TextC {
     public static void main(String[] args) throws IOException {
-        //åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
+        //´´½¨¼üÅÌÂ¼Èë¶ÔÏó
         Scanner sc=new Scanner(System.in);
-        //åˆ›å»ºè¾“å‡ºæµå¯¹è±¡,å…³è”xxx.txtæ–‡ä»¶
+        //´´½¨Êä³öÁ÷¶ÔÏó,¹ØÁªxxx.txtÎÄ¼ş
         FileOutputStream bos=new FileOutputStream("xxx.txt");
-        //å®šä¹‰æ— é™å¾ªç¯
+        //¶¨ÒåÎŞÏŞÑ­»·
         while (true){
-            String line =sc.nextLine(); //å½•å…¥æ•°æ®å­˜æ”¾
-            //é‡åˆ°quitå°±æ¨å‡º
+            String line =sc.nextLine(); //Â¼ÈëÊı¾İ´æ·Å
+            //Óöµ½quit¾ÍÍÆ³ö
             if ("quit".equals(line)){
                 break;
             }
-            bos.write(line.getBytes()); //å†™å‡ºå¿…é¡»æ˜¯å­—èŠ‚æ ¼å¼
+            bos.write(line.getBytes()); //Ğ´³ö±ØĞëÊÇ×Ö½Ú¸ñÊ½
             bos.write("\r\n".getBytes());
         }
-        bos.close();    //æµå…³é—­
+        bos.close();    //Á÷¹Ø±Õ
     }
 }

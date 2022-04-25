@@ -7,11 +7,11 @@ public class RenameAndDeleteFeatures {
     public static void main(String[] args) throws IOException {
         File a=new File("Go.txt");
         File b=new File("Java.txt");
-        System.out.println(a.renameTo(b));  //è·¯å¾„ç›¸åŒçš„æƒ…å†µä¸‹,è¿›è¡Œæ¢å,å¦‚æœä¸åŒå°±æ˜¯å‰ªè´´å’Œæ”¹å
+        System.out.println(a.renameTo(b));  //Â·¾¶ÏàÍ¬µÄÇé¿öÏÂ,½øĞĞ»»Ãû,Èç¹û²»Í¬¾ÍÊÇ¼ôÌùºÍ¸ÄÃû
 
         File c=new File("china.txt");
-        //æ…é‡ä½¿ç”¨deleteåŠŸèƒ½ å› ä¸ºdeleteåŠŸèƒ½çš„åˆ é™¤ä¸èµ°å›æ”¶ç«™,ä¸€æ—¦åˆ é™¤å°±å¾ˆéš¾æ‰¾å›æ¥
-        System.out.println(c.delete());     //deleteç”¨æ¥åˆ é™¤æ–‡ä»¶ åˆ é™¤æ–‡ä»¶å¤¹è¦ä¿è¯æ–‡ä»¶å¤¹ä¸ºç©ºé‡Œé¢æ²¡æœ‰ä¸œè¥¿
+        //É÷ÖØÊ¹ÓÃdelete¹¦ÄÜ ÒòÎªdelete¹¦ÄÜµÄÉ¾³ı²»×ß»ØÊÕÕ¾,Ò»µ©É¾³ı¾ÍºÜÄÑÕÒ»ØÀ´
+        System.out.println(c.delete());     //deleteÓÃÀ´É¾³ıÎÄ¼ş É¾³ıÎÄ¼ş¼ĞÒª±£Ö¤ÎÄ¼ş¼ĞÎª¿ÕÀïÃæÃ»ÓĞ¶«Î÷
 
     }
 }

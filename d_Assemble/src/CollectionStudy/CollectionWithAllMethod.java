@@ -24,7 +24,7 @@ public class CollectionWithAllMethod {
         c2.add("b");
         c2.add("ox");
         c2.add("n");
-        //å–äº¤é›†,å¦‚æœè°ƒç”¨çš„é›†åˆæ”¹å˜å°±è¿”å›true,å¦‚æœè°ƒç”¨çš„é›†åˆä¸å˜å°±è¿”å›false
+        //È¡½»¼¯,Èç¹ûµ÷ÓÃµÄ¼¯ºÏ¸Ä±ä¾Í·µ»Øtrue,Èç¹ûµ÷ÓÃµÄ¼¯ºÏ²»±ä¾Í·µ»Øfalse
         boolean bl=c1.retainAll(c2);
         System.out.println(bl);
         System.out.println(c1);
@@ -39,7 +39,7 @@ public class CollectionWithAllMethod {
         c2.add("a");
         c2.add("b");
 
-        boolean bl=c1.containsAll(c2);      //åˆ¤æ–­c1æ˜¯å¦åŒ…å«c2
+        boolean bl=c1.containsAll(c2);      //ÅĞ¶Ïc1ÊÇ·ñ°üº¬c2
         System.out.println(bl);
         System.out.println(c1);
     }
@@ -54,12 +54,12 @@ public class CollectionWithAllMethod {
         b.add("M");
         b.add("a");
 
-        boolean c=a.removeAll(b);           //åˆ é™¤çš„æ˜¯äº¤é›†
-        System.out.println(c);              //æ²¡æœ‰äº¤é›†ä¸åˆ é™¤,false æœ‰çš„è¯true
+        boolean c=a.removeAll(b);           //É¾³ıµÄÊÇ½»¼¯
+        System.out.println(c);              //Ã»ÓĞ½»¼¯²»É¾³ı,false ÓĞµÄ»°true
         System.out.println(a);
     }
 
-    private static void addAllMethod() {        //addallæ–¹æ³•
+    private static void addAllMethod() {        //addall·½·¨
         Collection cl1=new ArrayList();
         cl1.add("h");
         cl1.add("e");
@@ -69,8 +69,8 @@ public class CollectionWithAllMethod {
         cl2.add("M");
         cl2.add("a");
 
-        cl1.addAll(cl2);    //æŠŠcl2ä¸­çš„æ¯ä¸€ä¸ªå…ƒç´ æ·»åŠ åˆ°cl1ä¸­
-        cl1.add(cl2);       //æŠŠcl2çœ‹æˆä¸€ä¸ªå¯¹è±¡æ·»åŠ åˆ°cl1ä¸­
+        cl1.addAll(cl2);    //°Ñcl2ÖĞµÄÃ¿Ò»¸öÔªËØÌí¼Óµ½cl1ÖĞ
+        cl1.add(cl2);       //°Ñcl2¿´³ÉÒ»¸ö¶ÔÏóÌí¼Óµ½cl1ÖĞ
         System.out.println(cl1);
     }
 }

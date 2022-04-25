@@ -9,7 +9,7 @@ public class Demo7Wrap {
 interface code{
     public void code();
 }
-//è£…é¥°è®¾è®¡æ¨¡å¼çš„å¥½å¤„æ˜¯ è€¦åˆæ€§ä¸å¼º,è¢«è£…é¥°çš„ç±»å˜åŒ–å’Œè£…é¥°ç±»çš„å˜åŒ–æ— å…³
+//×°ÊÎÉè¼ÆÄ£Ê½µÄºÃ´¦ÊÇ ñîºÏĞÔ²»Ç¿,±»×°ÊÎµÄÀà±ä»¯ºÍ×°ÊÎÀàµÄ±ä»¯ÎŞ¹Ø
 class kinoz implements code{
 
     @Override
@@ -19,15 +19,15 @@ class kinoz implements code{
     }
 }
 class HMstudent implements code{
-    //è·å–è¢«è£…é¥°ç±»çš„å¼•ç”¨
+    //»ñÈ¡±»×°ÊÎÀàµÄÒıÓÃ
     private kinoz k;
 
-    //åœ¨æ„é€ æ–¹æ³•ä¸­åˆå§‹è¢«è£…é¥°ç±»çš„å¯¹è±¡
+    //ÔÚ¹¹Ôì·½·¨ÖĞ³õÊ¼±»×°ÊÎÀàµÄ¶ÔÏó
     public HMstudent(kinoz k) {
         this.k = k;
     }
 
-    //å¯¹åŸæœ‰å¯¹è±¡çš„åŠŸèƒ½è¿›è¡Œå‡çº§
+    //¶ÔÔ­ÓĞ¶ÔÏóµÄ¹¦ÄÜ½øĞĞÉı¼¶
     @Override
     public void code() {
         k.code();

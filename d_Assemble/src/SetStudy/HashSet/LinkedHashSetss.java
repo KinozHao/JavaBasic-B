@@ -1,9 +1,9 @@
 package SetStudy.HashSet;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
-/** @apiNote LinkedHashSetçš„ç‰¹ç‚¹
-    åº•å±‚ä¸ºé“¾è¡¨å®ç° seté›†åˆä¸­å”¯ä¸€ä¸€ä¸ªèƒ½ä¿è¯æ€ä¹ˆå­˜å°±æ€ä¹ˆå–çš„é›†åˆå¯¹è±¡
-    ä¸ºHashSetçš„å­ç±»,æ‰€ä»¥ä¿è¯äº†å…ƒç´ çš„å”¯ä¸€,ä¸HashSetåŸç†ä¸€æ ·
+/** @apiNote LinkedHashSetµÄÌØµã
+    µ×²ãÎªÁ´±íÊµÏÖ set¼¯ºÏÖĞÎ¨Ò»Ò»¸öÄÜ±£Ö¤ÔõÃ´´æ¾ÍÔõÃ´È¡µÄ¼¯ºÏ¶ÔÏó
+    ÎªHashSetµÄ×ÓÀà,ËùÒÔ±£Ö¤ÁËÔªËØµÄÎ¨Ò»,ÓëHashSetÔ­ÀíÒ»Ñù
 */
 public class LinkedHashSetss {
     public static void main(String[] args) {

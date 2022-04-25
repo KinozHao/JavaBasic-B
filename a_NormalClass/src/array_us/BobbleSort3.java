@@ -1,5 +1,5 @@
 package array_us;
-//æ•°ç»„é«˜çº§äºŒåˆ†æŸ¥æ‰¾ä»£ç å®ç°ä»¥åŠæ³¨æ„äº‹é¡¹
+//Êı×é¸ß¼¶¶ş·Ö²éÕÒ´úÂëÊµÏÖÒÔ¼°×¢ÒâÊÂÏî
 public class BobbleSort3 {
     public static void main(String[] args) {
         int [] arr={22,33,44,55,66,77};
@@ -8,22 +8,22 @@ public class BobbleSort3 {
         System.out.println(getindex(arr,88));
     }
     /*
-    * è¿”å›å€¼ç±»å‹int
-    * å‚æ•°ç±»å‹ ing  [] arr int value
+    * ·µ»ØÖµÀàĞÍint
+    * ²ÎÊıÀàĞÍ ing  [] arr int value
     * */
     public static int getindex(int [] arr,int value){
         int min=0;
         int max=arr.length-1;
         int mid=(min+max) /2;
-        while (arr[mid] != value){  //å½“ä¸­é—´å€¼ä¸ç­‰äºè¦æŸ¥æ‰¾çš„å€¼çš„æ—¶å€™,å°±å¼€å§‹å¾ªç¯æŸ¥æ‰¾
-            if(arr[mid]<value) {    //å½“ä¸­é—´å€¼å°äºäº†è¦æ‰¾çš„å€¼çš„æ—¶å€™
-                min = mid + 1;      //æœ€å°çš„ç´¢å¼•æ”¹å˜
-            }else if (arr[mid]>value){  //å½“ä¸­é—´çš„å€¼å¤§äºè¦æ‰¾çš„å€¼çš„æ—¶å€™
-                max= mid - 1;           //æœ€å¤§çš„ç´¢å¼•æ”¹å˜
+        while (arr[mid] != value){  //µ±ÖĞ¼äÖµ²»µÈÓÚÒª²éÕÒµÄÖµµÄÊ±ºò,¾Í¿ªÊ¼Ñ­»·²éÕÒ
+            if(arr[mid]<value) {    //µ±ÖĞ¼äÖµĞ¡ÓÚÁËÒªÕÒµÄÖµµÄÊ±ºò
+                min = mid + 1;      //×îĞ¡µÄË÷Òı¸Ä±ä
+            }else if (arr[mid]>value){  //µ±ÖĞ¼äµÄÖµ´óÓÚÒªÕÒµÄÖµµÄÊ±ºò
+                max= mid - 1;           //×î´óµÄË÷Òı¸Ä±ä
             }
-                mid=(min+max) /2;      //æ— è®ºæœ€å¤§çš„è¿˜æ˜¯æœ€å°çš„æ”¹å˜,ä¸­é—´çš„ç´¢å¼•éƒ½ä¼šéšä¹‹æ”¹å˜
+                mid=(min+max) /2;      //ÎŞÂÛ×î´óµÄ»¹ÊÇ×îĞ¡µÄ¸Ä±ä,ÖĞ¼äµÄË÷Òı¶¼»áËæÖ®¸Ä±ä
 
-            if (min>max){               //å¦‚æœæœ€å°ç´¢å¼•å¤§äºæœ€å¤§ç´¢å¼•ç›´æ¥è¿”å›-1
+            if (min>max){               //Èç¹û×îĞ¡Ë÷Òı´óÓÚ×î´óË÷ÒıÖ±½Ó·µ»Ø-1
                 return -1;
             }
         }

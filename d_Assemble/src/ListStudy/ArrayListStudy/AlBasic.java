@@ -9,7 +9,7 @@ public class AlBasic {
     }
 
     private static void method1(){
-        //åˆ›å»ºäº†ä¸€ä¸ªArrayListé›†åˆ,é›†åˆçš„åç§°æ˜¯list,é‡Œé¢è£…çš„å…¨æ˜¯Stringç±»å‹çš„å­—ç¬¦ä¸²æ•°æ®
+        //´´½¨ÁËÒ»¸öArrayList¼¯ºÏ,¼¯ºÏµÄÃû³ÆÊÇlist,ÀïÃæ×°µÄÈ«ÊÇStringÀàĞÍµÄ×Ö·û´®Êı¾İ
         //Note:JDK 1.7++ One the right<> not must write but must write the<>
         ArrayList<String> list=new ArrayList<>();
         //when you want to write some data you have to using the "add method"
@@ -23,7 +23,7 @@ public class AlBasic {
 
     public static void method2() {
         ArrayList<String> list=new ArrayList<>();
-        //<>å°±æ˜¯æ³›å‹,æ³›å‹åªèƒ½ä½¿ç”¨å¼•ç”¨æ•°æ®ç±»å‹ï¼Œä¸èƒ½ä½¿ç”¨åŸºæœ¬æ•°æ®ç±»å‹
+        //<>¾ÍÊÇ·ºĞÍ,·ºĞÍÖ»ÄÜÊ¹ÓÃÒıÓÃÊı¾İÀàĞÍ£¬²»ÄÜÊ¹ÓÃ»ù±¾Êı¾İÀàĞÍ
         ArrayList<Integer> list2=new ArrayList<>();
         list2.add(1);
         list2.add(20);
@@ -33,10 +33,10 @@ public class AlBasic {
         list2.add(600000);
         list2.add(111111);
         System.out.println(list2);
-        //é›†åˆçš„é•¿åº¦ds
+        //¼¯ºÏµÄ³¤¶Èds
         int num=list2.size();
         System.out.println(num);
-        //è°ƒç”¨é›†åˆç¬¬å››ä¸ªå€¼
+        //µ÷ÓÃ¼¯ºÏµÚËÄ¸öÖµ
         int num2=list2.get(4);
         System.out.println(num2);
 

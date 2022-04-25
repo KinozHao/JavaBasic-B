@@ -3,16 +3,16 @@ package object_us;
 /**
  * @author kinoz
  * @date 2022/4/9 - 17:53
- * @apiNote getClassä»¥åŠgetSuperclassçš„ä½¿ç”¨
+ * @apiNote getClassÒÔ¼°getSuperclassµÄÊ¹ÓÃ
  */
 
 
 public class GetClass {
     public static void main(String[] args) {
         StudentList studentList =new StudentList("xiaohuia",13);
-        //è·å–å¯¹è±¡çš„ç±»
+        //»ñÈ¡¶ÔÏóµÄÀà
         System.out.println(studentList.getClass());
-        //è·å–å¯¹è±¡çš„çˆ¶ç±»
+        //»ñÈ¡¶ÔÏóµÄ¸¸Àà
         System.out.println(studentList.getClass().getSuperclass());
     }
 }

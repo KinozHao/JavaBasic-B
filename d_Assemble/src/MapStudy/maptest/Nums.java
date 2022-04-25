@@ -2,30 +2,30 @@ package MapStudy.maptest;
 
 import java.util.HashMap;
 
-//ç»Ÿè®¡å­—ç¬¦ä¸²ä¸­æ¯ä¸ªå­—ç¬¦å‡ºç°çš„æ¬¡æ•°
+//Í³¼Æ×Ö·û´®ÖĞÃ¿¸ö×Ö·û³öÏÖµÄ´ÎÊı
 public class Nums {
     public static void main(String[] args) {
-        //å®šä¹‰ä¸€ä¸ªå­—ç¬¦ä¸²æŠŠå­—ç¬¦ä¸²è½¬æ¢ä¸ºå­—ç¬¦æ•°ç»„;
+        //¶¨ÒåÒ»¸ö×Ö·û´®°Ñ×Ö·û´®×ª»»Îª×Ö·ûÊı×é;
         String str = "abccbaabccba";
         char[] arr = str.toCharArray();
 
-        //å®šä¹‰åŒåˆ—é›†åˆ,å­˜æ”¾å­—ç¬¦ä¸²ä¸­å­—ç¬¦ä»¥åŠå­—ç¬¦å‡ºç°çš„æ¬¡æ•°
+        //¶¨ÒåË«ÁĞ¼¯ºÏ,´æ·Å×Ö·û´®ÖĞ×Ö·ûÒÔ¼°×Ö·û³öÏÖµÄ´ÎÊı
         HashMap<Character, Integer> hm = new HashMap<>();
 
-        //éå†å­—ç¬¦æ•°ç»„ä¸­çš„æ¯ä¸€ä¸ªå­—ç¬¦,å¹¶å°†å­—ç¬¦å­˜æ”¾åœ¨åŒåˆ—é›†åˆä¸­
+        //±éÀú×Ö·ûÊı×éÖĞµÄÃ¿Ò»¸ö×Ö·û,²¢½«×Ö·û´æ·ÅÔÚË«ÁĞ¼¯ºÏÖĞ
         for (char c:arr){
-            //ifå†™æ³•
+            //ifĞ´·¨
         /*for (char c:arr){
-            if (! hm.containsKey(c)){       //å¦‚æœä¸åŒ…å«è¿™ä¸ªkey
+            if (! hm.containsKey(c)){       //Èç¹û²»°üº¬Õâ¸ökey
                 hm.put(c,1);
-                }else{                      //å¦‚æœåŒ…å«keyçš„è¯å°±æ¯æ¬¡åŠ 1å­˜è¿›æ¥
+                }else{                      //Èç¹û°üº¬keyµÄ»°¾ÍÃ¿´Î¼Ó1´æ½øÀ´
                     hm.put(c,hm.get(c)+1);
                 }
             }*/
-        //ä¸‰å…ƒè¿ç®—ç¬¦çš„å†™æ³•
+        //ÈıÔªÔËËã·ûµÄĞ´·¨
         hm.put(c, !hm.containsKey(c) ? 1 : hm.get(c)+1);
         }
-        //è¿›è¡Œæ‰“å°ç»“æœ
+        //½øĞĞ´òÓ¡½á¹û
        for (Character key:hm.keySet()){
            System.out.println(key+"--->"+hm.get(key));
        }

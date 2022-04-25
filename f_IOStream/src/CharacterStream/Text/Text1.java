@@ -3,26 +3,26 @@ package CharacterStream.Text;
 import java.io.*;
 import java.util.ArrayList;
 
-//æ–‡æœ¬åè½¬
+//ÎÄ±¾·´×ª
 public class Text1 {
     public static void main(String[] args) throws IOException {
-        //åˆ›å»ºè¾“å…¥æµå¯¹è±¡
+        //´´½¨ÊäÈëÁ÷¶ÔÏó
         BufferedReader br =new BufferedReader(new FileReader("xxx.txt"));
-        //åˆ›å»ºæ•°ç»„å­˜æ”¾æµå¯¹è±¡
+        //´´½¨Êı×é´æ·ÅÁ÷¶ÔÏó
         ArrayList<String> list =new ArrayList<>();
 
         String line;
         while ((line= br.readLine()) != null){
-            list.add(line);     //æš‚æ—¶æŠŠè¯»çš„æ–‡ä»¶å­˜åœ¨é›†åˆä¸­
+            list.add(line);     //ÔİÊ±°Ñ¶ÁµÄÎÄ¼ş´æÔÚ¼¯ºÏÖĞ
         }
-        br.close();             //æµé‡Šæ”¾
-        //åˆ›å»ºè¾“å‡ºæµå¯¹è±¡
+        br.close();             //Á÷ÊÍ·Å
+        //´´½¨Êä³öÁ÷¶ÔÏó
         BufferedWriter bw =new BufferedWriter(new FileWriter("ggg.txt"));
-        //å¯¹é›†åˆå…ƒç´ è¿›è¡Œåéå†
+        //¶Ô¼¯ºÏÔªËØ½øĞĞ·´±éÀú
         for (int i = list.size() -1; i >= 0;i--) {
-            bw.write(list.get(i));  //å†™å‡º
-            bw.newLine();   //æ¢è¡Œ
+            bw.write(list.get(i));  //Ğ´³ö
+            bw.newLine();   //»»ĞĞ
         }
-        bw.close();             //æµé‡Šæ”¾
+        bw.close();             //Á÷ÊÍ·Å
     }
 }

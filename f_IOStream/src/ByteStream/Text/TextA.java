@@ -4,12 +4,12 @@ import java.io.*;
 
 public class TextA {
     public static void main(String[] args) throws IOException {
-        //FileInputStreamé‡Œé¢è¦å†™çš„æ˜¯ä¸€ä¸ªæ–‡ä»¶è·¯å¾„
+        //FileInputStreamÀïÃæÒªĞ´µÄÊÇÒ»¸öÎÄ¼şÂ·¾¶
         BufferedInputStream fis=new BufferedInputStream(new FileInputStream(""));
         BufferedOutputStream fos=new BufferedOutputStream(new FileOutputStream(""));
         int in;
         while ((in=fis.read()) != -1){
-            fos.write(in ^ 123);    //ä¸€ä¸ªæ•°è¢«å¦ä¸€ä¸ªæ•°ç–‘æƒ‘ä¸¤æ¬¡å°±æ˜¯è¿™ä¸ªæ•°æœ¬èº«
+            fos.write(in ^ 123);    //Ò»¸öÊı±»ÁíÒ»¸öÊıÒÉ»óÁ½´Î¾ÍÊÇÕâ¸öÊı±¾Éí
         }
         fis.close();
         fos.close();

@@ -9,7 +9,7 @@ public class GetFeatures {
         System.out.println("PartA:---->>>>>>>>");
         Demo1();
         System.out.println("PartB:---->>>>>>>>");
-        File dir=new File("I:\\å­¦ä¹ è§†é¢‘\\JavaåŸºç¡€");
+        File dir=new File("I:\\Ñ§Ï°ÊÓÆµ\\Java»ù´¡");
         String [] arr=dir.list();
         for (String string: arr) {
             System.out.println(string);
@@ -25,18 +25,18 @@ public class GetFeatures {
     private static void Demo1() {
         File s=new File("div.css");
         File b=new File("I:\\CodeProject\\JavaIntermedate\\div.css");
-        System.out.println("è·å–ç»å¯¹è·¯å¾„"+s.getAbsolutePath());    //è·å–ç»å¯¹è·¯å¾„
-        System.out.println("è·å–ç»å¯¹è·¯å¾„"+s.getAbsolutePath());
+        System.out.println("»ñÈ¡¾ø¶ÔÂ·¾¶"+s.getAbsolutePath());    //»ñÈ¡¾ø¶ÔÂ·¾¶
+        System.out.println("»ñÈ¡¾ø¶ÔÂ·¾¶"+s.getAbsolutePath());
 
-        System.out.println("è·å–æ„é€ æ–¹æ³•ä¼ å…¥çš„è·¯å¾„"+s.getPath());            //è·å–æ„é€ æ–¹æ³•ä¼ å…¥çš„è·¯å¾„
-        System.out.println("è·å–æ„é€ æ–¹æ³•ä¼ å…¥çš„è·¯å¾„"+b.getPath());
+        System.out.println("»ñÈ¡¹¹Ôì·½·¨´«ÈëµÄÂ·¾¶"+s.getPath());            //»ñÈ¡¹¹Ôì·½·¨´«ÈëµÄÂ·¾¶
+        System.out.println("»ñÈ¡¹¹Ôì·½·¨´«ÈëµÄÂ·¾¶"+b.getPath());
 
-        System.out.println("è·å–æ–‡ä»¶æˆ–è€…æ–‡ä»¶å¤¹çš„åå­—"+s.getName());              //è·å–æ–‡ä»¶æˆ–è€…æ–‡ä»¶å¤¹çš„åå­—
-        System.out.println("è·å–æ–‡ä»¶æˆ–è€…æ–‡ä»¶å¤¹çš„åå­—"+b.getName());
-        System.out.println("è·å–æ–‡ä»¶å­—ç¬¦ä¸²é•¿åº¦"+s.length());              //è·å–æ–‡ä»¶å­—ç¬¦ä¸²é•¿åº¦
+        System.out.println("»ñÈ¡ÎÄ¼ş»òÕßÎÄ¼ş¼ĞµÄÃû×Ö"+s.getName());              //»ñÈ¡ÎÄ¼ş»òÕßÎÄ¼ş¼ĞµÄÃû×Ö
+        System.out.println("»ñÈ¡ÎÄ¼ş»òÕßÎÄ¼ş¼ĞµÄÃû×Ö"+b.getName());
+        System.out.println("»ñÈ¡ÎÄ¼ş×Ö·û´®³¤¶È"+s.length());              //»ñÈ¡ÎÄ¼ş×Ö·û´®³¤¶È
 
-        Date d=new Date(s.lastModified());          //è·å–æ–‡ä»¶çš„æœ€åä¿®æ”¹æ—¶é—´
-        SimpleDateFormat sj=new SimpleDateFormat("yyyå¹´:MMæœˆ:ddæ—¥:HH:mm:ss");
+        Date d=new Date(s.lastModified());          //»ñÈ¡ÎÄ¼şµÄ×îºóĞŞ¸ÄÊ±¼ä
+        SimpleDateFormat sj=new SimpleDateFormat("yyyÄê:MMÔÂ:ddÈÕ:HH:mm:ss");
         System.out.println(sj.format(d));
     }
 }

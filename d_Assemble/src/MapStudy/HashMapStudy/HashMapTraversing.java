@@ -1,23 +1,23 @@
 package MapStudy.HashMapStudy;
 import java.util.*;
-//Mapé›†åˆçš„éå†ä¹‹é”®æ‰¾å€¼
-//é€šè¿‡æŸ¥çœ‹Mapé›†åˆçš„apiå‘ç°æ²¡æœ‰iteratoræ–¹æ³•,é‚£ä¹ˆåŒåˆ—é›†åˆå¦‚ä½•è¿­ä»£
+//Map¼¯ºÏµÄ±éÀúÖ®¼üÕÒÖµ
+//Í¨¹ı²é¿´Map¼¯ºÏµÄapi·¢ÏÖÃ»ÓĞiterator·½·¨,ÄÇÃ´Ë«ÁĞ¼¯ºÏÈçºÎµü´ú
 public class HashMapTraversing {
     public static void main(String[] args) {
-        //è¿­ä»£å™¨
+        //µü´úÆ÷
         Map<String,Integer> go=new HashMap<>();
-        go.put("Po",13);        //é”®å¯¹å€¼
+        go.put("Po",13);        //¼ü¶ÔÖµ
         go.put("Lo",14);
         go.put("Ho",15);
-        Set<String> keySet=go.keySet();     //è·å–æ‰€æœ‰çš„key
-        Iterator<String> in=keySet.iterator();  //è·å–è¿­ä»£å™¨
-        while (in.hasNext()){                   //åˆ¤æ–­é›†åˆä¸­æ˜¯å¦æœ‰å…ƒç´ 
-            String key=in.next();               //è·å–æ¯ä¸€ä¸ªkey
-            Integer value=go.get(key);          //æ ¹æ®keyè·å–value
-            System.out.println(key+"-->"+value);    //ç»“æœ
+        Set<String> keySet=go.keySet();     //»ñÈ¡ËùÓĞµÄkey
+        Iterator<String> in=keySet.iterator();  //»ñÈ¡µü´úÆ÷
+        while (in.hasNext()){                   //ÅĞ¶Ï¼¯ºÏÖĞÊÇ·ñÓĞÔªËØ
+            String key=in.next();               //»ñÈ¡Ã¿Ò»¸ökey
+            Integer value=go.get(key);          //¸ù¾İkey»ñÈ¡value
+            System.out.println(key+"-->"+value);    //½á¹û
         }
-        //å¢å¼ºfor
-        for (String key:go.keySet()){           //go.keySetæ˜¯æ‰€æœ‰keyçš„é›†åˆ
+        //ÔöÇ¿for
+        for (String key:go.keySet()){           //go.keySetÊÇËùÓĞkeyµÄ¼¯ºÏ
             System.out.println(key+"-->"+go.get(key));
         }
     }

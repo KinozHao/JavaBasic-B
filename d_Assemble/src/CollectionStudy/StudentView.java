@@ -28,7 +28,7 @@ public class StudentView {
         this.age = age;
     }
 
-    @Override           //toStringæ–¹æ³•å¯ä»¥æ›´æ–¹ä¾¿çš„æ˜¾ç¤ºå±æ€§å€¼
+    @Override           //toString·½·¨¿ÉÒÔ¸ü·½±ãµÄÏÔÊ¾ÊôĞÔÖµ
     public String toString() {
         return "student{" +
                 "name='" + name + '\'' +

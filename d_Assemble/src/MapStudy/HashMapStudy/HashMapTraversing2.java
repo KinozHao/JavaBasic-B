@@ -4,25 +4,25 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
-//Mapé›†åˆçš„éå†ä¹‹é”®å€¼å¯¹å¯¹è±¡æ‰¾é”®å’Œå€¼
+//Map¼¯ºÏµÄ±éÀúÖ®¼üÖµ¶Ô¶ÔÏóÕÒ¼üºÍÖµ
 public class HashMapTraversing2 {
     public static void main(String[] args) {
         Map<String,Integer> in=new HashMap<>();
-        in.put("å¼ ä¸‰",23);
-        in.put("æå››",24);
-        in.put("ç‹äº”",25);
+        in.put("ÕÅÈı",23);
+        in.put("ÀîËÄ",24);
+        in.put("ÍõÎå",25);
 
-        //Map.Entryè¯´æ˜Entryæ˜¯Mapçš„å†…éƒ¨æ¥å£,å°†é”®å’Œå€¼å°è£…æˆäº†Entryå¯¹è±¡,å¹¶å­˜å‚¨åœ¨Seté›†åˆä¸­
+        //Map.EntryËµÃ÷EntryÊÇMapµÄÄÚ²¿½Ó¿Ú,½«¼üºÍÖµ·â×°³ÉÁËEntry¶ÔÏó,²¢´æ´¢ÔÚSet¼¯ºÏÖĞ
         Set<Map.Entry<String,Integer>> en=in.entrySet();
-        //è¿­ä»£å™¨çš„æ³›å‹å’ŒSeté›†åˆçš„æ³›å‹ä¿æŒä¸€è‡´
+        //µü´úÆ÷µÄ·ºĞÍºÍSet¼¯ºÏµÄ·ºĞÍ±£³ÖÒ»ÖÂ
         Iterator<Map.Entry<String,Integer>> it=en.iterator();
-        while (it.hasNext()){           //åˆ¤æ–­é›†åˆä¸­æ˜¯å¦æœ‰å…ƒç´ 
-            Map.Entry<String,Integer> go=it.next(); //è·å–æ¯ä¸€ä¸ªkey
-            //Entryä¸­çš„getKey/getValue åˆ†åˆ«ç”¨æ¥è·å– é”®å’Œå€¼
+        while (it.hasNext()){           //ÅĞ¶Ï¼¯ºÏÖĞÊÇ·ñÓĞÔªËØ
+            Map.Entry<String,Integer> go=it.next(); //»ñÈ¡Ã¿Ò»¸ökey
+            //EntryÖĞµÄgetKey/getValue ·Ö±ğÓÃÀ´»ñÈ¡ ¼üºÍÖµ
             System.out.println(go.getKey()+"="+go.getValue());
         }
 
-        //å®šä¹‰ä¸€ä¸ªä¸´æ—¶å˜é‡ ç±»å‹ä¸ºEntryå¯¹è±¡   entrySetè·å¾—å…ƒç´ 
+        //¶¨ÒåÒ»¸öÁÙÊ±±äÁ¿ ÀàĞÍÎªEntry¶ÔÏó   entrySet»ñµÃÔªËØ
         for (Map.Entry<String,Integer> uc :in.entrySet()){
             System.out.println(uc.getKey()+"="+uc.getValue());
         }

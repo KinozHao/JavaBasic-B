@@ -1,5 +1,5 @@
 package Reflects;
-//é€šè¿‡åå°„è·å–æ–¹æ³•å¹¶ä½¿ç”¨
+//Í¨¹ı·´Éä»ñÈ¡·½·¨²¢Ê¹ÓÃ
 
 import Bean.Person;
 import java.lang.reflect.Constructor;
@@ -11,12 +11,12 @@ public class Demo5_Method {
 
         Constructor cons =  clz.getConstructor(String.class,int.class);
 
-        Person p = (Person) cons.newInstance("æˆ‘",17);
+        Person p = (Person) cons.newInstance("ÎÒ",17);
 
-        Method m = clz.getMethod("doing");      //è·å–doingæ–¹æ³•     è¿™ä¸ªä¸ºæ— å‚æ–¹æ³•
+        Method m = clz.getMethod("doing");      //»ñÈ¡doing·½·¨     Õâ¸öÎªÎŞ²Î·½·¨
         m.invoke(p);
 
-        Method m2 = clz.getMethod("doing",int.class);   //è·å–æœ‰å‚çš„doingæ–¹æ³• è¿™ä¸ªä¸ºæœ‰å‚æ–¹æ³•
+        Method m2 = clz.getMethod("doing",int.class);   //»ñÈ¡ÓĞ²ÎµÄdoing·½·¨ Õâ¸öÎªÓĞ²Î·½·¨
         m2.invoke(p,6);
     }
 }

@@ -3,8 +3,8 @@ package ByteStream;
 import java.io.*;
 
 /*
-* è¯»å†™ä¸­æ–‡çš„é—®é¢˜
-* æ³¨æ„:ä¸€ä¸ªä¸­æ–‡ä¸ºä¸¤ä¸ªå­—èŠ‚
+* ¶ÁĞ´ÖĞÎÄµÄÎÊÌâ
+* ×¢Òâ:Ò»¸öÖĞÎÄÎªÁ½¸ö×Ö½Ú
 * */
 public class chinese {
     public static void main(String[] args) throws IOException {
@@ -12,7 +12,7 @@ public class chinese {
       /*  File s=new File("zzz.txt");
         System.out.println(s.createNewFile());
         FileOutputStream FOS =new FileOutputStream("zzz.txt");
-        FOS.write("ä½ å¥½,ä¸–ç•Œ".getBytes());    //è¾“å‡ºå¿…é¡»è¦æŠŠè¯è½¬æ¢ä¸ºå­—èŠ‚æ‰å¯ä»¥è¾“å‡º
+        FOS.write("ÄãºÃ,ÊÀ½ç".getBytes());    //Êä³ö±ØĞëÒª°Ñ»°×ª»»Îª×Ö½Ú²Å¿ÉÒÔÊä³ö
         FOS.close();
     }
 

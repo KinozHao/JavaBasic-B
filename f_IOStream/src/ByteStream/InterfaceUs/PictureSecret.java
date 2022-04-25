@@ -1,8 +1,8 @@
 package ByteStream.InterfaceUs;
 
 import java.io.*;
-//鏂囦欢鍔犲瘑鎺ュ彛 Can encryption the file
-public interface PictureSecrect {
+//文件加密接口 Can encryption the file
+public interface PictureSecret {
     static void method() throws IOException {
         //New IO Object Add fileaddress to the FileInputStream
         BufferedInputStream bis = new BufferedInputStream(new FileInputStream(""));

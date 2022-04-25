@@ -1,19 +1,19 @@
 package GenericStudy;
 
 /*
-    æ­£åˆ™è¡¨è¾¾å¼
-    æ¡ˆä¾‹è¦æ±‚:
-    éœ€æ±‚ FBè´¦å·æ ¡éªŒ
-    1:éœ€æ±‚å¿…é¡»æ˜¯5-15ä½æ•°å­—
-    2:0ä¸èƒ½ä¸ºå¼€å¤´
-    3:å¿…é¡»éƒ½æ˜¯æ•°å­—
+    ÕýÔò±í´ïÊ½
+    °¸ÀýÒªÇó:
+    ÐèÇó FBÕËºÅÐ£Ñé
+    1:ÐèÇó±ØÐëÊÇ5-15Î»Êý×Ö
+    2:0²»ÄÜÎª¿ªÍ·
+    3:±ØÐë¶¼ÊÇÊý×Ö
 */
 public class RegularUs {
     public static void main(String[] args) {
 
 
-        System.out.println(checkFBAccount("124322335"));   //ç¬¦åˆè¦æ±‚
-        System.out.println(checkFBAccount("0232323232"));  //ä¸ç¬¦åˆè¦æ±‚0å¼€å¤´
+        System.out.println(checkFBAccount("124322335"));   //·ûºÏÒªÇó
+        System.out.println(checkFBAccount("0232323232"));  //²»·ûºÏÒªÇó0¿ªÍ·
 
 
         String regex="[1-9]\\d{4,14}";
@@ -23,11 +23,11 @@ public class RegularUs {
 
     public static boolean checkFBAccount(String fb){
         boolean flag=true;
-        if (fb.length()>=5 && fb.length()<=15){ //fbçš„ç´¢å¼•åœ¨5-15å†…æ­£å¸¸ å¦åˆ™è¿”å›žfalse
-            if (!fb.startsWith("0")){           //fbå¼€å¤´ä¸ä¸º0æ­£å¸¸,å¦åˆ™false
-                char [] arr=fb.toCharArray();   //å­—ç¬¦ä¸²è½¬æ¢ä¸ºå­—ç¬¦æ•°ç»„
-                for (int i = 0; i < arr.length; i++) {  //æ•°ç»„éåŽ†
-                    char cr=arr[i];             //è®°å½•éåŽ†çš„ç»“æžœ
+        if (fb.length()>=5 && fb.length()<=15){ //fbµÄË÷ÒýÔÚ5-15ÄÚÕý³£ ·ñÔò·µ»Øfalse
+            if (!fb.startsWith("0")){           //fb¿ªÍ·²»Îª0Õý³£,·ñÔòfalse
+                char [] arr=fb.toCharArray();   //×Ö·û´®×ª»»Îª×Ö·ûÊý×é
+                for (int i = 0; i < arr.length; i++) {  //Êý×é±éÀú
+                    char cr=arr[i];             //¼ÇÂ¼±éÀúµÄ½á¹û
                     if (cr>='0' && cr<='9'){
 
                     }else{

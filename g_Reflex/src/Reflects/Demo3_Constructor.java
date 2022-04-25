@@ -1,5 +1,5 @@
 package Reflects;
-//åå°„è·å–å¸¦å‚æ„é€ æ–¹æ³•å¹¶ä½¿ç”¨
+//·´Éä»ñÈ¡´ø²Î¹¹Ôì·½·¨²¢Ê¹ÓÃ
 import Bean.Person;
 import java.lang.reflect.Constructor;
 
@@ -7,11 +7,11 @@ public class Demo3_Constructor {
     public static void main(String[] args) throws Exception {
        Class clz =Class.forName("Bean.Person");
         //Method ONE
-        /*Person p =(Person) clz.newInstance();                        //é€šè¿‡æ— å‚æ„é€ åˆ›å»ºå¯¹è±¡
+        /*Person p =(Person) clz.newInstance();                        //Í¨¹ıÎŞ²Î¹¹Ôì´´½¨¶ÔÏó
         System.out.println(p);*/
         //Method TWO
-        Constructor cso =clz.getConstructor(String.class,int.class);    //è·å–æœ‰å‚æ„é€ 
-        Person p = (Person) cso.newInstance("ä»»æ·±",18);           //é€šè¿‡æœ‰å‚æ„Wé€ åˆ›å»ºå¯¹è±¡
+        Constructor cso =clz.getConstructor(String.class,int.class);    //»ñÈ¡ÓĞ²Î¹¹Ôì
+        Person p = (Person) cso.newInstance("ÈÎÉî",18);           //Í¨¹ıÓĞ²Î¹¹WÔì´´½¨¶ÔÏó
         System.out.println(p);
     }
 }

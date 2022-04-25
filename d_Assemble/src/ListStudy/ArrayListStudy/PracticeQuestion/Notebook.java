@@ -21,7 +21,7 @@ public class Notebook {
     public static ArrayList<Integer> getslist(ArrayList<Integer> big){
         ArrayList<Integer> xiao=new ArrayList<>();
         for (int i = 0; i < big.size(); i++) {
-            int num=big.get(i);     //鎶奲ig闆嗗悎鐨勬暟缁勮祴鍊肩粰num
+            int num=big.get(i);     //把big集合的数组赋值给num
             if(num%2 ==0){
                 xiao.add(num);
             }

@@ -5,11 +5,11 @@ import java.util.List;
 
 public class ListBasic {
     public static void main(String[] args) {
-        //Listæœ¬èº«æ˜¯ä¸€ä¸ªæ¥å£ åªèƒ½é€šè¿‡å®ƒçš„å®ä¾‹ç±»å»é€ å¯¹è±¡
+        //List±¾ÉíÊÇÒ»¸ö½Ó¿Ú Ö»ÄÜÍ¨¹ıËüµÄÊµÀıÀàÈ¥Ôì¶ÔÏó
         List list = new ArrayList();
 
-        //æ·»åŠ ä¸€ä¸ªè‡ªå®šä¹‰å¯¹è±¡åˆ°é›†åˆä¸­
-        list.add(new LolView("è‰¾ä¼¦","å¯’å†°ç®­"));
+        //Ìí¼ÓÒ»¸ö×Ô¶¨Òå¶ÔÏóµ½¼¯ºÏÖĞ
+        list.add(new LolView("°¬Â×","º®±ù¼ı"));
 
         System.out.println(list);
     }

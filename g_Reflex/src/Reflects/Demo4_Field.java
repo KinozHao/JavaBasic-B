@@ -1,5 +1,5 @@
 package Reflects;
-//åå°„è·å–æˆå‘˜å˜é‡å¹¶ä½¿ç”¨
+//·´Éä»ñÈ¡³ÉÔ±±äÁ¿²¢Ê¹ÓÃ
 
 import Bean.Person;
 import java.lang.reflect.Constructor;
@@ -7,15 +7,15 @@ import java.lang.reflect.Field;
 
 public class Demo4_Field {
     public static void main(String[] args) throws Exception {
-        Class clz =Class.forName("Bean.Person");    //è·å–å­—èŠ‚ç æ–‡ä»¶
+        Class clz =Class.forName("Bean.Person");    //»ñÈ¡×Ö½ÚÂëÎÄ¼ş
 
-        Constructor cso = clz.getConstructor(String.class,int.class);   //è·å–æœ‰å‚æ„é€ 
-        Person per = (Person) cso.newInstance("Kinoz",18);      //é€šè¿‡æœ‰å‚æ„é€ åˆ›å»ºå¯¹è±¡
+        Constructor cso = clz.getConstructor(String.class,int.class);   //»ñÈ¡ÓĞ²Î¹¹Ôì
+        Person per = (Person) cso.newInstance("Kinoz",18);      //Í¨¹ıÓĞ²Î¹¹Ôì´´½¨¶ÔÏó
 
-//        Field f1 = clz.getField("name");            æ™®é€šçš„åå°„ å¦‚æœå‚æ•°ç§æœ‰å°±æ²¡åŠæ³•è®¿é—®
-        Field f2 = clz.getDeclaredField("name");    //æš´åŠ›åå°„è·å–å­—æ®µ
-        f2.setAccessible(true);                           //å»é™¤ç§æœ‰æƒé™
-        f2.set(per,"Jack");                               //seté‡Œé¢ç¬¬ä¸€ä¸ªä¸ºpersonå¯¹è±¡åç§° ç¬¬äºŒä¸ªä¿®æ”¹çš„å‚æ•°
-        System.out.println(per);                          //è¾“å‡ºpersonå¯¹è±¡ä¿®æ”¹è¿‡åçš„ç»“æœ
+//        Field f1 = clz.getField("name");            ÆÕÍ¨µÄ·´Éä Èç¹û²ÎÊıË½ÓĞ¾ÍÃ»°ì·¨·ÃÎÊ
+        Field f2 = clz.getDeclaredField("name");    //±©Á¦·´Éä»ñÈ¡×Ö¶Î
+        f2.setAccessible(true);                           //È¥³ıË½ÓĞÈ¨ÏŞ
+        f2.set(per,"Jack");                               //setÀïÃæµÚÒ»¸öÎªperson¶ÔÏóÃû³Æ µÚ¶ş¸öĞŞ¸ÄµÄ²ÎÊı
+        System.out.println(per);                          //Êä³öperson¶ÔÏóĞŞ¸Ä¹ıºóµÄ½á¹û
     }
 }

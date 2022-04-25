@@ -12,10 +12,10 @@ Thought:
  */
 public class DemoAarrayListStudent {
     public static void main(String[] args) {
-        Student one=new Student("èµµä¸½é¢–",20);
-        Student two=new Student("æ¨å¹‚",27);
-        Student three=new Student("å‘¨æ°ä¼¦",18);
-        Student four=new Student("å¼ æ°",25);
+        Student one=new Student("ÕÔÀöÓ±",20);
+        Student two=new Student("ÑîÃİ",27);
+        Student three=new Student("ÖÜ½ÜÂ×",18);
+        Student four=new Student("ÕÅ½Ü",25);
 
         ArrayList<Student> list=new ArrayList<>();
         list.add(one);
@@ -30,7 +30,7 @@ public class DemoAarrayListStudent {
         }
     }
 }
-class Student{      //å®šä¹‰ä¸€ä¸ªå­¦ç”Ÿç±»
+class Student{      //¶¨ÒåÒ»¸öÑ§ÉúÀà
     private String name;
     private int age;
     public Student() {

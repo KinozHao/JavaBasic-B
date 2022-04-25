@@ -1,26 +1,26 @@
 package array_us;
-//æ•°ç»„ç±»å‹è½¬æ¢ä¸ºStringç±»å‹
+//Êı×éÀàĞÍ×ª»»ÎªStringÀàĞÍ
 public class ArrayToString {
     public static void main(String[] args) {
-        int [] arr={1,3,5,7,8};     //å®šä¹‰æ•°ç»„
+        int [] arr={1,3,5,7,8};     //¶¨ÒåÊı×é
         System.out.println(Method(arr));
     }
     /*
-    * è¿”å›å€¼ç±»å‹ String
-    * å‚æ•°åˆ—è¡¨ int[] arr
+    * ·µ»ØÖµÀàĞÍ String
+    * ²ÎÊıÁĞ±í int[] arr
     * */
     public static String Method(int [] arr){
-        StringBuffer sb=new StringBuffer(); //StringBufferç¼“å†²åŒº
-        sb.append("[");                     //æ·»åŠ [å­—ç¬¦
-        for (int i = 0; i < arr.length; i++) {  //æ•°ç»„éå†
+        StringBuffer sb=new StringBuffer(); //StringBuffer»º³åÇø
+        sb.append("[");                     //Ìí¼Ó[×Ö·û
+        for (int i = 0; i < arr.length; i++) {  //Êı×é±éÀú
 //            sb.append(arr[i]+", ");
-            if (i==arr.length-1){           //åˆ¤æ–­æ˜¯å¦ç›¸ç¬¦åˆ æœ«å°¾æ˜¯]è¿˜æ˜¯,
+            if (i==arr.length-1){           //ÅĞ¶ÏÊÇ·ñÏà·ûºÏ Ä©Î²ÊÇ]»¹ÊÇ,
                 sb.append(arr[i]).append("]");
             }else{
                 sb.append(arr[i]).append(", ");
             }
         }
-        return sb.toString();               //è¿”å›StringBufferç¼“å†²åŒº
+        return sb.toString();               //·µ»ØStringBuffer»º³åÇø
     }
 
 }

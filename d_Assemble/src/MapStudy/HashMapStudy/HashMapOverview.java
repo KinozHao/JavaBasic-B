@@ -5,11 +5,11 @@ import java.util.HashMap;
 public class HashMapOverview {
     public static void main(String[] args) {
         HashMap<String,String> in=new HashMap<>();
-        in.put("abc","Acer");       //å‰é¢ä¸ºé”® åé¢ä¸ºå€¼
+        in.put("abc","Acer");       //Ç°ÃæÎª¼ü ºóÃæÎªÖµ
         in.put("mon","pown");
         in.put("cce","Ater");
-        in.put("cce","Pros");       //keyæ˜¯å”¯ä¸€çš„,ä¸å¯ä»¥é‡å¤çš„
-        // å¦‚æœæ·»åŠ äº†æ–°çš„å…ƒç´ åˆ°Mapä¸­ä¼šå¯¼è‡´æ—§å…ƒç´ è¢«è¦†ç›–  åªç•™ä¸‹æœ€åçš„å…ƒç´ 
+        in.put("cce","Pros");       //keyÊÇÎ¨Ò»µÄ,²»¿ÉÒÔÖØ¸´µÄ
+        // Èç¹ûÌí¼ÓÁËĞÂµÄÔªËØµ½MapÖĞ»áµ¼ÖÂ¾ÉÔªËØ±»¸²¸Ç  Ö»ÁôÏÂ×îºóµÄÔªËØ
         System.out.println(in.get("cce"));
     }
 }

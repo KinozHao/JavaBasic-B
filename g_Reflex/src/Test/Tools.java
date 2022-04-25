@@ -4,9 +4,9 @@ import java.lang.reflect.Field;
 
 public class Tools {
     public void setProperty(Object obj, String propertyName, Object value) throws Exception{
-        Class clz = obj.getClass();             //è·å–å­—èŠ‚ç å¯¹è±¡
-        Field f = clz.getDeclaredField(propertyName);   //æš´åŠ›åå°„è·å–å­—æ®µ
-        f.setAccessible(true);      //å»é™¤ç§æœ‰
+        Class clz = obj.getClass();             //»ñÈ¡×Ö½ÚÂë¶ÔÏó
+        Field f = clz.getDeclaredField(propertyName);   //±©Á¦·´Éä»ñÈ¡×Ö¶Î
+        f.setAccessible(true);      //È¥³ıË½ÓĞ
         f.set(obj,value);
     }
 }

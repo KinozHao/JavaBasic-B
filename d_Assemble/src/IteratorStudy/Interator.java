@@ -3,7 +3,7 @@ package IteratorStudy;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
-//è¿­ä»£å™¨
+//µü´úÆ÷
 public class Interator {
     public static void main(String[] args) {
         Demo1();
@@ -17,12 +17,12 @@ public class Interator {
         b.add(new StudentParam("Jecy",5));
         b.add(new StudentParam("Frank",23));
 
-        //è·å–é€‰ä»£å™¨
+        //»ñÈ¡Ñ¡´úÆ÷
         Iterator in2 = b.iterator();
-        while (in2.hasNext()){          //åˆ¤æ–­é›†åˆä¸­æ˜¯å¦æœ‰å…ƒç´ ,æœ‰å°±è¿”å›true
+        while (in2.hasNext()){          //ÅĞ¶Ï¼¯ºÏÖĞÊÇ·ñÓĞÔªËØ,ÓĞ¾Í·µ»Øtrue
             StudentParam s=(StudentParam)in2.next();
             System.out.println("Name:"+s.name+"Age:"+s.age);
-            //System.out.println(in2.next()); æ¯æ¬¡è¿”å›é€‰ä»£ä¸­çš„ä¸‹ä¸€ä¸ªå…ƒç´ 
+            //System.out.println(in2.next()); Ã¿´Î·µ»ØÑ¡´úÖĞµÄÏÂÒ»¸öÔªËØ
         }
     }
 

@@ -1,47 +1,47 @@
 package string_us.StringBuffer.StringBufferMethod;
-//æ³¨ å½“ç¼“å†²åŒºæ²¡æœ‰ä»»ä½•ç´¢å¼•æ—¶å€™ ç”¨ä»»ä½•çš„æ–¹æ³•éƒ½ä¼š æç¤ºStringIndexOutOfBoundsException
+//×¢ µ±»º³åÇøÃ»ÓĞÈÎºÎË÷ÒıÊ±ºò ÓÃÈÎºÎµÄ·½·¨¶¼»á ÌáÊ¾StringIndexOutOfBoundsException
 public class AddRemoveAlterMethod {
     public static void main(String[] args) {
-        System.out.println("æ·»åŠ -------------");
+        System.out.println("Ìí¼Ó-------------");
         add();
-        System.out.println("åˆ é™¤-------------");
+        System.out.println("É¾³ı-------------");
         remove();
-        System.out.println("ä¿®æ”¹-------------");
+        System.out.println("ĞŞ¸Ä-------------");
         alter();
     }
 
     private static void alter() {
         StringBuffer sb=new StringBuffer("haoguobin");
-        sb.setCharAt(0,'K');    //ä¿®æ”¹æŒ‡å®šä½ç½®å­—ç¬¦
+        sb.setCharAt(0,'K');    //ĞŞ¸ÄÖ¸¶¨Î»ÖÃ×Ö·û
         sb.setCharAt(1,'I');
         sb.setCharAt(2,'G');
-        System.out.println("ä¿®æ”¹æŒ‡å®šä½ç½®å­—ç¬¦ç»“æœ"+sb);
+        System.out.println("ĞŞ¸ÄÖ¸¶¨Î»ÖÃ×Ö·û½á¹û"+sb);
 
-        sb.replace(3,5,"kk");   //æ›¿æ¢æŒ‡å®šä½ç½®å­—ç¬¦æˆ–å­—ç¬¦ä¸²
-        System.out.println("æ›¿æ¢æŒ‡å®šå­—ç¬¦ä¸²æˆ–è€…å­—ç¬¦ç»“æœ"+sb);
+        sb.replace(3,5,"kk");   //Ìæ»»Ö¸¶¨Î»ÖÃ×Ö·û»ò×Ö·û´®
+        System.out.println("Ìæ»»Ö¸¶¨×Ö·û´®»òÕß×Ö·û½á¹û"+sb);
 
-        System.out.println("å­—ç¬¦ä¸²åè½¬ç»“æœ:"+sb.reverse());
+        System.out.println("×Ö·û´®·´×ª½á¹û:"+sb.reverse());
     }
 
     private static void remove() {
         StringBuffer sb=new StringBuffer("china");
 
-        sb.delete(0,1);     //æŒ‡å®šèŒƒå›´åˆ é™¤
-        System.out.println("åˆ é™¤æŒ‡å®šä½ç½®ç»“æœ"+sb);
+        sb.delete(0,1);     //Ö¸¶¨·¶Î§É¾³ı
+        System.out.println("É¾³ıÖ¸¶¨Î»ÖÃ½á¹û"+sb);
 
-        sb.deleteCharAt(3); //æŒ‡å®šä½ç½®åˆ é™¤
-        System.out.println("åˆ é™¤æŒ‡å®šä½ç½®ç»“æœ"+sb);
+        sb.deleteCharAt(3); //Ö¸¶¨Î»ÖÃÉ¾³ı
+        System.out.println("É¾³ıÖ¸¶¨Î»ÖÃ½á¹û"+sb);
 
-        sb.delete(0,sb.length());   //æ¸…ç©ºç¼“å†²åŒº
-        System.out.println("æ¸…ç©ºç¼“å­˜åŒºçš„ç»“æœ:"+sb);
+        sb.delete(0,sb.length());   //Çå¿Õ»º³åÇø
+        System.out.println("Çå¿Õ»º´æÇøµÄ½á¹û:"+sb);
     }
 
     private static void add() {
-        StringBuffer sb=new StringBuffer(); //å®šä¹‰ä¸€ä¸ªå­—ç¬¦ä¸²ç¼“å†²åŒº
-        sb.append("abcdefj");       //åœ¨æœ«å°¾æ·»åŠ å­—ç¬¦ä¸²
-        System.out.println("appendçš„æ·»åŠ ç»“æœä¸º"+sb);
+        StringBuffer sb=new StringBuffer(); //¶¨ÒåÒ»¸ö×Ö·û´®»º³åÇø
+        sb.append("abcdefj");       //ÔÚÄ©Î²Ìí¼Ó×Ö·û´®
+        System.out.println("appendµÄÌí¼Ó½á¹ûÎª"+sb);
 
-        sb.insert(2,"124"); //åœ¨æŒ‡å®šä½ç½®æ’å…¥å­—ç¬¦ä¸²
-        System.out.println("insertçš„æ·»åŠ ç»“æœä¸º"+sb);
+        sb.insert(2,"124"); //ÔÚÖ¸¶¨Î»ÖÃ²åÈë×Ö·û´®
+        System.out.println("insertµÄÌí¼Ó½á¹ûÎª"+sb);
     }
 }

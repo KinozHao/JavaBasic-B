@@ -4,14 +4,14 @@ import java.util.Random;
 
 public class RandomName {
     public static void main(String[] args) {
-        String name =getRandomName();
+        String name = getRandomName();
         System.out.println(name);
     }
 
     private static String getRandomName() {
-        String[] name ={"åˆ˜å²©","å¢æ—º","é™ˆå­ğŸ","æˆå‘¨å‘¨"};
+        String[] name ={"ÁõÑÒ","ÂÀÍş","³Â×ÓÑî","³ÉÖÜÖÜ"};
         Random r = new Random();
-        int r1 =r.nextInt(name.length);
+        int r1 = r.nextInt(name.length);
 
         return name[r1];
     }

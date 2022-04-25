@@ -6,19 +6,19 @@ import java.io.IOException;
 
 public class CopyMethod2 {
     public static void main(String[] args) throws IOException {
-        //åˆ›å»ºè¾“å…¥æµå¯¹è±¡
+        //´´½¨ÊäÈëÁ÷¶ÔÏó
         FileInputStream fis=new FileInputStream("I:\\CodeProject\\JavaIntermedate\\picture.png");
-        //åˆ›å»ºè¾“å‡ºæµå¯¹è±¡
+        //´´½¨Êä³öÁ÷¶ÔÏó
         FileOutputStream fos=new FileOutputStream("I:\\CodeProject\\JavaIntermedate\\copy.png");
         /*
         int len=fis.available();
         System.out.println(len);*/
 
-        byte[] arr=new byte[fis.read()];        //åˆ›å»ºå’Œæ–‡ä»¶å¤§å°ä¸€æ ·çš„å­—èŠ‚æ•°ç»„
-        fis.read(arr);                          //å°†æ–‡ä»¶ä¸Šçš„å­—èŠ‚è¯»å–åˆ°å†…å­˜ä¸­
-        fos.write(arr);                         //å°†å­—èŠ‚æ•°ç»„ä¸­çš„å­—èŠ‚æ•°æ®å†™åˆ°æ–‡ä»¶ä¸Š
+        byte[] arr=new byte[fis.read()];        //´´½¨ºÍÎÄ¼ş´óĞ¡Ò»ÑùµÄ×Ö½ÚÊı×é
+        fis.read(arr);                          //½«ÎÄ¼şÉÏµÄ×Ö½Ú¶ÁÈ¡µ½ÄÚ´æÖĞ
+        fos.write(arr);                         //½«×Ö½ÚÊı×éÖĞµÄ×Ö½ÚÊı¾İĞ´µ½ÎÄ¼şÉÏ
 
-        fis.close();                            //å…³é—­æµé‡Šæ”¾å†…å­˜
+        fis.close();                            //¹Ø±ÕÁ÷ÊÍ·ÅÄÚ´æ
         fos.close();
     }
 }

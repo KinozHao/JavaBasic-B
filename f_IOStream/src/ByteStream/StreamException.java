@@ -13,10 +13,10 @@ public class StreamException {
     }
 
     private static void ExceptiongJDK7() throws IOException {
-        try(    //closeæ²¡æœ‰å†™ å› ä¸ºè‡ªåŠ¨è°ƒç”¨äº†closeæ–¹æ³• å¯ä»¥æŸ¥çœ‹è¾“å‡ºæˆ–è€…è¾“å…¥æµçš„æºç 
+        try(    //closeÃ»ÓĞĞ´ ÒòÎª×Ô¶¯µ÷ÓÃÁËclose·½·¨ ¿ÉÒÔ²é¿´Êä³ö»òÕßÊäÈëÁ÷µÄÔ´Âë
                 FileInputStream fis =new FileInputStream("a.txt");
                 FileOutputStream fos=new FileOutputStream("b.txt");
-                myclass s=new myclass();    //è‡ªå®šä¹‰ç±»å¯ä»¥è¾“å‡ºå› ä¸ºå®ç°äº†AutoCloseableæ¥å£
+                myclass s=new myclass();    //×Ô¶¨ÒåÀà¿ÉÒÔÊä³öÒòÎªÊµÏÖÁËAutoCloseable½Ó¿Ú
         ){
             int go;
             while ((go = fis.read()) != -1){
@@ -26,10 +26,10 @@ public class StreamException {
     }
 
     private static void ExceptionJDK6() throws IOException {
-        FileInputStream FIS =null;  //å¿…é¡»è¦æœ‰ä¸€ä¸ªå‚æ•°å¦åˆ™æµæ²¡æ³•å…³é—­
+        FileInputStream FIS =null;  //±ØĞëÒªÓĞÒ»¸ö²ÎÊı·ñÔòÁ÷Ã»·¨¹Ø±Õ
         FileOutputStream FOS =null;
         try {
-          new FileInputStream("xxx.txt");   //è¯»å–æ–‡ä»¶
+          new FileInputStream("xxx.txt");   //¶ÁÈ¡ÎÄ¼ş
           new FileOutputStream("copy.txt");
 
             int b;
@@ -37,7 +37,7 @@ public class StreamException {
                 FOS.write(b);
             }
         }finally {
-            try {       //è¿™æ ·åšçš„ç›®çš„å°±æ˜¯å¦‚æœå‡ºé—®é¢˜å°½é‡èƒ½å…³ä¸€ä¸ªæ˜¯ä¸€ä¸ª
+            try {       //ÕâÑù×öµÄÄ¿µÄ¾ÍÊÇÈç¹û³öÎÊÌâ¾¡Á¿ÄÜ¹ØÒ»¸öÊÇÒ»¸ö
                 if (FIS != null)
                     FIS.close();
             }finally {

@@ -1,9 +1,9 @@
 package ListStudy.ArrayListStudy;
 /*
-    public boolean add(E e):å‘é›†åˆå½“ä¸­æ·»åŠ å…ƒç´ ,å‚æ•°çš„ç±»å‹å’Œæ³›å‹ä¸€è‡´.
-    public E getï¼ˆint index):ä»é›†åˆå½“ä¸­è·å–å…ƒç´ ,å‚æ•°æ˜¯ç´¢å¼•ç¼–å·,è¿”å›å€¼æ˜¯å¯¹åº”ä½ç½®çš„å…ƒç´ .
-    public E remove(int index):ä»é›†åˆå½“ä¸­åˆ é™¤å…ƒç´ ,å‚æ•°æ˜¯ç´¢å¼•ç¼–å·,è¿”å›å€¼æ˜¯è¢«åˆ æ‰çš„å…ƒç´ .
-    public Int size(): è·å–é›†åˆçš„å°ºå¯¸é•¿åº¦,è¿”å›å€¼æ˜¯é›†åˆä¸­åŒ…å«çš„å…ƒç´ ä¸ªæ•°ã€‚
+    public boolean add(E e):Ïò¼¯ºÏµ±ÖĞÌí¼ÓÔªËØ,²ÎÊıµÄÀàĞÍºÍ·ºĞÍÒ»ÖÂ.
+    public E get£¨int index):´Ó¼¯ºÏµ±ÖĞ»ñÈ¡ÔªËØ,²ÎÊıÊÇË÷Òı±àºÅ,·µ»ØÖµÊÇ¶ÔÓ¦Î»ÖÃµÄÔªËØ.
+    public E remove(int index):´Ó¼¯ºÏµ±ÖĞÉ¾³ıÔªËØ,²ÎÊıÊÇË÷Òı±àºÅ,·µ»ØÖµÊÇ±»É¾µôµÄÔªËØ.
+    public Int size(): »ñÈ¡¼¯ºÏµÄ³ß´ç³¤¶È,·µ»ØÖµÊÇ¼¯ºÏÖĞ°üº¬µÄÔªËØ¸öÊı¡£
 */
 import java.util.ArrayList;
 
@@ -16,20 +16,20 @@ public class AlMethod {
         boolean success=list.add("Apple");//boolean determination the element T/F
         System.out.println(list);
         System.out.println("Is the element's ture:"+success);
-        //ä»é›†åˆä¸­è·å¾—å…ƒç´ æ˜¯get,ç´¢å¼•å€¼ä»oå¼€å§‹
+        //´Ó¼¯ºÏÖĞ»ñµÃÔªËØÊÇget,Ë÷ÒıÖµ´Óo¿ªÊ¼
         list.add("Honor");
         list.add("Huawei");
         list.add("Oneplus");
         list.add("Mi");
-        System.out.println(list);   //æ‰“å°çš„æ˜¯æ‰€æœ‰çš„é›†åˆå‚æ•°
-        String name=list.get(2);    //å•ç‹¬è°ƒç”¨äº†é›†åˆä¸­çš„ç¬¬äºŒä¸ªå‚æ•°
-        System.out.println("The second is:"+name);  //å•ç‹¬è°ƒç”¨äº†ç¬¬äºŒä¸ªå…ƒç´ 
-        //ä»é›†åˆä¸­åˆ é™¤å…ƒç´ æ˜¯remove,ç´¢å¼•å€¼æ˜¯ä»0å¼€å§‹
-        String remove=list.remove(3);       //åˆ é™¤ç¬¬ä¸‰ä¸ªå…ƒç´ 
-        System.out.println("We remove the"+remove); //æ‰“å°åˆ é™¤çš„ç¬¬ä¸‰ä¸ªå…ƒç´ æ˜¯ä»€ä¹ˆ
-        System.out.println(list);           //ç§»é™¤ç¬¬ä¸‰ä¸ªå…ƒç´ åçš„é›†åˆ
-        //è·å–é›†åˆçš„é•¿åº¦æ³¨:ç´¢å¼•å€¼æ˜¯ä»0å¼€å§‹çš„æ‰€ä»¥é•¿åº¦ä¸º4
-        int num=list.size();            //æŠŠé•¿åº¦èµ‹å€¼ç»™num
-        System.out.println("The arrays size:"+num);        //æ‰“å°é•¿åº¦å€¼
+        System.out.println(list);   //´òÓ¡µÄÊÇËùÓĞµÄ¼¯ºÏ²ÎÊı
+        String name=list.get(2);    //µ¥¶Àµ÷ÓÃÁË¼¯ºÏÖĞµÄµÚ¶ş¸ö²ÎÊı
+        System.out.println("The second is:"+name);  //µ¥¶Àµ÷ÓÃÁËµÚ¶ş¸öÔªËØ
+        //´Ó¼¯ºÏÖĞÉ¾³ıÔªËØÊÇremove,Ë÷ÒıÖµÊÇ´Ó0¿ªÊ¼
+        String remove=list.remove(3);       //É¾³ıµÚÈı¸öÔªËØ
+        System.out.println("We remove the"+remove); //´òÓ¡É¾³ıµÄµÚÈı¸öÔªËØÊÇÊ²Ã´
+        System.out.println(list);           //ÒÆ³ıµÚÈı¸öÔªËØºóµÄ¼¯ºÏ
+        //»ñÈ¡¼¯ºÏµÄ³¤¶È×¢:Ë÷ÒıÖµÊÇ´Ó0¿ªÊ¼µÄËùÒÔ³¤¶ÈÎª4
+        int num=list.size();            //°Ñ³¤¶È¸³Öµ¸ønum
+        System.out.println("The arrays size:"+num);        //´òÓ¡³¤¶ÈÖµ
     }
 }

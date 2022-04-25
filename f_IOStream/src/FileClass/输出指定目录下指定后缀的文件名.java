@@ -2,22 +2,22 @@ package FileClass;
 
 import java.io.File;
 /*
-*1:è·å–ä¸€ä¸ªfileæ ¹ç›®å½•æ–‡ä»¶
-2:å®šä¹‰ä¸€ä¸ªæ•°ç»„é€šè¿‡Fileçš„listæ–¹æ³•æŠŠè¯»å–åˆ°çš„æ–‡ä»¶èµ‹å€¼ç»™æ•°ç»„
-3:<1>åšæ³•1 åªä½œä¸ºäº†è§£å¤šç”¨æ–¹æ³•2
-åæœŸå¼€å‘ç”¨çš„å¤š
- <2>åšæ³•2å®šä¹‰ä¸€ä¸ªFileæ•°ç»„,ç”¨listFilesè¯»å–ç›®å½•ä¸‹çš„æ‰€æœ‰æ–‡ä»¶æˆ–æ–‡ä»¶å¤¹
+*1:»ñÈ¡Ò»¸öfile¸ùÄ¿Â¼ÎÄ¼ş
+2:¶¨ÒåÒ»¸öÊı×éÍ¨¹ıFileµÄlist·½·¨°Ñ¶ÁÈ¡µ½µÄÎÄ¼ş¸³Öµ¸øÊı×é
+3:<1>×ö·¨1 Ö»×÷ÎªÁË½â¶àÓÃ·½·¨2
+ºóÆÚ¿ª·¢ÓÃµÄ¶à
+ <2>×ö·¨2¶¨ÒåÒ»¸öFileÊı×é,ÓÃlistFiles¶ÁÈ¡Ä¿Â¼ÏÂµÄËùÓĞÎÄ¼ş»òÎÄ¼ş¼Ğ
 * */
-public class è¾“å‡ºæŒ‡å®šç›®å½•ä¸‹æŒ‡å®šåç¼€çš„æ–‡ä»¶å {
+public class Êä³öÖ¸¶¨Ä¿Â¼ÏÂÖ¸¶¨ºó×ºµÄÎÄ¼şÃû {
     public static void main(String[] args) {
-        File file=new File("F:\\CSSè§†é¢‘");
-        String[] arr=file.list();           //è¯»å–æ ¹ç›®å½•ä¸‹çš„æ‰€æœ‰æ–‡ä»¶æˆ–æ–‡ä»¶å¤¹
+        File file=new File("F:\\CSSÊÓÆµ");
+        String[] arr=file.list();           //¶ÁÈ¡¸ùÄ¿Â¼ÏÂµÄËùÓĞÎÄ¼ş»òÎÄ¼ş¼Ğ
         /*for (String string: arr) {
             if (string.endsWith(".avi")){
                 System.out.println(string);
             }
         }*/
-        File [] subFile=file.listFiles();   //è¯»å–æ ¹ç›®å½•ä¸‹çš„æ‰€æœ‰æ–‡ä»¶æˆ–æ–‡ä»¶å¤¹
+        File [] subFile=file.listFiles();   //¶ÁÈ¡¸ùÄ¿Â¼ÏÂµÄËùÓĞÎÄ¼ş»òÎÄ¼ş¼Ğ
         for (File Gos : subFile) {
             if (Gos.isFile() && Gos.getName().endsWith(".avi")){
                 System.out.println(Gos);

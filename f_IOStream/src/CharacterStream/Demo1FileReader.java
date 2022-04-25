@@ -12,9 +12,9 @@ public class Demo1FileReader {
     private static void High() throws IOException {
         FileReader fr=new FileReader("xxx.txt");
         int in;
-        //é€šå¸¸é¡¹ç›®é»˜è®¤çš„ç è¡¨ä¸€æ¬¡è¯»å–ä¸€ä¸ªå­—ç¬¦
+        //Í¨³£ÏîÄ¿Ä¬ÈÏµÄÂë±íÒ»´Î¶ÁÈ¡Ò»¸ö×Ö·û
         while ((in = fr.read()) != -1){
-            System.out.println((char)in);   //charç±»å‹å¼ºè½¬
+            System.out.println((char)in);   //charÀàĞÍÇ¿×ª
         }
         fr.close();
     }
@@ -22,7 +22,7 @@ public class Demo1FileReader {
     private static void PRIMARY() throws IOException {
         FileReader fr =new FileReader("xxx.txt");
         int i=fr.read();
-        System.out.println((char)i);        //charç±»å‹å¼ºè½¬
+        System.out.println((char)i);        //charÀàĞÍÇ¿×ª
         fr.close();
     }
 }

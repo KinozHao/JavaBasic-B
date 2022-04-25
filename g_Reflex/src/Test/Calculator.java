@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class Calculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("è¯·è¾“å…¥ç¬¬ä¸€ä¸ªæ•°å­—");
+        System.out.println("ÇëÊäÈëµÚÒ»¸öÊı×Ö");
         double a =sc.nextDouble();
-        System.out.println("è¯·è¾“å…¥è¦è¿ç®—çš„æ–¹å¼");
+        System.out.println("ÇëÊäÈëÒªÔËËãµÄ·½Ê½");
         String s =sc.next();
-        System.out.println("è¯·è¾“å…¥ç¬¬äºŒä¸ªæ•°å­—");
+        System.out.println("ÇëÊäÈëµÚ¶ş¸öÊı×Ö");
         double b =sc.nextDouble();
-        System.out.println("æœ€ç»ˆçš„ç»“æœæ˜¯"+method(a,s,b));
+        System.out.println("×îÖÕµÄ½á¹ûÊÇ"+method(a,s,b));
 
     }
     public static double method(double a,String s,double b){
@@ -28,7 +28,7 @@ public class Calculator {
                 break;
             case "/":
                 if (b==0){
-                    System.out.println("è¢«é™¤æ•°ä¸èƒ½ä¸º0");
+                    System.out.println("±»³ıÊı²»ÄÜÎª0");
                 }else {
                     result = a / b;
 
@@ -36,7 +36,7 @@ public class Calculator {
                 break;
 
                 default:
-                    System.out.println("è¾“å…¥æœ‰è¯¯");
+                    System.out.println("ÊäÈëÓĞÎó");
                     break;
         }
 

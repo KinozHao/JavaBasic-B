@@ -20,7 +20,7 @@ public class Demo5Buffered {
     private static void Demo1() throws IOException {
         BufferedReader br =new BufferedReader(new FileReader("xxx.txt"));
         String line;
-        while ((line=br.readLine()) !=null){    //readLine鏂规硶鐢ㄦ潵璇诲彇鏁磋
+        while ((line=br.readLine()) !=null){    //readLine方法用来读取整行
             System.out.println(line);
         }
         br.close();

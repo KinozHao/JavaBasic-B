@@ -3,30 +3,30 @@ package array_us;
 public class BobbleSort {
     public static void main(String[] args) {
         int [] arr={10,43,53,312,64,1};
-        array(arr); //è°ƒç”¨æ’åºæ–¹æ³•
-        printf(arr);    //æ‰“å°å†’æ³¡æ’åºè¿‡åçš„å…ƒç´ 
+        array(arr); //µ÷ÓÃÅÅĞò·½·¨
+        printf(arr);    //´òÓ¡Ã°ÅİÅÅĞò¹ıºóµÄÔªËØ
     }
     /*
-    * å†’æ³¡æ’åº:
-    * 1è¿”å›å€¼ç±»å‹ void
-    * 2å‚æ•°åˆ—è¡¨ int[] arr
+    * Ã°ÅİÅÅĞò:
+    * 1·µ»ØÖµÀàĞÍ void
+    * 2²ÎÊıÁĞ±í int[] arr
     * */
     public static void array(int [] arr){
-        //å¤–å¾ªç¯   åªéœ€è¦æ¯”è¾ƒarr.length-1å³å¯
+        //ÍâÑ­»·   Ö»ĞèÒª±È½Ïarr.length-1¼´¿É
         for (int i = 0; i <arr.length-1 ; i++) {
-        //å†…å¾ªç¯   -1æ˜¯ä¸ºäº†é˜²æ­¢ç´¢å¼•è¶Šç•Œ -iæ˜¯ä¸ºäº†æé«˜æ•ˆç‡
+        //ÄÚÑ­»·   -1ÊÇÎªÁË·ÀÖ¹Ë÷ÒıÔ½½ç -iÊÇÎªÁËÌá¸ßĞ§ÂÊ
             for (int j = 0; j <arr.length-1-i; j++) {
                 if(arr[j]>arr[j+1]) {
-                    //æ¢ä½æ“ä½œ
+                    //»»Î»²Ù×÷
                     swaps(arr,i,j);
                 }
             }
         }
     }
     /*
-    * æ¢ä½æ“ä½œ
-    * 1:è¿”å›å€¼ç±»å‹void
-    * 2:å‚æ•°åˆ—è¡¨ int [] arr,i,j
+    * »»Î»²Ù×÷
+    * 1:·µ»ØÖµÀàĞÍvoid
+    * 2:²ÎÊıÁĞ±í int [] arr,i,j
     * */
     protected static void swaps(int [] arr,int i,int j){
         int tmep = arr[j];
@@ -34,9 +34,9 @@ public class BobbleSort {
         arr[j+1]=tmep;
     }
     /*
-    * æ‰“å°æ•°ç»„
-    * 1è¿”å›å€¼ç±»å‹void
-    * 2å‚æ•°åˆ—è¡¨ int[] arr
+    * ´òÓ¡Êı×é
+    * 1·µ»ØÖµÀàĞÍvoid
+    * 2²ÎÊıÁĞ±í int[] arr
     * */
     public static void printf(int [] arr){
         for (int i = 0; i < arr.length; i++) {

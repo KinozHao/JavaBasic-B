@@ -1,26 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="GBK">
+    <file url="file://$PROJECT_DIR$/a_NormalClass/src/array_us/ArrayToString.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/a_NormalClass/src/array_us/ArraysOverview.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/a_NormalClass/src/array_us/BobbleSort.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/a_NormalClass/src/array_us/BobbleSort2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/a_NormalClass/src/array_us/BobbleSort3.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/a_NormalClass/src/array_us/CharacterReverse.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/a_NormalClass/src/array_us/CircleSquare.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/a_NormalClass/src/array_us/CommonDivisor.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/a_NormalClass/src/array_us/rectangle.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/a_NormalClass/src/object_us/GetClass.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/a_NormalClass/src/string_us/StringBuffer/StringBufferMethod/AddRemoveAlterMethod.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/a_NormalClass/src/string_us/stringOtherMethod/OtherMethod.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/b_Exception/src/btest/ExceptionTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/b_Exception/src/throwsus/AgeFalseException.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/b_Exception/src/throwsus/StudentTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/b_Exception/src/trycatchus/NewFeatures.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/b_Exception/src/trycatchus/TryCatchBasic.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/c_Multithread/src/synchronizedss/SynchronizedBasic.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/c_Multithread/src/synchronizedss/SynchronizedBasic.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/c_Multithread/src/synchronizedss/SynchronizedBasic2.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/c_Multithread/src/threada/Demo3_Timer.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/CollectionStudy/CollectionBasic.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/CollectionStudy/CollectionMethod.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/CollectionStudy/CollectionWithAllMethod.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/CollectionStudy/CollectionsMethod.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/CollectionStudy/StudentView.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Assemble/src/GenericStudy/GenericBasic.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/GenericStudy/ListBasic.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/GenericStudy/RegularUs.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Assemble/src/GenericStudy/Traversing.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Assemble/src/IteratorStudy/ConvertTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/IteratorStudy/Interator.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Assemble/src/ListStudy/ArrayListStudy/AITravers.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/ListStudy/ArrayListStudy/AlBasic.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/ListStudy/ArrayListStudy/AlMethod.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/ListStudy/ArrayListStudy/PracticeQuestion/DemoAarrayListStudent.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/ListStudy/ArrayListStudy/PracticeQuestion/DemoArrayListPrint.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/ListStudy/ArrayListStudy/PracticeQuestion/Notebook.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Assemble/src/MapStudy/HashMapStudy/HashMapAndHashtable.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/MapStudy/HashMapStudy/HashMapMethod.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/MapStudy/HashMapStudy/HashMapOverview.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/MapStudy/HashMapStudy/HashMapTraversing.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/MapStudy/HashMapStudy/HashMapTraversing2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/MapStudy/HashMapStudy/ObjectKey.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/MapStudy/HashMapStudy/Student.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Assemble/src/MapStudy/TreeMapStudy/MapEntry的解释.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/MapStudy/TreeMapStudy/TreeMapUsing.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Assemble/src/MapStudy/maptest/BillionsHeros.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Assemble/src/MapStudy/maptest/InformTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/MapStudy/maptest/Nums.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Assemble/src/MapStudy/maptest/Poker.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Assemble/src/MapStudy/maptest/PokerPlus.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Assemble/src/SetStudy/HashSet/LinkedHashSetss.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/e_PackageGroup/src/BaseView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/ByteStream/Copy/CopyIOSteamCore.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/ByteStream/Copy/CopyMethod2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/ByteStream/Copy/CopyMethod3.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/ByteStream/FileInputStreamUs.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/ByteStream/FileOutputStreamUs.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/ByteStream/InterfaceUs/PictureSecret.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/ByteStream/StreamException.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/ByteStream/Text/TextA.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/ByteStream/Text/TextB.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/ByteStream/Text/TextC.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/ByteStream/chinese.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/ByteStream/flushAndclose.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/CharacterStream/Demo1FileReader.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/CharacterStream/Demo2FileWriter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/CharacterStream/Demo3Copy.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/CharacterStream/Demo4CopyTwo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/CharacterStream/Demo5Buffered.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/CharacterStream/Demo6LineNumberReader.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/CharacterStream/Demo7Wrap.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/CharacterStream/Demo8TransIO.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/CharacterStream/Text/Text1.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/CharacterStream/Text/Text2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/CharacterStream/Text/Text3.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/FileClass/Features/GetFeatures.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/FileClass/Features/JudgeFeatures.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/FileClass/Features/MakeFeatures.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/FileClass/Features/RenameAndDeleteFeatures.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/FileClass/FileClassOverviewAndConstruction.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/FileClass/文件名称过滤器.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/FileClass/输出指定目录下指定后缀的文件名.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/g_Reflex/src/Bean/Person.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/g_Reflex/src/Bean/helloword.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/g_Reflex/src/Reflects/Demo1_Reflex.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/g_Reflex/src/Reflects/Demo2_Reflex.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/g_Reflex/src/Reflects/Demo3_Constructor.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/g_Reflex/src/Reflects/Demo4_Field.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/g_Reflex/src/Reflects/Demo5_Method.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/g_Reflex/src/Reflects/config.properties.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/g_Reflex/src/Test/Calculator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/g_Reflex/src/Test/RandomName.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/g_Reflex/src/Test/TestOne.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/g_Reflex/src/Test/Tools.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/h_Programer_Project/src/domain/equipment/Equipment.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/h_Programer_Project/src/junit/NameListServiceTest.java" charset="GBK" />
     <file url="PROJECT" charset="GBK" />

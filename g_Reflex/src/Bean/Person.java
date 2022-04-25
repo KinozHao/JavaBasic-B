@@ -33,8 +33,8 @@ public class Person {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass())    //åˆ¤æ–­è°ƒç”¨å¯¹è±¡å’Œä¼ å…¥å¯¹è±¡çš„å­—èŠ‚ç æ–‡ä»¶
-        return false;                                   //æ˜¯å¦æ˜¯åŒä¸€ä¸ªå­—èŠ‚ç æ–‡ä»¶
+        if (o == null || getClass() != o.getClass())    //ÅĞ¶Ïµ÷ÓÃ¶ÔÏóºÍ´«Èë¶ÔÏóµÄ×Ö½ÚÂëÎÄ¼ş
+        return false;                                   //ÊÇ·ñÊÇÍ¬Ò»¸ö×Ö½ÚÂëÎÄ¼ş
         Person person = (Person) o;
         return age == person.age &&
                 Objects.equals(name, person.name);
@@ -56,7 +56,7 @@ public class Person {
         System.out.println("I doing homework");
     }
 
-    public void doing(int num){     //æ–¹æ³•é‡è½½ æ–¹æ³•åç›¸åŒ å‚æ•°ä¸åŒ
+    public void doing(int num){     //·½·¨ÖØÔØ ·½·¨ÃûÏàÍ¬ ²ÎÊı²»Í¬
         System.out.println("I also get up at AM " +num+ " o'clock");
     }
 
