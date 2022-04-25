@@ -36,4 +36,9 @@ public class Designer extends Programmer{
         //status同理
         return getDetails()+"\t设计师\t"+getStatus()+"\t"+bonus+"\t\t\t"+getEquipment().getDescription();
     }
+
+    //用于TeamView类中getTeam方法的中逻辑的调用
+    public String getDetailsForTeamView(){
+        return getMemberId() + "/" +getId()+"\t\t" + getName() + "\t" + getAge() + "\t" + getSalary() + "\t设计师\t"+getBonus();
+    }
 }

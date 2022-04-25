@@ -116,7 +116,7 @@ public class TeamService {
     //Step3.1:判断要添加的员工是否已经存在团队中
     private boolean isExist(Employee e) {
         for (int i = 0; i < total; i++) {
-            //判断开发团队中成员ID和要添加的是否相同
+            //判断开发团队中成员ID和要添加的是否相同(也可以使用memberID判断)
             //写法1
             /*if (team[i].getId() == e.getId()){
                 return true;
@@ -129,6 +129,33 @@ public class TeamService {
 
     //删除团队中指定的员工
     public void removeMember(int memberID) throws  TeamException{
+        //通过此逻辑第一轮判断,走逻辑1还是逻辑2
+        int i =0;
+        for (; i < total; i++) {
+            if (team[i].getMemberId() == memberID){
+                //设置此员工状态为FREE
+                team[i].setStatus(Status.FREE);
+                //此时即可跳出循环
+                break;
+            }
+        }
+
+        //逻辑1:没找到ID的情况
+        if (i == total){
+            throw new TeamException("找不到指定MemberID的员工,删除失败！");
+        }
+
+        //逻辑2:找到ID的情况(后一个元素覆盖前一个元素)
+        for (int j = i; j < total; j++) {
+            team[j] = team[j+1];
+        }
+        //最后一个元素要置null
+        team[total-1] = null;
+        total--;
+
+        //写法2
+        //team[--total] = null;
+
 
     }
 }

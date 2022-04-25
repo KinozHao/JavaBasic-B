@@ -1,6 +1,8 @@
 package junit;
 
+import domain.human.Designer;
 import domain.human.Employee;
+import domain.human.Programmer;
 import org.junit.Test;
 import service.NameListService;
 import service.TeamException;

@@ -32,4 +32,10 @@ public class Architect extends Designer{
     public String toString() {
         return getDetails()+"\t架构师\t"+getStatus()+"\t"+getBonus()+"\t"+stock+"\t"+getEquipment().getDescription();
     }
+
+    //用于TeamView类中getTeam方法的中逻辑的调用
+    public String getDetailsForTeamView(){
+        return getMemberId() + "/" +getId()+"\t\t"  + getName() + "\t" +
+                getAge() + "\t" + getSalary() + "\t架构师\t"+getBonus()+"\t"+getStock();
+    }
 }
