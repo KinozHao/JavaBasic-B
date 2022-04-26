@@ -17,7 +17,7 @@ public class Demo2_Reflex {
     @Test
     public void reflexTest() throws Exception {
         //反射写法
-        BufferedReader br = new BufferedReader(new FileReader("src/Reflects/config.properties.txt"));
+        BufferedReader br = new BufferedReader(new FileReader("config.properties.txt"));
 
         //BufferedReader的方法readLine可以读整行
         //newInstance方法概述创建由此 类对象表示的类的新实例

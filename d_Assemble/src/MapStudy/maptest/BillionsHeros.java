@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 public class BillionsHeros {
     public static void main(String[] args) {
-        // TODO 自动生成的方法存根
+        //自动生成的方法存根
         ArrayList<Hero> al=new ArrayList<>();
         //创建对象
         for(int i=0;i<3000000;i++)

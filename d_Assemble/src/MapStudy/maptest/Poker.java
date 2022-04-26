@@ -23,15 +23,15 @@ public class Poker {
         Collections.shuffle(pokers);
         System.out.println(pokers);
 
-        ArrayList<String> Jack=new ArrayList<>();
-        ArrayList<String> Alisa=new ArrayList<>();
-        ArrayList<String> Me=new ArrayList<>();
-        ArrayList<String> Dipai=new ArrayList<>();
+        ArrayList<String> Jack = new ArrayList<>();
+        ArrayList<String> Alisa = new ArrayList<>();
+        ArrayList<String> Me = new ArrayList<>();
+        ArrayList<String> Cho = new ArrayList<>();
 
         //·¢ÅÆ
         for (int i = 0; i < pokers.size(); i++) {
             if (i >= pokers.size() -3){
-                Dipai.add(pokers.get(i));
+                Cho.add(pokers.get(i));
             }else if (i % 3 == 0){
                 Jack.add(pokers.get(i));
             }else if (i % 3 == 1){
@@ -44,6 +44,6 @@ public class Poker {
         System.out.println(Jack);
         System.out.println(Alisa);
         System.out.println(Me);
-        System.out.println(Dipai);
+        System.out.println(Cho);
     }
 }
