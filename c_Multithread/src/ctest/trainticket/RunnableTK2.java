@@ -15,7 +15,7 @@ class RunnableTK2 implements Runnable{
     @Override
     public void run() {
         while (true){
-            //上锁
+            //开始执行前进行上锁 上锁
             reentrantLock.lock();
             if (all_ticket <= 0){
                 break;
@@ -26,7 +26,7 @@ class RunnableTK2 implements Runnable{
                 e.printStackTrace();
             }
             System.out.println(Thread.currentThread().getName()+"..这是第"+ all_ticket-- +"号票");
-            //开锁
+            //运行完毕解锁
             reentrantLock.unlock();
         }
     }

@@ -7,6 +7,7 @@ package ctest.trainticket;
  * @Date 2022/4/15
  * */
 class RunnableTK implements Runnable{
+    //票可以不用static进行修饰
     private int ticket =100;
     @Override
     public void run() {
@@ -15,12 +16,13 @@ class RunnableTK implements Runnable{
                 if (ticket <= 0) {
                     break;
                 }
+                ticket--;
                 try {
                     Thread.sleep(10);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                System.out.println(Thread.currentThread().getName() + "..这是第" + ticket-- + "号票");
+                System.out.println(Thread.currentThread().getName() + "..这是第" + ticket + "号票");
             }
         }
     }

@@ -7,18 +7,20 @@ class ThreadTK extends Thread{
     @Override
     public void run() {
         while (true) {
-                synchronized (ThreadTK.class) {
+            synchronized (ThreadTK.class) {
+                //票小于时直接跳出
                 if (all_ticket <= 0) {
                     break;
                 }
-                try {
-                    Thread.sleep(10);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                System.out.println(getName() + "..这是第" + all_ticket-- + "号票");
+                //每销售一张，递减一次
+                all_ticket--;
+
+                System.out.println(getName() + "这是第" + all_ticket + "号票");
             }
         }
     }
 
+    public ThreadTK(String name) {
+        super(name);
+    }
 }

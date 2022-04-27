@@ -7,20 +7,28 @@ package ctest.trainticket;
 public class TicketTest {
     public static void main(String[] args) {
         //tTest1();
+        tTest2();
         //rTest1();
-        rTest2();
+        //rTest2();
     }
 
     //继承Thread写法
     public static void tTest1(){
-        //直接调用Thread的方法
-        new ThreadTK().start();
-        new ThreadTK().start();
-        new ThreadTK().start();
-        new ThreadTK().start();
+        new ThreadTK2("上海虹桥:").start();
+        new ThreadTK2("北京西站:").start();
+        new ThreadTK2("重庆北站:").start();
+        new ThreadTK2("日喀则站:").start();
     }
 
-    //实现runnable接口，synchronized锁
+    //使用synchronized解决线程安全
+    public static void tTest2(){
+        new ThreadTK("一号窗口").start();
+        new ThreadTK("二号窗口").start();
+        new ThreadTK("三号窗口").start();
+        new ThreadTK("四号窗口").start();
+    }
+
+    //实现runnable接口，synchronized解决安全问题
     public static void rTest1(){
         RunnableTK rkt = new RunnableTK();
         new Thread(rkt).start();

@@ -1,3 +1,5 @@
+import ctest.trainticket.ThreadTK2;
+
 /**
  * @author kinoz
  * @create 2022/4/26 - 19:18
@@ -24,6 +26,9 @@ class RunnableBasic implements Runnable{
         Thread tr = new Thread(rbc);
         //5:开启线程
         tr.start();
+
+        //匿名写法
+        //new Thread(rbc).start();
 
         for (int j = 0; j < 4000; j++) {
             System.out.println("PHP not liked everything");

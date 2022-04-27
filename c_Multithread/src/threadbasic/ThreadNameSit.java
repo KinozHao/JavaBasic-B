@@ -2,13 +2,16 @@ package threadbasic;
 //Thread设置名称的三种方式
 public class ThreadNameSit {
     public static void main(String[] args) {
+        //currentThread是静态方法可以直接类名调用
+        Thread.currentThread().setName("main主线程");
+        System.out.println(Thread.currentThread().getName()+":"+11111);
         methodOBJ();
         methodGTST();
         methodConstruct();
     }
 
     private static void methodOBJ() {
-        Thread so =new  Thread(){
+        Thread so = new  Thread(){
             @Override
             public void run() {
                 System.out.println("对象设置名称: " + this.getName());
