@@ -1,5 +1,3 @@
-import ctest.trainticket.ThreadTK2;
-
 /**
  * @author kinoz
  * @create 2022/4/26 - 19:18
@@ -30,8 +28,9 @@ class RunnableBasic implements Runnable{
         //匿名写法
         //new Thread(rbc).start();
 
-        for (int j = 0; j < 4000; j++) {
-            System.out.println("PHP not liked everything");
+        //main线程执行的事务
+        for (int j = 0; j < 50; j++) {
+            System.out.println("PHP是世界上最好的语言");
         }
     }
 }

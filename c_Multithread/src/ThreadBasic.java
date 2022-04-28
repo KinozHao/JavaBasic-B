@@ -12,6 +12,9 @@ class ThreadBasic extends Thread{
         for (int i = 0; i < 100; i++) {
           if (i % 2 == 0 ){
               System.out.println(i);
+          }else if (i == 1){
+              //强制结束此线程
+              //stop();
           }
         }
     }
