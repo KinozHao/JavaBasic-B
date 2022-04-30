@@ -2,9 +2,19 @@ package a_thread_basic;
 //休眠线程的应用
 public class Thread_Sleep {
     public static void main(String[] args) throws InterruptedException {
-        Normal();
+        hourMeter();
         //WithThread();
 
+    }
+
+    //sleep方法本事存在异常，需要抛异常
+    private static void hourMeter() throws InterruptedException {
+        int i = 20;
+        while (i >= 0) {
+            Thread.sleep(1000);     //间隔1秒
+            System.out.println("倒计时"+i+"秒");
+            i--;
+        }
     }
 
     private static void WithThread() {
@@ -35,14 +45,5 @@ public class Thread_Sleep {
                 }
             }
         }).start();
-    }
-
-    private static void Normal() throws InterruptedException {  //sleep的异常
-        int i = 20;
-        while (i >= 0) {
-            Thread.sleep(1000);     //间隔1秒
-            System.out.println("倒计时"+i+"秒");
-            i--;
-        }
     }
 }

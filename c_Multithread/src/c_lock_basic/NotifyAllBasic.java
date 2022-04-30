@@ -66,9 +66,7 @@ class mntf2{
             while (A != 1){     //while循环是判断循环,每次都会判断标记
                 this.wait();    //当前线程等待
             }
-            System.out.print("R");
-            System.out.print("B");
-            System.out.print("T");
+            System.out.print("上杉");
             System.out.println();
             A =2;
             this.notifyAll();      //随机召唤单个等待的线程
@@ -79,10 +77,7 @@ class mntf2{
             while (A != 2){
                 this.wait();
             }
-            System.out.print("M");
-            System.out.print("W");
-            System.out.print("X");
-            System.out.print("Q");
+            System.out.print("奔腾");
             System.out.println();
             A = 3;
             this.notifyAll();
@@ -93,10 +88,7 @@ class mntf2{
             while (A != 3){
                 this.wait();
             }
-            System.out.print("D");
-            System.out.print("E");
-            System.out.print("A");
-            System.out.print("D");
+            System.out.print("辉瑞");
             System.out.println();
             A = 1;
             this.notifyAll();

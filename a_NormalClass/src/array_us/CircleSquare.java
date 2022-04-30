@@ -20,28 +20,25 @@ import java.util.Scanner;
 public class CircleSquare {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.println("ÇëÊäÈë?µÄ°ë¾¶");
-        double iRadius=sc.nextDouble();
-        if (iRadius<0)
-        {
+        System.out.println("ÇëÊäÈëÔ²µÄ°ë¾¶");
+        double iRadius = sc.nextDouble();
+        if (iRadius < 0){
             System.out.println("You have put in wrong things try again");
         }
-        else
-        {
-            circle s=new circle(iRadius);
-            System.out.println("Circles Length"+s.getlength());
-            System.out.println("Circles Area"+s.getArea());
-        }
+        Circle s = new Circle(iRadius);
+        System.out.println("Circles Length"+s.getLength());
+        System.out.println("Circles Area"+s.getArea());
+
     }
 }
-class circle{
+class Circle {
     private double radius;
 
-    public circle(double radius) {
+    public Circle(double radius) {
         this.radius = radius;
     }
 
-    public double getlength()
+    public double getLength()
     {
         return 2*Math.PI*this.radius;
     }

@@ -1,7 +1,5 @@
 package e_thread_us;
 
-import org.w3c.dom.ls.LSOutput;
-
 //匿名内部类实现线程的两种方法
 public class AnonymousThread {
     public static void main(String[] args) {
