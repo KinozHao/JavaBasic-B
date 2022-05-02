@@ -12,8 +12,6 @@
     <file url="file://$PROJECT_DIR$/a_NormalClass/src/array_us/bobblesort/BobbleSort2.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/a_NormalClass/src/array_us/bobblesort/BobbleSort3.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/a_NormalClass/src/object_us/GetClass.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/a_NormalClass/src/string_buffer_us/StringBufferMethod/AddRemoveAlterMethod.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/a_NormalClass/src/string_us/stringOtherMethod/OtherMethod.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/b_Exception/src/throws_us/AgeFalseException.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/b_Exception/src/throws_us/StudentTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/b_Exception/src/trycatch_us/NewFeatures.java" charset="GBK" />
@@ -35,6 +33,7 @@
     <file url="file://$PROJECT_DIR$/c_Multithread/src/d_thread_test/product/Customer.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/c_Multithread/src/d_thread_test/product/Maker.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/c_Multithread/src/d_thread_test/product/ProductTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/c_Multithread/src/d_thread_test/product/Safe.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/c_Multithread/src/d_thread_test/product/Shopper.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/c_Multithread/src/d_thread_test/ticket/RunnableUnsafe.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/c_Multithread/src/d_thread_test/ticket/ThreadUnsafe.java" charset="UTF-8" />
@@ -74,6 +73,9 @@
     <file url="file://$PROJECT_DIR$/d_Assemble/src/MapStudy/maptest/PokerPlus.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Assemble/src/SetStudy/HashSet/LinkedHashSetss.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/e_PackageGroup/src/BaseView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/e_StringUs/src/string_buffer_basic/AddRemoveAlterMethod.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/e_StringUs/src/string_method/Method_D_Other.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/e_StringUs/src/string_test/UserSignIn.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/ByteStream/Copy/CopyIOSteamCore.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/ByteStream/Copy/CopyMethod2.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/ByteStream/Copy/CopyMethod3.java" charset="GBK" />
