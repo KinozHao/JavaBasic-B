@@ -15,14 +15,14 @@ public class Method_A {
         System.out.println(character.length());
         //2.截取指定字符
         System.out.println(character.charAt(3));
-        //StringIndexOutOfBoundsException
-        //System.out.println(character.charAt(10));
-        //3.判断是否为空
-        System.out.println(character.isEmpty());
 
+
+        //3.判断此对象是否为空
+        System.out.println(character.isEmpty());
         //4.转换大小写
         System.out.println(character.toUpperCase());
         System.out.println(character.toLowerCase());
+
 
         //5.忽略首尾空格
         String fruit = "  a ppl e  ";
@@ -51,13 +51,5 @@ public class Method_A {
         //9.连接,用的少一半用+
         String world = character2.concat("world");
         System.out.println(world);
-    }
-
-    @Test
-    public void String_Travers(){
-        String s="Jifeng";
-        for (int i = 0; i < s.length(); i++) {
-            System.out.println(s.charAt(i));    //通过索引获得每一个字符
-        }
     }
 }

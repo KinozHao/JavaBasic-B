@@ -10,11 +10,10 @@ public class ChangeCharacterWithUser {
     private static void Method2() { //进行分开的写法 条例清晰更容易理解
         String str2="huaiANGAOJI";
         //指定位置开始,指定位置结束,截取字符串substring的用法
-        String s2=str2.substring(0,1).toUpperCase();
-        //把指定字符串转换为大写/小写 toUpperCase 和 toLowerCase的用法
-        String s3=str2.substring(1).toLowerCase();
+        String s2 = str2.substring(0,1).toUpperCase();
+        String s3 = str2.substring(1).toLowerCase();
         //把字符串进行连接,concat的用法
-        String s4=s2.concat(s3);
+        String s4 =s2.concat(s3);
         System.out.println(s4);
     }
 

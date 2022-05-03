@@ -14,6 +14,7 @@ public class Method_B {
         //1.测试是不是以指定字符串开始或结尾
         System.out.println(s1.endsWith("ld"));
         System.out.println(s1.startsWith("ld"));
+
         //2.判断指定字符串是不是以指定索引开始的
         System.out.println(s1.startsWith("ll",2));
 

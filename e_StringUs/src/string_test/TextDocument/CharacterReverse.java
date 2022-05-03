@@ -24,12 +24,12 @@ public class CharacterReverse {
         System.out.println("enter the character");
         String str=sc.nextLine();
         //上面部分为键盘录入部分 要点Scanner 的nextLine方法
-        char [] cr=str.toCharArray();
+        char [] cr = str.toCharArray();
         //String的toCharArray方法 用来字符数组的转化
         String s=" ";
         //留着在遍历时候进行拼接
         for (int i = cr.length-1; i >= 0; i--) {
-            s=s+cr[i];
+            s = s+cr[i];
         }
         //上面部分为字符数组的反遍历部分和s的拼接
         System.out.println(s);

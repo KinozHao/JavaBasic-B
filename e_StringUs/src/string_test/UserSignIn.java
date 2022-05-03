@@ -11,7 +11,7 @@ import java.util.Scanner;
     2:给三次机会会用到for循环
     3:判断输入进去的字符串是否相同会用到equals方法
     4:因为键盘录入有字符串所以用nextLine方法,不要用nextInt方法
-    5:并提示有几次,需要用到判断,if
+    5:并提示有几次,需要用到判断,i
  */
 public class UserSignIn {
     public static void main(String[] args) {
