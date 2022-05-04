@@ -1,6 +1,11 @@
 package string_buffer_basic;
-//注 当缓冲区没有任何索引时候 用任何的方法都会 提示StringIndexOutOfBoundsException
-public class AddRemoveAlterMethod {
+/**
+ * @author kinoz
+ * @Date 2022/5/4 - 19:52
+ * @apiNote 一堆StringBuffer常用方法
+ * 当缓冲区没有任何索引时候 用任何的方法都会 提示StringIndexOutOfBoundsException
+ */
+public class SB_Method {
     public static void main(String[] args) {
         System.out.println("添加-------------");
         add();
@@ -8,10 +13,12 @@ public class AddRemoveAlterMethod {
         remove();
         System.out.println("修改-------------");
         alter();
+        System.out.println("截取-------------");
+        substring();
     }
 
     private static void alter() {
-        StringBuffer sb=new StringBuffer("haoguobin");
+        StringBuffer sb = new StringBuffer("haoguobin");
         sb.setCharAt(0,'K');    //修改指定位置字符
         sb.setCharAt(1,'I');
         sb.setCharAt(2,'G');
@@ -43,5 +50,18 @@ public class AddRemoveAlterMethod {
 
         sb.insert(2,"124"); //在指定位置插入字符串
         System.out.println("insert的添加结果为"+sb);
+    }
+
+    public static void substring() {
+        //返回值类型不再是StringBuffer本身 而是String类型
+        StringBuffer sb=new StringBuffer("jifeng");
+
+        String s=sb.substring(2);       //截取feng 从索引2开始
+        System.out.println(s);
+
+        String s2=sb.substring(0,2);       //截取ji 从索引0开始到索引2 不包含索引的尾
+        System.out.println(s2);
+
+        System.out.println(sb);            //对象本身不改变
     }
 }

@@ -10,7 +10,7 @@ import java.util.Arrays;
  * @Date 2022/5/2 - 14:31
  * @apiNote String类与其他结构之间的转换
  */
-public class Transform_Method {
+public class String_Transform {
     @Test
     public void withIntInteger() {
         //把int类型的数据转成字符串
