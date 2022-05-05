@@ -1,4 +1,4 @@
-package string_buffer_basic;
+package bufferbuilder_basic;
 /*
 * String与StringBuffer之间的转换
 * */

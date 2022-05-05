@@ -1,8 +1,7 @@
-package string_test.TextDocument;
-/*
-Question:
-在大的字符串中查找小的字符串出现的次数代码实现
-*/
+package string_test.algorithm;
+
+//在大的字符串中查找小的字符串出现的次数代码实现
+
 public class BigFindSmallTimes {
     public static void main(String[] args) {
         //定义大串
@@ -20,5 +19,7 @@ public class BigFindSmallTimes {
             max = max.substring(index+min.length());  //substring方法截取字符串
         }
         System.out.println(count);
+
     }
+
 }

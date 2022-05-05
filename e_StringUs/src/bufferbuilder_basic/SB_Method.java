@@ -1,4 +1,4 @@
-package string_buffer_basic;
+package bufferbuilder_basic;
 /**
  * @author kinoz
  * @Date 2022/5/4 - 19:52

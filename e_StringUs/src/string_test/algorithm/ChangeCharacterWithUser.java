@@ -1,5 +1,4 @@
-package string_test.TextDocument;
-//需求
+package string_test.algorithm;
 //把一个字符串的首字母转换为大写,其余的转换为小写;(只考虑英文大小写字母字符)
 public class ChangeCharacterWithUser {
     public static void main(String[] args) {

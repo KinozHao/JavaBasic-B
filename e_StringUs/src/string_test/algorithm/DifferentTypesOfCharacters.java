@@ -1,4 +1,4 @@
-package string_test.TextDocument;
+package string_test.algorithm;
 /*
 Question:
 统计一个字符串中,大写字母,小写字母,数字字符出现的次数,其他字符出现的次数
@@ -12,7 +12,7 @@ Function:
 */
 public class DifferentTypesOfCharacters {
     public static void main(String[] args) {
-        String s="ABCDEfjhijk1245@#%^^&";
+        String s ="ABCDEfjhijk1245@#%^^&";
 //      计数器
         int big=0;
         int small=0;
@@ -21,7 +21,7 @@ public class DifferentTypesOfCharacters {
 //      ------------------------
 //        获取每一个字符,通过for循环来进行遍历
         for (int i = 0; i <s.length() ; i++) {
-            char c=s.charAt(i);         //通过索引获得每一个字符
+            char c = s.charAt(i);         //通过索引获得每一个字符
 //            判断字符是否在这个范围内
             if (c >='A' && c<='Z'){
                 big++;

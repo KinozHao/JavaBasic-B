@@ -1,4 +1,4 @@
-package string_buffer_basic;
+package bufferbuilder_basic;
 /*
 * 开发中建议使用SBuffer或SBuilder来造字符串，可变，提高效率
 * */
