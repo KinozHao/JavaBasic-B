@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="GBK">
-    <file url="file://$PROJECT_DIR$/a_NormalClass/src/DateBasic.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/a_NormalClass/src/TimerBasic.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/a_NormalClass/src/about_date/DateBasic.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/a_NormalClass/src/array_us/ArrayToString.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/a_NormalClass/src/array_us/ArraysOverview.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/a_NormalClass/src/array_us/CharacterReverse.java" charset="GBK" />
