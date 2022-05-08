@@ -1,4 +1,4 @@
-package about_date;
+package about_date.deprecated;
 
 import org.junit.Test;
 
@@ -10,6 +10,7 @@ import java.util.Date;
  * @author kinoz
  * @Date 2022/5/7 - 22:45
  * @apiNote SimpleDateFormal类的使用
+ * 主要用于解析时间
  */
 public class SDFBasic {
     @Test
@@ -38,4 +39,14 @@ public class SDFBasic {
         Date dt2 = sdf.parse("公元 2022-05-07 10:53:29");
         System.out.println(dt2);
     }
+    //把字符串转换为sql下的date
+    @Test
+    public void ForInstance() throws ParseException {
+        String birth = "2020-09-08";
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Date dt = sdf.parse(birth);
+        java.sql.Date birthDate = new java.sql.Date(dt.getTime());
+        System.out.println(birthDate);
+    }
+
 }
