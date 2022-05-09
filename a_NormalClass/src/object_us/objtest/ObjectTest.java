@@ -1,4 +1,4 @@
-package object_us;
+package object_us.objtest;
 
 import object_us.objtest.Order;
 

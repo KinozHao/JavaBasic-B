@@ -7,8 +7,8 @@ package object_us.objtest;
  */
 public class MyDateTest {
     public static void main(String[] args) {
-        MyDate me = new MyDate(14,3,2022);
-        MyDate me2 = new MyDate(14,3,2022);
+        MyDate me = new MyDate(2014,3,12);
+        MyDate me2 = new MyDate(2034,6,32);
 
         //==比较地址值
         if (me == me2){

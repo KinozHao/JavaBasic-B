@@ -7,7 +7,7 @@ package object_us.objtest;
  */
 public class MyDate {
     private int day;
-    private int mouth;
+    private int month;
     private int year;
 
     public int getDay() {
@@ -19,11 +19,11 @@ public class MyDate {
     }
 
     public int getMouth() {
-        return mouth;
+        return month;
     }
 
     public void setMouth(int mouth) {
-        this.mouth = mouth;
+        this.month = mouth;
     }
 
     public int getYear() {
@@ -34,10 +34,10 @@ public class MyDate {
         this.year = year;
     }
 
-    public MyDate(int a, int b, int c) {
-        this.day = a;
-        this.mouth = b;
-        this.year = c;
+    public MyDate(int year, int month, int day) {
+        this.day = day;
+        this.month = month;
+        this.year = year;
     }
 
 /*    @Override
@@ -58,7 +58,7 @@ public class MyDate {
 
         if (obj instanceof MyDate){
             MyDate myDate = (MyDate)obj;
-            return this.day == myDate.day && this.mouth == myDate.mouth && this.year == myDate.year;
+            return this.day == myDate.day && this.month == myDate.month && this.year == myDate.year;
         }
         return false;
     }

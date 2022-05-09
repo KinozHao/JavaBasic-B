@@ -18,8 +18,8 @@ public class DTFBasic {
     public void normalUs(){
         DateTimeFormatter ter3 = DateTimeFormatter.ofPattern("GGG:yyyy-MM-dd HH:mm:ss");
         //格式化
-        String strtime = ter3.format(LocalDateTime.now());
-        System.out.println(strtime);
+        String str_time = ter3.format(LocalDateTime.now());
+        System.out.println(str_time);
 
         //解析
         System.out.println(ter3.parse("公元:2022-05-08 10:26:31"));
@@ -44,8 +44,7 @@ public class DTFBasic {
 
         //格式化
         DateTimeFormatter ter2 = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM).withZone(ZoneId.of("Asia/Shanghai"));
-        LocalDateTime ldt = LocalDateTime.now();
-        String strsj = ter2.format(ldt);
+        String strsj = ter2.format(LocalDateTime.now());
         System.out.println(strsj);
 
         //解析

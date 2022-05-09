@@ -41,7 +41,7 @@ public class SDFBasic {
     }
     //把字符串转换为sql下的date
     @Test
-    public void ForInstance() throws ParseException {
+    public void transform() throws ParseException {
         String birth = "2020-09-08";
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Date dt = sdf.parse(birth);
