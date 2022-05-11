@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/a_NormalClass/StringBasic/StringBasic.iml" filepath="$PROJECT_DIR$/a_NormalClass/StringBasic/StringBasic.iml" />
       <module fileurl="file://$PROJECT_DIR$/a_NormalClass/a_NormalClass.iml" filepath="$PROJECT_DIR$/a_NormalClass/a_NormalClass.iml" />
       <module fileurl="file://$PROJECT_DIR$/b_Exception/b_Exception.iml" filepath="$PROJECT_DIR$/b_Exception/b_Exception.iml" />
       <module fileurl="file://$PROJECT_DIR$/c_Multithread/c_Multithread.iml" filepath="$PROJECT_DIR$/c_Multithread/c_Multithread.iml" />
       <module fileurl="file://$PROJECT_DIR$/d_Assemble/d_Assemble.iml" filepath="$PROJECT_DIR$/d_Assemble/d_Assemble.iml" />
-      <module fileurl="file://$PROJECT_DIR$/e_PackageGroup/e_PackageGroup.iml" filepath="$PROJECT_DIR$/e_PackageGroup/e_PackageGroup.iml" />
-      <module fileurl="file://$PROJECT_DIR$/e_StringUs/e_StringUs.iml" filepath="$PROJECT_DIR$/e_StringUs/e_StringUs.iml" />
       <module fileurl="file://$PROJECT_DIR$/f_IOStream/f_IOStream.iml" filepath="$PROJECT_DIR$/f_IOStream/f_IOStream.iml" />
       <module fileurl="file://$PROJECT_DIR$/g_Reflex/g_Reflex.iml" filepath="$PROJECT_DIR$/g_Reflex/g_Reflex.iml" />
     </modules>

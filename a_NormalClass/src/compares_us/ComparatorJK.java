@@ -8,8 +8,8 @@ import java.util.Comparator;
 /**
  * @author kinoz
  * @Date 2022/5/9 - 21:23
- * @apiNote Comparator可以在不影响原本类的compareTo()方法的基础上
- * 再写一种新的规则来排序
+ * @apiNote Comparator定制排序
+ * 不影响原本类的compareTo()方法的基础上，再写一种新的规则来排序
  */
 public class ComparatorJK {
     String[] str = new String[]{"a","c","b","k","m","n","c"};
@@ -30,6 +30,7 @@ public class ComparatorJK {
         });
         System.out.println(Arrays.toString(str));
     }
+
     @Test
     public void Goods_test(){
         Goods[] goods = new Goods[6];
@@ -43,25 +44,39 @@ public class ComparatorJK {
 
         //按照产品名称从低到高，再按照价格从高到低
         //sort为排序，new Comparator里面为排序规则
-        Arrays.sort(goods,new Comparator() {
+        Comparator goodsCompare = new Comparator() {
             @Override
             public int compare(Object o1, Object o2) {
                 if (o1 instanceof Goods && o2 instanceof Goods){
-                    Goods goods1 = (Goods)o1;
-                    Goods goods2 = (Goods)o2;
-                    //1若商品名称相同
-                    if (goods1.getName().equals(goods2.getName())){
-                        //2商品价格从高到低排列
-                        return -Double.compare(goods1.getPrice(),goods2.getPrice());
+                    Goods A = (Goods)o1;
+                    Goods B = (Goods)o2;
+                    if (A.getName().equals(B.getName())){
+                        return -Double.compare(A.getPrice(),B.getPrice());
                     }else {
-                        //3名称不同时，商品价格从高到低
-                        return goods1.getName().compareTo(goods2.getName());
+                        return A.getName().compareTo(B.getName());
                     }
                 }
-                throw new RuntimeException("类型不一致");
+                return 0;
             }
-
-        });
+        };
+        Arrays.sort(goods,goodsCompare);
         System.out.println(Arrays.toString(goods));
+
+        //lambda表达式写法
+        Comparator bj = (o1, o2) -> {
+            if (o1 instanceof Goods && o2 instanceof Goods){
+                Goods goods1 = (Goods)o1;
+                Goods goods2 = (Goods)o2;
+                //1若商品名称相同
+                if (goods1.getName().equals(goods2.getName())){
+                    //2商品价格从高到低排列
+                    return -Double.compare(goods1.getPrice(),goods2.getPrice());
+                }else {
+                    //3名称不同时，商品价格从高到低
+                    return goods1.getName().compareTo(goods2.getName());
+                }
+            }
+            throw new RuntimeException("类型不一致");
+        };
     }
 }

@@ -44,7 +44,7 @@ public class Goods implements Comparable {
     public int compareTo(Object o){
         if (o instanceof Goods){
             Goods goods = (Goods)o;
-            //当前对象大于形参 输出正数
+            //方式一:当前对象大于形参 输出正数
             if (this.price > goods.price){
                 return 1;
                 //当前对象小于形参 输出负数
@@ -55,6 +55,8 @@ public class Goods implements Comparable {
                 //默认为从低到高进行排序 加个-就是反向操作
                 return -this.name.compareTo(goods.name);
             }
+            //方式2:
+            //return Double.compare(this.price,goods.price);
         }
         throw new RuntimeException("类型不一致");
     }
