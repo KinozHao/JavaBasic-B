@@ -1,3 +1,7 @@
+package about_date;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Timer;
@@ -17,7 +21,8 @@ class TimerBasic extends TimerTask {
 
     public static void main(String[] args) throws InterruptedException {
         Timer t = new Timer();
-        t.schedule(new TimerBasic(), new Date(2022, Calendar.JANUARY, 26, 19, 12, 10), 1000);
+
+        t.schedule(new TimerBasic(),new Date(2018,Calendar.FEBRUARY,22,18,25),1000);
         while (true) {
             Thread.sleep(1000);
             System.out.println(new Date());
