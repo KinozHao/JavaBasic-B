@@ -7,7 +7,6 @@
       <module fileurl="file://$PROJECT_DIR$/b_Exception/b_Exception.iml" filepath="$PROJECT_DIR$/b_Exception/b_Exception.iml" />
       <module fileurl="file://$PROJECT_DIR$/c_Multithread/c_Multithread.iml" filepath="$PROJECT_DIR$/c_Multithread/c_Multithread.iml" />
       <module fileurl="file://$PROJECT_DIR$/d_Collections/d_Collections.iml" filepath="$PROJECT_DIR$/d_Collections/d_Collections.iml" />
-      <module fileurl="file://$PROJECT_DIR$/e_EnumBasic/e_EnumBasic.iml" filepath="$PROJECT_DIR$/e_EnumBasic/e_EnumBasic.iml" />
       <module fileurl="file://$PROJECT_DIR$/f_IOStream/f_IOStream.iml" filepath="$PROJECT_DIR$/f_IOStream/f_IOStream.iml" />
       <module fileurl="file://$PROJECT_DIR$/g_Reflex/g_Reflex.iml" filepath="$PROJECT_DIR$/g_Reflex/g_Reflex.iml" />
     </modules>

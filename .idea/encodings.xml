@@ -48,38 +48,38 @@
     <file url="file://$PROJECT_DIR$/c_Multithread/src/e_thread_us/ThreadBasic.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/c_Multithread/src/e_thread_us/excutor_basic/BubbleThread.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/c_Multithread/src/e_thread_us/excutor_basic/SumThread.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/GenericStudy/GenericBasic.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/GenericStudy/ListBasic.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/GenericStudy/RegularUs.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/GenericStudy/Traversing.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/collection_us/CollectionBasic.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/collection_us/CollectionMethod.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/collection_us/CollectionWithAllMethod.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/collection_us/CollectionsTools.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/collection_us/StudentView.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/collection_us/list_us/ArrayListStudy/AITravers.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/collection_us/list_us/ArrayListStudy/AlBasic.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/collection_us/list_us/ArrayListStudy/AlMethod.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/collection_us/list_us/ArrayListStudy/PracticeQuestion/DemoAarrayListStudent.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/collection_us/list_us/ArrayListStudy/PracticeQuestion/DemoArrayListPrint.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/collection_us/list_us/ArrayListStudy/PracticeQuestion/Notebook.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/collection_us/set_us/HashSet/LinkedHashSetss.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/iterator_us/ConvertTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/iterator_us/Interator.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/map_us/HashMapStudy/HashMapAndHashtable.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/map_us/HashMapStudy/HashMapMethod.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/map_us/HashMapStudy/HashMapOverview.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/map_us/HashMapStudy/HashMapTraversing.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/map_us/HashMapStudy/HashMapTraversing2.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/map_us/HashMapStudy/ObjectKey.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/map_us/HashMapStudy/Student.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/map_us/TreeMapStudy/MapEntry的解释.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/map_us/TreeMapStudy/TreeMapUsing.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/map_us/maptest/BillionsHeros.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/map_us/maptest/InformTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/map_us/maptest/Nums.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/map_us/maptest/Poker.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/map_us/maptest/PokerPlus.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/a_collection/CollectionBasic.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/a_collection/CollectionFF_A.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/a_collection/CollectionFF_B.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/a_collection/StudentView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/b_list/ArrayList_us/AITravers.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/b_list/ArrayList_us/AlBasic.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/b_list/ArrayList_us/AlMethod.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/b_list/ArrayList_us/PracticeQuestion/DemoAarrayListStudent.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/b_list/ArrayList_us/PracticeQuestion/DemoArrayListPrint.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/b_list/ArrayList_us/PracticeQuestion/Notebook.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/b_set/LinkedBasic.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/c_map/HashMapStudy/HashMapAndHashtable.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/c_map/HashMapStudy/HashMapMethod.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/c_map/HashMapStudy/HashMapOverview.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/c_map/HashMapStudy/HashMapTraversing.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/c_map/HashMapStudy/HashMapTraversing2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/c_map/HashMapStudy/ObjectKey.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/c_map/HashMapStudy/Student.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/c_map/TreeMapStudy/MapEntry的解释.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/c_map/TreeMapStudy/TreeMapUsing.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/c_map/maptest/BillionsHeros.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/c_map/maptest/InformTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/c_map/maptest/Nums.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/c_map/maptest/Poker.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/c_map/maptest/PokerPlus.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/d_generic/GenericBasic.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/d_generic/ListBasic.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/d_generic/RegularUs.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/d_generic/Traversing.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/e_iterator/ConvertTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/e_iterator/Interator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/z_tools/CollectionsTools.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/ByteStream/Copy/CopyIOSteamCore.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/ByteStream/Copy/CopyMethod2.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/ByteStream/Copy/CopyMethod3.java" charset="GBK" />
