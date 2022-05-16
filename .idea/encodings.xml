@@ -52,12 +52,13 @@
     <file url="file://$PROJECT_DIR$/d_Collections/src/a_collection/CollectionFF_A.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Collections/src/a_collection/CollectionFF_B.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Collections/src/a_collection/StudentView.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/b_list/ArrayList_us/AITravers.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/b_list/ArrayList_us/AlBasic.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/b_list/ArrayListBasic.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Collections/src/b_list/ArrayList_us/AlMethod.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/b_list/ArrayList_us/PracticeQuestion/DemoAarrayListStudent.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/b_list/ArrayList_us/PracticeQuestion/DemoArrayListPrint.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/b_list/ArrayList_us/PracticeQuestion/Notebook.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/b_list/QueueUs.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/b_list/TraversElementAL.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/b_list/list_test/DemoArrayListPrint.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/b_list/list_test/Notebook.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/b_list/list_test/StudentQAF.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Collections/src/b_set/LinkedBasic.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Collections/src/c_map/HashMapStudy/HashMapAndHashtable.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Collections/src/c_map/HashMapStudy/HashMapMethod.java" charset="GBK" />
@@ -76,9 +77,9 @@
     <file url="file://$PROJECT_DIR$/d_Collections/src/d_generic/GenericBasic.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Collections/src/d_generic/ListBasic.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Collections/src/d_generic/RegularUs.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/d_generic/Traversing.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Collections/src/e_iterator/ConvertTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Collections/src/e_iterator/Interator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/e_iterator/Travers.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Collections/src/z_tools/CollectionsTools.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/ByteStream/Copy/CopyIOSteamCore.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/ByteStream/Copy/CopyMethod2.java" charset="GBK" />

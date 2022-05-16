@@ -1,10 +1,10 @@
-package d_generic;
+package e_iterator;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Traversing {
+public class Travers {
     public static void main(String[] args) {
         System.out.println("forÑ­»·±éÀú");
         forCircle();

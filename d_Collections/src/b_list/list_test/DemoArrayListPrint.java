@@ -1,4 +1,4 @@
-package b_list.ArrayList_us.PracticeQuestion;
+package b_list.list_test;
 
 import java.util.ArrayList;
 /*
@@ -25,7 +25,7 @@ public class DemoArrayListPrint {
             if (king==list.size()-1) {
                 System.out.println(name + "}");
             }else{
-        System.out.print(name+"@");
+        System.out.print(name+"->");
             }
         }
     }

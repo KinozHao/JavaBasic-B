@@ -1,4 +1,4 @@
-package b_list.ArrayList_us.PracticeQuestion;
+package b_list.list_test;
 
 
 import java.util.ArrayList;

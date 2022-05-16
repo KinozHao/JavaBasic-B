@@ -1,14 +1,14 @@
-package b_set.TreeSet;
+package b_set.compare;
 
-public class Student {
+public class StuB {
     private String name;
     private int age;
 
-    public Student(String name, int age) {
+    public StuB(String name, int age) {
         this.name = name;
         this.age = age;
     }
-    public Student() {
+    public StuB() {
     }
 
     public String getName() {

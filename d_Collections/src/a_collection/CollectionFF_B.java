@@ -1,22 +1,15 @@
 package a_collection;
 
+import org.junit.Test;
 import z_tools.CollectionNote;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 
 @CollectionNote("带All的方法具体使用")
 public class CollectionFF_B {
-    public static void main(String[] args) {
-        addAllMethod();
-        System.out.println("--------");
-        RemoveAllMethod();
-        System.out.println("--------");
-        ContainsAllMethod();
-        System.out.println("--------");
-        RetainAllMethod();
-    }
-
-    private static void addAllMethod() {
+    @Test
+    public void addAllMethod() {
         Collection cl1=new ArrayList();
         cl1.add("h");
         cl1.add("e");
@@ -30,8 +23,8 @@ public class CollectionFF_B {
         cl1.add(cl2);       //把cl2看成一个对象添加到cl1中
         System.out.println(cl1);
     }
-
-    private static void RemoveAllMethod() {
+    @Test
+    public void RemoveAllMethod() {
         Collection a=new ArrayList();
         a.add("M");
         a.add("a");
@@ -40,40 +33,39 @@ public class CollectionFF_B {
         Collection b=new ArrayList();
         b.add("M");
         b.add("a");
-
-        boolean c=a.removeAll(b);           //删除的是交集
-        System.out.println(c);              //没有交集不删除,false 有的话true
+        //相当于把差集删除
+        boolean c = a.removeAll(b);
+        System.out.println(c);
         System.out.println(a);
     }
 
-    private static void RetainAllMethod() {
-        Collection c1=new ArrayList();
+    @Test
+    public void ContainsAllMethod() {
+        Collection c1 = new ArrayList();
         c1.add("a");
         c1.add("d");
         c1.add("b");
-        Collection c2=new ArrayList();
-        c2.add("a");
-        c2.add("b");
-        c2.add("ox");
-        c2.add("n");
-        //取交集,如果调用的集合改变就返回true,如果调用的集合不变就返回false
-        boolean bl=c1.retainAll(c2);
-        System.out.println(bl);
-        System.out.println(c1);
-    }
-
-    private static void ContainsAllMethod() {
-        Collection c1=new ArrayList();
-        c1.add("a");
-        c1.add("d");
-        c1.add("b");
-        Collection c2=new ArrayList();
-        c2.add("a");
-        c2.add("b");
+        //通过asList做一个临时列表,多态体现
+        Collection c2 = Arrays.asList("a","b");
 
         boolean bl = c1.containsAll(c2);      //判断c1是否包含c2
         System.out.println(bl);
         System.out.println(c1);
     }
+    @Test
+    public void RetainAllMethod() {
+        Collection c1 = new ArrayList();
+        c1.add("a");
+        c1.add("d");
+        c1.add("b");
+        Collection c2 = Arrays.asList("a","b");
+        //取交集,最终的结果赋给了c1
+        boolean bl = c1.retainAll(c2);
+        System.out.println(bl);
+        System.out.println(c1);
 
+        //链式写法
+        System.out.println(Arrays.asList("a","c").equals(c2));
+        System.out.println(c1.hashCode());
+    }
 }

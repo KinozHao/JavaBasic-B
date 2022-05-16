@@ -1,15 +1,15 @@
-package b_set.TreeSet;
+package b_set.compare;
 
-public class BaseStudent extends Student{
+public class StuA extends StuB {
     private String name;
     private int age;
 
-    public BaseStudent(String name, int age) {
+    public StuA(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
-    public BaseStudent() {
+    public StuA() {
     }
 
     public String getName() {

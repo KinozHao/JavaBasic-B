@@ -1,4 +1,4 @@
-package b_list.ArrayList_us.PracticeQuestion;
+package b_list.list_test;
 import java.util.ArrayList;
 /*
 Question:
@@ -10,7 +10,7 @@ Thought:
 4:Add four Student Object to the ArrayList:add
 5:Traversing the ArrayList ALSO THINGS:for`size`get
  */
-public class DemoAarrayListStudent {
+class StudentQAF {
     public static void main(String[] args) {
         Student one=new Student("’‘¿ˆ”±",20);
         Student two=new Student("—Ó√›",27);
