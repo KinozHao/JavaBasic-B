@@ -78,8 +78,8 @@
     <file url="file://$PROJECT_DIR$/d_Collections/src/d_generic/ListBasic.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Collections/src/d_generic/RegularUs.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Collections/src/e_iterator/ConvertTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/d_Collections/src/e_iterator/Interator.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Collections/src/e_iterator/Travers.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/d_Collections/src/z_tools/CollTraver.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/d_Collections/src/z_tools/CollectionsTools.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/ByteStream/Copy/CopyIOSteamCore.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/ByteStream/Copy/CopyMethod2.java" charset="GBK" />

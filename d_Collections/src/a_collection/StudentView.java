@@ -35,10 +35,7 @@ public class StudentView {
 
     @Override           //toString方法可以更方便的显示属性值
     public String toString() {
-        return "student{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
+        return "["+name+"|"+age+"]";
     }
 
     @Override

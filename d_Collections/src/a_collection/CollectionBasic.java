@@ -8,6 +8,7 @@ import java.util.*;
  * 直接继承它的接口有两个(List Set)
  * 实现List接口的常用类(LinkedList ArrayList Vector)
  * 实现Set接口的常用类(HashSet TreeSet)
+ * @see Collection
 * */
 public class CollectionBasic {
     @Test
@@ -24,8 +25,11 @@ public class CollectionBasic {
         arr[2] =new StudentView("Folk",19);
 
         //遍历这个学生数组
-        for (int i = 0; i < arr.length; i++) {
+        /*for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
+        }*/
+        for (StudentView svw : arr){
+            System.out.print(svw+" ");
         }
     }
 
