@@ -46,10 +46,11 @@ public class CollTraver {
         }
 
     }
-    public static void ForTravers(Collection c){
-        Iterator ddq = c.iterator();
+    //若使用普通for形参不可为Collection类型，因为get方法为实例类特有的
+    public static void ForTravers(ArrayList c){
+        //3:normal for
         for (int i = 0; i < c.size(); i++) {
-            System.out.println(ddq.next());
+            System.out.println(c.get(i));
         }
     }
 

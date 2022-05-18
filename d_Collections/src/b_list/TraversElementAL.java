@@ -9,15 +9,15 @@ public class TraversElementAL {
         list.add("ËÎĞ¡±¦");
         list.add("Íõ»¢");
         list.add("Ğ¡ÉòÑô");
-        for (int b = 0; b < list.size(); b++) {
-            System.out.print(list.get(b)+"¡¤");
+        for (Object obj : list){
+            System.out.print(obj+" ");
         }
     }
     @Test
     public void SzTransform(){
         int []num={10,40,80,25,36};
-        for (int i = 0; i < num.length; i++) {
-            System.out.println(num[i]);
+        for (int i : num) {
+            System.out.print(i+" ");
         }
     }
 }
