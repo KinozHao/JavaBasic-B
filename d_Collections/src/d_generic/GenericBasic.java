@@ -1,33 +1,21 @@
 package d_generic;
-import java.util.ArrayList;
-import java.util.List;
+
+import org.junit.Test;
+import z_tools.CollTraver;
+import java.util.Vector;
+
 /** @apiNote
- * 没有泛型的弊端
- * 如果你要存储了10个英雄
- * 存放1个武器的时候就很麻烦
- * 武器还需要进行强转才可以使用
- * 时间长了可能记不清楚是什么类型的对象了
+ * 让一个集合只存储一种数据类型的数据
+ * Generic是一种规范
  * */
 public class GenericBasic {
-        public static void main(String[] args) {
-            WithGeneric();
-            NoneGeneric();
-        }
-
-    private static void NoneGeneric() {
-
-        List all = new ArrayList();
-        all.add(new LolView("剑圣"));
-        all.add("剑圣长刀");
-        System.out.println(all);
-
-    }
-
-    private static void WithGeneric() {
-        //规定了泛型类型为LOLView就只能写里面规定的参数
-        List<LolView> lol = new ArrayList<>();
-        lol.add(new LolView("提莫","毒液竹管"));
-        //lol.add("大砍刀");
-        System.out.println(lol);
+    @Test
+    public void WithGeneric() {
+        Vector<String> vector = new Vector();
+        vector.add("俺的圣剑");
+        vector.add("信息学院");
+        vector.add("机械学院");
+        //vector.add(25.34); 泛型指定类型为String就只能添加String类型的数据
+        CollTraver.IteratorTravers(vector);
     }
 }

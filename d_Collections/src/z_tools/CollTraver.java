@@ -35,8 +35,9 @@ public class CollTraver {
         //判断是否还有下一个元素
         while (ddq.hasNext()){
             //next让指针下移，下移以后集合位置上的元素返回
-            System.out.println(ddq.next());
+            System.out.print(ddq.next()+" ");
         }
+        System.out.println();
     }
 
     public static void ForeachTravers(Collection c){
@@ -44,6 +45,7 @@ public class CollTraver {
         for (Object obj:c){
             System.out.print(obj+" ");
         }
+        System.out.println();
 
     }
     //若使用普通for形参不可为Collection类型，因为get方法为实例类特有的

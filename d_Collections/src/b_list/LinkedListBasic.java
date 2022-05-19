@@ -1,15 +1,17 @@
 package b_list;
 
-import java.util.Iterator;
+import z_tools.CollTraver;
+
 import java.util.LinkedList;
 
 public class LinkedListBasic {
     public static void main(String[] args) {
+        //带有first和last的方法为LinkedList特有方法
         LinkedList<LolView> elements = new LinkedList<>();
-        elements.addFirst(new LolView("艾欧尼亚"));       //最前面添加对象
-        elements.addLast(new LolView("扭曲丛林"));           //最后面添加对象
+        elements.addFirst(new LolView("艾欧尼亚"));
+        elements.addLast(new LolView("扭曲丛林"));
         elements.addFirst(new LolView("德玛西亚"));
-        Method(elements);
+        LLTraver(elements);
 
         //获取头/尾元素
         System.out.println(elements.getFirst());
@@ -21,26 +23,12 @@ public class LinkedListBasic {
 
     }
 
-    private static void Method(LinkedList<LolView> in) {
-        /*//1.Normal for
-        for (int i = 0; i < in.size(); i++) {
-            System.out.print(in.get(i)+" ");
-        }
-        System.out.println();
-
-        //2.PlusVersion for
-        System.out.println();
-        for (LOL H:in){
-            System.out.print(H+" ");
-        }*/
-
-        //3.Generic
-        Iterator iterator = in.iterator();
-        while (iterator.hasNext()){
-            System.out.print(iterator.next()+" ");
-        }
-        System.out.println();
-
+    private static void LLTraver(LinkedList<LolView> data) {
+        /**
+         * CollTraver provide kinds of travers method
+        * @see CollTraver
+        * */
+        CollTraver.IteratorTravers(data);
     }
 }
 class LolView {

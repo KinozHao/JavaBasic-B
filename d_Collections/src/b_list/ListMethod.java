@@ -1,6 +1,7 @@
 package b_list;
 
 import org.junit.Test;
+import z_tools.CollTraver;
 import z_tools.CollectionNote;
 
 import java.util.*;
@@ -8,7 +9,9 @@ import java.util.*;
 /**
  * @author kinoz
  * @Date 2022/5/18 - 21:59
- * @apiNote
+ * @apiNote List接口下的通用方法
+ * @see List
+ * @see CollTraver
  */
 public class ListMethod {
     @Test
@@ -39,6 +42,8 @@ public class ListMethod {
         elements.add(1342);
         elements.add(14422);
         elements.add(9742342);
+        //我们自己提供过的遍历方法
+        CollTraver.ForeachTravers(elements);
         Iterator<Integer> iterator = elements.iterator();
         //包括头不包括尾[左闭右开]
         System.out.println(elements.subList(1,3));
