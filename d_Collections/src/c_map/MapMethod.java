@@ -23,7 +23,9 @@ public class MapMethod {
         System.out.println(go2);
         go.clear();//Çå³ý
         System.out.println(go);
+
     }
+
     @Test
     //ÅÐ¶Ï
     public void Judge(){
