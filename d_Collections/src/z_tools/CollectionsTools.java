@@ -2,10 +2,30 @@ package z_tools;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.*;
+
 //和Arrays一样Collections作为一个工具类(它们都是单列模式的体现)
 public class CollectionsTools {
+    @Test
+    @CollectionNote("Collections排序方法")
+    public void SortMethod() {
+        ArrayList<String> data=new ArrayList<>();
+        data.add("a");
+        data.add("c");
+        data.add("g");
+        data.add("d");
+        data.add("5");
+        Collections.sort(data); //排序 默认自然排序
+        System.out.println(data);
+        Collections.shuffle(data);  //打乱集合元素
+        System.out.println(data);
+        ArrayList<String> dataB=new ArrayList<>();
+        dataB.add("a");
+        dataB.add("c");
+        Collections.swap(dataB,0,1); //交换指定索引位置
+        System.out.println(dataB);
+    }
+
     @Test
     @CollectionNote("Collections查找方法")
     public void binarySearch() {
@@ -13,16 +33,10 @@ public class CollectionsTools {
         al.add("a");al.add("c");
         al.add("g");al.add("e");al.add("c");
         System.out.println(Collections.binarySearch(al,"g"));
-    }
-    @Test
-    @CollectionNote("Collections排序方法")
-    public void SortMethod() {
-        ArrayList<String> al=new ArrayList<>();
-        al.add("a");al.add("c");al.add("g");
-        al.add("e");al.add("c");
-        System.out.println(al); //初始
-        Collections.sort(al);   //排序
-        System.out.println(al); //排序后
+        List list = Arrays.asList(new Object[al.size()]);
+        //赋值集合1全部元素到集合2
+        Collections.copy(list,al);
+        System.out.println(list);
     }
     @Test
     @CollectionNote("一些其他的常用方法")
@@ -36,5 +50,17 @@ public class CollectionsTools {
         System.out.println(al);
         Collections.shuffle(al);                    //数组随机改变位置
         System.out.println(al);
+        int c = Collections.frequency(al, "c"); //相同元素出现的次数
+        System.out.println(c);
+    }
+    @Test
+    @CollectionNote("synchronized线程安全的方法")
+    public void synchronizedMethod(){
+        ArrayList arr = new ArrayList();
+        Collection arr2 = new LinkedList();
+        List list = Collections.synchronizedList(arr);
+        Collection col = Collections.synchronizedCollection(arr2);
+        HashMap map = new HashMap();
+        Map newmap = Collections.synchronizedMap(map);
     }
 }
