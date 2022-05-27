@@ -1,12 +1,12 @@
-package c_map;
+package d_generics.generic_test;
 
 import java.util.Objects;
 
-public class MapData implements Comparable {
+public class Datas implements Comparable<Datas> {
         private String name;
         private int age;
 
-    public MapData(String name, int age) {
+    public Datas(String name, int age) {
         this.name = name;
         this.age = age;
     }
@@ -31,7 +31,7 @@ public class MapData implements Comparable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        MapData student = (MapData) o;
+        Datas student = (Datas) o;
 
         if (age != student.age) return false;
         return Objects.equals(name, student.name);
@@ -44,11 +44,10 @@ public class MapData implements Comparable {
         return result;
     }
 
-    @Override
     //写法一
-    public int compareTo(Object o) {
-        if (o instanceof MapData){
-            MapData mo = (MapData)o;
+    /*public int compareTo(Object o) {
+        if (o instanceof Datas){
+            Datas mo = (Datas)o;
             int compare = this.getName().compareTo(mo.getName());
             if (compare != 0){
                 return compare;
@@ -57,6 +56,17 @@ public class MapData implements Comparable {
             }
         }else {
             throw new RuntimeException("输入类型不匹配");
+        }
+    }*/
+
+    @Override
+    //使用泛型后
+    public int compareTo(Datas o) {
+        int compare = this.getName().compareTo(o.getName());
+        if (compare != 0){
+            return compare;
+        }else {
+            return Integer.compare(this.getAge(),o.getAge());
         }
     }
     //写法二

@@ -33,10 +33,12 @@ public class CollectionsTools {
         al.add("a");al.add("c");
         al.add("g");al.add("e");al.add("c");
         System.out.println(Collections.binarySearch(al,"g"));
+        //1.获取al集合的长度，通过Arrays工具类存放在一个新的集合中
         List list = Arrays.asList(new Object[al.size()]);
-        //赋值集合1全部元素到集合2
+        //2.通过copy方法赋值集合1全部元素到集合2
         Collections.copy(list,al);
         System.out.println(list);
+
     }
     @Test
     @CollectionNote("一些其他的常用方法")

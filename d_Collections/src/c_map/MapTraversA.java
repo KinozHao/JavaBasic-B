@@ -37,9 +37,9 @@ public class MapTraversA {
         Iterator<Map.Entry<String, Integer>> iterator = entries.iterator();
         while (iterator.hasNext()){
             //3.把iterator转换为Entry类型
-            Map.Entry<String, Integer> entryData = iterator.next();
+            Map.Entry<String, Integer> keyvalue = iterator.next();
             //4.调用Entry中方法，完成key_value的遍历
-            System.out.println(entryData.getKey()+"->"+entryData.getValue());
+            System.out.println(keyvalue.getKey()+"->"+keyvalue.getValue());
         }
     }
     @Test

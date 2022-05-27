@@ -12,7 +12,7 @@ public class PropertiesBasic{
     public static void main(String[] args) throws Exception{
         Properties p = new Properties();
         //1.加载配置文件
-        p.load(new FileInputStream("d_Collections/jdbc.properties"));
+        p.load(new FileInputStream("./d_Collections/jdbc.properties"));
         //2.通过key获取配置文件value
         p.getProperty("name");
         p.getProperty("age");
