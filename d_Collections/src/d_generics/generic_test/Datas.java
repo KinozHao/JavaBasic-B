@@ -6,6 +6,10 @@ public class Datas implements Comparable<Datas> {
         private String name;
         private int age;
 
+    public Datas() {
+
+    }
+
     public Datas(String name, int age) {
         this.name = name;
         this.age = age;

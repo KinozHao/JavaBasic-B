@@ -29,13 +29,17 @@ public class CollTraver {
         return ibc;
     }
 
-    public static void IteratorTravers(Collection c){
+    //通配符的使用 表示此遍历方法可以遍历任意泛型的数据
+    public static void IteratorTravers(Collection<?> c){
         //迭代器初始化调用collection下的iterator方法
-        Iterator ddq = c.iterator();
+        Iterator<?> ddq = c.iterator();
         //判断是否还有下一个元素
         while (ddq.hasNext()){
-            //next让指针下移，下移以后集合位置上的元素返回
-            System.out.println(ddq.next()+" ");
+            /*//next让指针下移，下移以后集合位置上的元素返回
+            System.out.println(ddq.next()+" ");*/
+            //通配符用Object类接收
+            Object obj = ddq.next();
+            System.out.println(obj);
         }
     }
 

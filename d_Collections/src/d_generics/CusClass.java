@@ -9,6 +9,9 @@ import java.util.List;
  * @author kinoz
  * @Date 2022/5/27 - 14:48
  * @apiNote 自定义泛型类的使用
+ * 可参考JDK中集合的泛型写法
+ * @see java.util.Collection
+ * @see List
  */
 public class CusClass {
     @Test

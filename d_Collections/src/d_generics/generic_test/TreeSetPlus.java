@@ -8,6 +8,9 @@ import java.util.*;
  * @author kinoz
  * @Date 2022/5/27 - 14:12
  * @apiNote 使用泛型优化TreeMap的排序
+ * @see TreeSet
+ * @see Comparable
+ * @see Comparator
  */
 public class TreeSetPlus {
     @Test
