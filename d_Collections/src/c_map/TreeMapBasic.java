@@ -20,12 +20,8 @@ public class TreeMapBasic {
         tree.put(new MapData("dani",70),"Matins City");
 
         //travers map
-        Set<MapData> mapData = tree.keySet();
-        Iterator<MapData> iterator = mapData.iterator();
-        while (iterator.hasNext()){
-            MapData key = iterator.next();
-            String value = tree.get(key);
-            System.out.println(key+"->"+value);
+        for (Map.Entry<MapData,String> entry:tree.entrySet()){
+            System.out.println(entry);
         }
 
     }

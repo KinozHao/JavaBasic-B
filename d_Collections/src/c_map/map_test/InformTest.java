@@ -16,7 +16,7 @@ public class InformTest {
         area_b.put(new InformData("戚继光",2),"稠江");
         area_b.put(new InformData("驼宾王",1),"福田");
 
-        //定义一个城市分类
+        //定义一个城市合集 泛型嵌套
         HashMap<HashMap<InformData,String>,String> city =new HashMap<>();
         city.put(area_a,"浙江省杭州市");
         city.put(area_b,"浙江省义乌市");
@@ -32,7 +32,7 @@ public class InformTest {
             for (InformData key2 : key.keySet()){
                 String value2=key.get(key2);
                 //key代表的是人   value2代表的地区    value代表的是省份城市
-                System.out.println(key+"="+value2+"="+value);
+                System.out.println(key+"==="+value2+"==="+value);
 
             }
         }

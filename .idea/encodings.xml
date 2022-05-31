@@ -90,27 +90,27 @@
     <file url="file://$PROJECT_DIR$/f_IOStream/src/a_file/FileMethodII.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/a_file/MakeFeatures.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/a_file/RenameAndDeleteFeatures.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_IOStream/src/b_byte/Copy/CopyIOSteamCore.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/b_byte/Copy/CopyMethod2.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/b_byte/Copy/CopyMethod3.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_IOStream/src/b_byte/FileInputStreamUs.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_IOStream/src/b_byte/FileOutputStreamUs.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/b_byte/Copy/PicCopy.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/b_byte/FISBasic.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/b_byte/FOSBasic.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/b_byte/IOExceptions.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/b_byte/IOMethod.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_IOStream/src/b_byte/StreamException.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_IOStream/src/b_byte/io_test/PictureTest/PictureSecret.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_IOStream/src/b_byte/io_test/TextB.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_IOStream/src/b_byte/io_test/TextC.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_IOStream/src/c_character/Demo1FileReader.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/c_character/BufferedBasic.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/c_character/Demo2FileWriter.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_IOStream/src/c_character/Demo3Copy.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/c_character/Demo4CopyTwo.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_IOStream/src/c_character/Demo5Buffered.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_IOStream/src/c_character/Demo6LineNumberReader.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_IOStream/src/c_character/Demo7Wrap.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/c_character/Demo8TransIO.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_IOStream/src/c_character/Text/Text1.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_IOStream/src/c_character/Text/Text2.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_IOStream/src/c_character/Text/Text3.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/c_character/FileCopy.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/c_character/FileRWBasic.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/c_character/LNRBasic.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/decorator_design/DecoratorPattern.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/io_test/PictureTest/PictureSecret.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/io_test/Text1.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/io_test/Text2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/io_test/Text3.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/io_test/TextB.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/io_test/TextC.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/g_Reflex/config.properties.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/g_Reflex/src/Bean/Person.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/g_Reflex/src/Bean/helloword.java" charset="UTF-8" />

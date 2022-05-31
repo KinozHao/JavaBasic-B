@@ -18,6 +18,7 @@ public class TreeSetBasic {
         CollTraver.IteratorTravers(datas);
 
         //定制排序
+        //没有使用泛型的情况下
         Comparator CusCompare = new Comparator() {
             @Override
             public int compare(Object o1, Object o2) {
@@ -30,7 +31,14 @@ public class TreeSetBasic {
                 }
             }
         };
-        TreeSet<SetData> treeData = new TreeSet<>(CusCompare);
+        //使用了泛型
+        Comparator<SetData> cust = new Comparator<>() {
+            @Override
+            public int compare(SetData o1, SetData o2) {
+                return Integer.compare(o1.getAge(),o2.getAge());
+            }
+        };
+        TreeSet<SetData> treeData = new TreeSet<>(cust);
         treeData.add(new SetData("Jack",54));
         treeData.add(new SetData("Aicci",32));
         treeData.add(new SetData("Long",94));
