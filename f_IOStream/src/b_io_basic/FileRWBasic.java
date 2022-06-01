@@ -1,4 +1,4 @@
-package c_character;
+package b_io_basic;
 
 import org.junit.Test;
 
@@ -7,6 +7,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 /**
+ * 字符流
  * @author kinoz
  * @Date 2022/5/31 - 15:20
  * @apiNote Reader和Writer的使用

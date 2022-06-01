@@ -1,4 +1,4 @@
-package c_character;
+package c_buffered;
 
 import org.junit.Test;
 
