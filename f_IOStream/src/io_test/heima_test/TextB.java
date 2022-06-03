@@ -1,4 +1,4 @@
-package io_test;
+package io_test.heima_test;
 
 //¿½±´ÎÄ¼ş
 import java.io.*;

@@ -1,4 +1,4 @@
-package io_test;
+package io_test.heima_test;
 //录入数据拷贝到文件
 import java.io.FileOutputStream;
 import java.io.IOException;

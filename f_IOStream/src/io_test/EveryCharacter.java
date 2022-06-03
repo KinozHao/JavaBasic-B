@@ -3,10 +3,10 @@ package io_test;
 import java.io.*;
 import java.util.TreeMap;
 //获取文本上字符出现的次数
-public class Text2 {
+public class EveryCharacter {
     public static void main(String[] args) throws IOException {
         //1.创建带Buffered的输入流对象
-        BufferedReader br =new BufferedReader(new FileReader("tts.txt"));
+        BufferedReader br =new BufferedReader(new FileReader("f_IOStream\\my.txt"));
         //2.创建TreeMap集合
         TreeMap<Character,Integer> tree =new TreeMap<>();
         //3.将读取到的字符存储在tree中
@@ -23,10 +23,9 @@ public class Text2 {
             //写法二(三元运算符)
             tree.put(c,!tree.containsKey(c) ? 1: tree.get(c) +1);
         }
-        //4.关闭流
-        br.close();
+
         //创建带Buffered的输出流对象
-        BufferedWriter bw =new BufferedWriter(new FileWriter("tts.txt"));
+        BufferedWriter bw = new BufferedWriter(new FileWriter("f_IOStream\\myDatas.txt"));
         //遍历集合里的内容 写到指定文件中
         for (Character key : tree.keySet()){
             switch (key){       //进行代码的规范
@@ -41,10 +40,14 @@ public class Text2 {
                     break;
                     default:
                         bw.write(key+"="+tree.get(key));  //写出键和值
-                        break;
+                    break;
             }
-            bw.newLine();       //换行
+            //换行
+            bw.newLine();
         }
-        bw.close(); //输出流的释放
+
+        //4.关闭流
+        br.close();
+        bw.close();
     }
 }

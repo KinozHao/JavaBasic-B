@@ -1,4 +1,4 @@
-package io_test;
+package io_test.heima_test;
 
 import org.junit.Test;
 
@@ -6,7 +6,7 @@ import java.io.*;
 import java.util.ArrayList;
 
 //文本反转
-public class Text1 {
+public class TextReverse {
     @Test
     public void Reverse_Test() throws IOException {
         //创建输入流对象
