@@ -43,7 +43,7 @@ public class CollTraver {
         }
     }
 
-    public static void ForeachTravers(Collection c){
+    public static void ForeachTravers(Collection<?> c){
         //2:foreach 底层依然是通过迭代器实现
         for (Object obj:c){
             System.out.print(obj+" ");
@@ -52,7 +52,7 @@ public class CollTraver {
 
     }
     //若使用普通for形参不可为Collection类型，因为get方法为实例类特有的
-    public static void ForTravers(ArrayList c){
+    public static void ForTravers(ArrayList<?> c){
         //3:normal for
         for (int i = 0; i < c.size(); i++) {
             System.out.println(c.get(i));

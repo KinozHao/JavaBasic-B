@@ -17,6 +17,7 @@ public class PropertiesBasic{
         p.getProperty("name");
         p.getProperty("age");
         p.getProperty("school");
+        p.getProperty("city");
         //3.Êä³ö
         System.out.println(p);
     }

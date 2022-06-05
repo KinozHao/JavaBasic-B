@@ -49,36 +49,21 @@ public class CopyMethod {
         }
     }
     @IOAnnotation("字节流适用于除文本文件外文件的复制操作")
-    public static void unTestCopy(String beginPath,String endPath){
-        FileInputStream pic = null;
-        FileOutputStream cop = null;
-        try {
-            //1.创建流对象获取文件
-            pic = new FileInputStream(beginPath);
-            cop = new FileOutputStream(endPath);
+    public static void unTestCopy(String beginPath,String endPath) throws IOException{
+        //1.创建流对象获取文件
+        FileInputStream pic = new FileInputStream(beginPath);
+        FileOutputStream cop = new FileOutputStream(endPath);
 
-            //2.读取数据(大型文件通常数组为1024个字节)
-            byte[] bt = new byte[1024];
-            int len;
-            while ((len = pic.read(bt)) != -1){
-                cop.write(bt,0,len);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }finally {
-            //3.释放流
-            try {
-                pic.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            } finally {
-                try {
-                    cop.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-
+        //2.读取数据(大型文件通常数组为1024个字节)
+        byte[] bt = new byte[1024];
+        int len;
+        while ((len = pic.read(bt)) != -1){
+            cop.write(bt,0,len);
         }
+
+        //3.释放流
+        pic.close();
+        cop.close();
     }
+
 }

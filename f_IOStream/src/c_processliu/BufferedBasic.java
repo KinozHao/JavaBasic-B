@@ -1,10 +1,10 @@
-package c_buffered;
+package c_processliu;
 
 import org.junit.Test;
 
 import java.io.*;
 /**
- * @apiNote 缓冲流的基本使用
+ * @apiNote 处理流一:缓冲流
  * 字节流和字符流的使用体现
  * @see BufferedReader
  * @see BufferedWriter
@@ -39,8 +39,11 @@ public class BufferedBasic {
 
     @Test
     public void io_Copy() throws IOException {
-        BufferedInputStream bis = new BufferedInputStream(new FileInputStream("E:\\Videos\\滑板.mp4"));
-        BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("board.mp4"));
+        //1.创建字符流包装到缓冲流中
+        FileInputStream origin = new FileInputStream("E:\\Videos\\滑板.mp4");
+        FileOutputStream after = new FileOutputStream("board.mp4");
+        BufferedInputStream bis = new BufferedInputStream(origin);
+        BufferedOutputStream bos = new BufferedOutputStream(after);
 
         //2.数据的读写
         byte[] bt = new byte[1024];

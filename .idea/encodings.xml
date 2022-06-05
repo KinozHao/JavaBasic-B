@@ -99,11 +99,11 @@
     <file url="file://$PROJECT_DIR$/f_IOStream/src/b_io_basic/IOExceptions.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/b_io_basic/IOMethod.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/b_io_basic/TextFileCopy.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_IOStream/src/c_buffered/BufferedBasic.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/f_IOStream/src/c_buffered/LNRBasic.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/c_character/Demo2FileWriter.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/c_character/Demo4CopyTwo.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/c_character/Demo8TransIO.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/c_processliu/BufferedBasic.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/f_IOStream/src/c_processliu/LNRBasic.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/decorator_design/DecoratorPattern.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/io_test/EveryCharacter.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/io_test/heima_test/PictureTest/PictureSecret.java" charset="GBK" />

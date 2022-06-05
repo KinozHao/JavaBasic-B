@@ -6,7 +6,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 /**
- * 字节流
+ * 字节流(节点流)
  * @author kinoz
  * @Date 2022/5/31 - 15:20
  * @apiNote FileInputStream和FileOutputStream的使用
@@ -21,7 +21,7 @@ public class FileIOBasic {
         FileInputStream lyo = new FileInputStream("a.txt");
 
         //2.读取数据
-        byte[] bt = new byte[5];
+        byte[] bt = new byte[20];
         int len;
         //循环判断如果读取的字节数据不为-1就执行
         while ((len=lyo.read(bt)) != -1){
@@ -37,9 +37,10 @@ public class FileIOBasic {
         //3.释放流
         lyo.close();
     }
+
     @Test
     //对CopyMethod功能类的测试
-    public void CMD_Test(){
+    public void CMD_Test() throws IOException {
         CopyMethod.TextCopy("a.txt","b.txt");
         CopyMethod.unTestCopy("E:\\Videos\\滑板.mp4","bd.mp4");
     }
