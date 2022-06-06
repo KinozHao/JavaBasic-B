@@ -13,7 +13,7 @@ import java.io.LineNumberReader;
 
 public class LNRBasic {
     public static void main(String[] args) throws IOException {
-        FileReader file = new FileReader("f_IOStream\\a.txt");
+        FileReader file = new FileReader("f_IOStream\\accessData.txt");
         LineNumberReader lnr =new LineNumberReader(file);
         String line;
         //设置从哪个数字开始(对应的是索引值)

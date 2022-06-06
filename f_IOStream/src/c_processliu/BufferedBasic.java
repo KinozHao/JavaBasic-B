@@ -15,7 +15,7 @@ public class BufferedBasic {
     @Test
     public void rw_Copy() throws IOException {
         //1.创建字符流包装到缓冲流中
-        BufferedReader br =new BufferedReader(new FileReader("hello.txt"));
+        BufferedReader br =new BufferedReader(new FileReader("accessData.txt"));
         BufferedWriter bw =new BufferedWriter(new FileWriter("my.txt"));
 
         //2.方式一 使用char数组

@@ -18,7 +18,7 @@ public class FileIOBasic {
     //开发中尽量使用tryCatch保证流可以关闭
     public void unText_Copy() throws IOException{
         //1.创建流对象获取文件
-        FileInputStream lyo = new FileInputStream("a.txt");
+        FileInputStream lyo = new FileInputStream("accessData.txt");
 
         //2.读取数据
         byte[] bt = new byte[20];
@@ -41,7 +41,7 @@ public class FileIOBasic {
     @Test
     //对CopyMethod功能类的测试
     public void CMD_Test() throws IOException {
-        CopyMethod.TextCopy("a.txt","b.txt");
+        CopyMethod.TextCopy("accessData.txt","b.txt");
         CopyMethod.unTestCopy("E:\\Videos\\滑板.mp4","bd.mp4");
     }
 }

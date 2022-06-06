@@ -15,7 +15,7 @@ import java.util.Date;
 public class FileMethod {
     @Test
     public void file_Get() {
-        File files = new File("a.txt");
+        File files = new File("accessData.txt");
 
         System.out.println("绝对路径"+files.getAbsolutePath());
 
@@ -55,7 +55,7 @@ public class FileMethod {
 
     @Test
     public void file_Judge() throws IOException {
-        File file = new File("a.txt");
+        File file = new File("accessData.txt");
         //创建a.txt文件
         System.out.println(file.createNewFile());
         //判断是不是个文件夹
@@ -68,7 +68,7 @@ public class FileMethod {
     }
     @Test
     public void file_RW(){
-        File file1 = new File("a.txt");
+        File file1 = new File("accessData.txt");
         //设置为不可读
         file1.setReadable(false);
         System.out.println("是否可读"+file1.canRead());

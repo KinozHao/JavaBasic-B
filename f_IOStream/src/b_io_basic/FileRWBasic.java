@@ -20,7 +20,7 @@ public class FileRWBasic {
         FileReader fr = null;
         try {
             //1:提供File对象
-            File file = new File("a.txt");
+            File file = new File("accessData.txt");
             //2:提供流对象对File操纵
             fr = new FileReader(file);
 
@@ -49,7 +49,7 @@ public class FileRWBasic {
         FileReader fr = null;
         try {
             //1.提供file对象
-            File file = new File("a.txt");
+            File file = new File("accessData.txt");
             //2.提供流对file对象进行操纵
             fr = new FileReader(file);
 
@@ -89,7 +89,7 @@ public class FileRWBasic {
     * */
     @Test
     public void Writer_Test() throws IOException {
-        File file = new File(   "a.txt");
+        File file = new File(   "accessData.txt");
         //append参数为true添加数据 为false覆盖原有数据
         FileWriter fw =new FileWriter(file,true);
         fw.write("zh:这是一个txt类型的文件\n");

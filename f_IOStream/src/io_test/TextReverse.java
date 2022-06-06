@@ -1,4 +1,4 @@
-package io_test.heima_test;
+package io_test;
 
 import org.junit.Test;
 
@@ -10,7 +10,7 @@ public class TextReverse {
     @Test
     public void Reverse_Test() throws IOException {
         //创建输入流对象
-        BufferedReader br =new BufferedReader(new FileReader(new File("a.txt")));
+        BufferedReader br =new BufferedReader(new FileReader(new File("accessData.txt")));
         //创建数组存放流对象
         ArrayList<String> list =new ArrayList<>();
 

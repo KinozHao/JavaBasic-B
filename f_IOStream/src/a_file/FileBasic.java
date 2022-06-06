@@ -27,16 +27,4 @@ public class FileBasic {
         File dirs = new File(dir1, "hello world");
         System.out.println(dirs);
     }
-    @Test
-    public void Test1() throws IOException {
-        File file = new File("xxx.txt");
-        System.out.println(file.createNewFile());
-        FileInputStream FIS=new FileInputStream("xxx.txt");
-        byte [] b = new byte[6];
-        int len;
-        while ((len=FIS.read(b)) != -1){
-            System.out.println(new String(b));
-        }
-        FIS.close();
-    }
 }

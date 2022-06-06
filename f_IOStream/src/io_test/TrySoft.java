@@ -1,9 +1,9 @@
-package io_test.heima_test;
+package io_test;
 
 import java.io.*;
 
 //试用版软件
-public class Text3 {
+public class TrySoft {
     public static void main(String[] args) throws IOException {
         FileReader fdr= new FileReader("f_IOStream\\tts.txt");
         //创建带缓冲的输出流对象,因为要使用readLine方法,保证数据原样性

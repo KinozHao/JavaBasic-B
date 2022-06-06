@@ -13,15 +13,15 @@ public class FileFilter {
     public static void main(String[] args) {
         File dir = new File("E:\\图片\\Blog素材"); //获取一个File文件根目录
         System.out.println("Root directory"+dir);
-        FilenameFilter fter = new FilenameFilter(){
+        FilenameFilter ffr = new FilenameFilter(){
             @Override
             public boolean accept(File dir, String name) {
                 System.out.println(name);
-                File wj = new File(dir,name);
-                return wj.isFile() && wj.getName().endsWith(".png");
+                File file = new File(dir,name);
+                return file.isFile() && file.getName().endsWith(".png");
             }
         };
-        String [] arr = dir.list(fter);
+        String [] arr = dir.list(ffr);
         for (String str : arr){
             System.out.println(str);
         }
