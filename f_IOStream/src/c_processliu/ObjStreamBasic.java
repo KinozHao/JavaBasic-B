@@ -26,6 +26,7 @@ public class ObjStreamBasic {
     }
 
     @Test
+
     public void OIS() throws Exception{
         //反序列化过程
         ObjectInputStream ois = new ObjectInputStream(new FileInputStream("myText.dat"));
@@ -42,4 +43,5 @@ public class ObjStreamBasic {
 
         ois.close();
     }
+
 }
