@@ -4,16 +4,25 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
-     * @author kinoz
+ * @author kinoz
  * @Date 2022/6/14 - 15:15
  * @apiNote 获取网络资源通过url
+ * uniform resource locator
  */
 public class URLBasic {
     public static void main(String[] args) {
-        /*try {
+        URL_Method();
+        //调用方法
+        URLBasic.Net_Url("https://blogpic-1310626923.cos.ap-nanjing.myqcloud.com/img/io_picb.png","io.png");
+        URLBasic.Net_Url("https://img-blog.csdnimg.cn/68d43f9bd4184d9588b05286899b33c9.png#pic_center","csdn.png");
+    }
+
+    public static void URL_Method() {
+        try {
             URL url = new URL("https://www.kinozspace.top");
             System.out.println(url.getHost());
             System.out.println(url.getPort());
@@ -22,10 +31,7 @@ public class URLBasic {
             System.out.println(url.getFile());
         }catch (MalformedURLException e) {
             e.printStackTrace();
-        }*/
-        //调用方法
-        URLBasic.Net_Url("https://blogpic-1310626923.cos.ap-nanjing.myqcloud.com/img/io_picb.png","io.png");
-        URLBasic.Net_Url("https://img-blog.csdnimg.cn/68d43f9bd4184d9588b05286899b33c9.png#pic_center","csdn.png");
+        }
     }
 
     //从网络获取资源到本地

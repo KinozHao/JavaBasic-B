@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.io.BufferedReader;
 import java.io.FileReader;
 
-public class Demo2_Reflex {
+public class FruitTest {
     Juicer juicer = new Juicer();
 
     @Test

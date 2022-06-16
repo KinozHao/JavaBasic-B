@@ -17,7 +17,7 @@ public class UDPBasic {
     @Test
     //和TCP相比UDP是不等待握手的,不管对面服务器是否存在直接发送一条数据过去
     public void sender() throws IOException {
-        //1.创建DSocket对象
+        //1.创建Socket对象
         DatagramSocket sock = new DatagramSocket();
         //2.要发送的数据
         String  str = "发送端发送了一条信息";

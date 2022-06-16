@@ -1,16 +1,15 @@
 package Reflects;
 //反射获取成员变量并使用
 
-import Bean.Person;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 
 public class Demo4_Field {
     public static void main(String[] args) throws Exception {
-        Class clz =Class.forName("Bean.Person");    //获取字节码文件
+        Class clz =Class.forName("Reflects.ReData");    //获取字节码文件
 
         Constructor cso = clz.getConstructor(String.class,int.class);   //获取有参构造
-        Person per = (Person) cso.newInstance("Kinoz",18);      //通过有参构造创建对象
+        ReData per = (ReData) cso.newInstance("Kinoz",18);      //通过有参构造创建对象
 
 //        Field f1 = clz.getField("name");            普通的反射 如果参数私有就没办法访问
         Field f2 = clz.getDeclaredField("name");    //暴力反射获取字段
