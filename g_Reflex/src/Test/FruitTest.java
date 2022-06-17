@@ -1,4 +1,4 @@
-package  Reflects;
+package Test;
 
 import org.junit.Test;
 

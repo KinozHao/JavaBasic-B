@@ -3,7 +3,6 @@ package d_soketcode;
 import org.junit.Test;
 
 import java.net.InetAddress;
-import java.net.Socket;
 
 /**
  * @author kinoz
@@ -21,7 +20,7 @@ public class InetAddressBasic {
         InetAddress localHost = InetAddress.getLocalHost();
         System.out.println(localHost);
 
-        //获取HostIP或者域名
+        //获取Host IP或者域名
         System.out.println(ipadd.getHostAddress());
         System.out.println(ipadd.getHostName());
     }

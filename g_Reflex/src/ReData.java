@@ -1,5 +1,3 @@
-package Reflects;
-
 import java.util.Objects;
 
 public class ReData {
