@@ -34,7 +34,10 @@ public class ReData extends Dynamism<String> implements ReInterface<String>{
     @ReAnnotation("This is about you want secret info")
     private String secretInfo(String str) throws RuntimeException{
         System.out.println(str);
-        return str;
+        return null;
+    }
+    private static void anotherMethod(){
+        System.out.println("我是一个静态方法，这是我的输出语句");
     }
 
     @Override
