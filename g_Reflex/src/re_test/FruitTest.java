@@ -32,7 +32,7 @@ public class FruitTest {
 }
 //多态把多个方法抽取为一个接口
 interface Fruit {
-    public void squeeze();
+    void squeeze();
 }
 
 class Apple implements Fruit{

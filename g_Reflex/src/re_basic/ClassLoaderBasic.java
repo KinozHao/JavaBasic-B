@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.Method;
 import java.util.Properties;
 
 /**
@@ -26,6 +27,7 @@ public class ClassLoaderBasic {
         //无法获取引导类加载器(主要负责加载java核心类库)
         ClassLoader clr3 = clr2.getParent();
         System.out.println(clr3);
+
     }
 
     @Test

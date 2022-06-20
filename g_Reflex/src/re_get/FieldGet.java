@@ -1,15 +1,11 @@
 package re_get;
 
-import jdk.swing.interop.SwingInterOpUtils;
 import org.junit.Test;
 import re_basic.ReData;
 
-import java.io.File;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-import java.util.Arrays;
+
 
 /**
  * @author kinoz
