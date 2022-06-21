@@ -17,10 +17,8 @@ public class FruitTest {
     @Test
     public void reflexTest() throws Exception {
         //反射写法
-        BufferedReader br = new BufferedReader(new FileReader("config.properties.txt"));
+        BufferedReader br = new BufferedReader(new FileReader("FruitConfig.txt"));
 
-        //BufferedReader的方法readLine可以读整行
-        //newInstance方法概述创建由此 类对象表示的类的新实例
         Class aClass =Class.forName(br.readLine());
         //父类引用指向子类对象,水果引用指向苹果对象
         Fruit fruit = (Fruit) aClass.newInstance();
@@ -30,7 +28,7 @@ public class FruitTest {
 
     }
 }
-//多态把多个方法抽取为一个接口
+
 interface Fruit {
     void squeeze();
 }

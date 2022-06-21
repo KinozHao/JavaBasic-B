@@ -111,7 +111,7 @@
     <file url="file://$PROJECT_DIR$/f_IOStream/src/io_test/heima_test/PictureTest/PictureSecret.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/io_test/heima_test/TextB.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/f_IOStream/src/io_test/heima_test/TextC.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/g_Reflex/config.properties.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/g_Reflex/FruitConfig.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/g_Reflex/src/Bean/helloword.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/g_Reflex/src/Reflects/Demo3_Constructor.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/g_Reflex/src/Reflects/Demo4_Field.java" charset="GBK" />
@@ -119,11 +119,11 @@
     <file url="file://$PROJECT_DIR$/g_Reflex/src/ReflexBasic.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/g_Reflex/src/re_basic/ReData.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/g_Reflex/src/re_get/lei.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/g_Reflex/src/re_test/ArrayTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/g_Reflex/src/re_test/Calculator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/g_Reflex/src/re_test/FieldTools.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/g_Reflex/src/re_test/FruitTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/g_Reflex/src/re_test/RandomName.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/g_Reflex/src/re_test/TestOne.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/g_Reflex/src/re_test/Tools.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/h_Programer_Project/src/domain/equipment/Equipment.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/h_Programer_Project/src/junit/NameListServiceTest.java" charset="GBK" />
     <file url="PROJECT" charset="GBK" />
