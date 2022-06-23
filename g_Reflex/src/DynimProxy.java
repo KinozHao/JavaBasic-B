@@ -18,11 +18,6 @@ public class DynimProxy {
     }
 }
 
-interface Human{
-    String getBelief();
-    void eat(String food);
-}
-
 //被代理类
 class SuperMan implements Human{
 

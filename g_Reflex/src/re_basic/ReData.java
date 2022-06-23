@@ -1,7 +1,6 @@
 package re_basic;
 
 import java.util.Objects;
-import java.util.Properties;
 
 @ReAnnotation("反射所使用学习类")
 public class ReData extends Dynamism<String> implements ReInterface<String>{
@@ -61,5 +60,29 @@ public class ReData extends Dynamism<String> implements ReInterface<String>{
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }
