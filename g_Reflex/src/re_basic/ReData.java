@@ -16,7 +16,7 @@ public class ReData extends Dynamism<String> implements ReInterface<String>{
         this.age = age;
     }
 
-    private ReData(String name) {
+    public ReData(String name) {
         this.name = name;
     }
 
