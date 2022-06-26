@@ -2,7 +2,7 @@ package re_basic;
 
 import java.util.Objects;
 
-@ReAnnotation("反射所使用学习类")
+@ReAnnotation("反射与jdk8新特性学习类")
 public class ReData extends Dynamism<String> implements ReInterface<String>{
     public int id;
     private String name;

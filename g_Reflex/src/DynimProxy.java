@@ -57,3 +57,7 @@ class MyIHR implements InvocationHandler{
         return returnValue;
     }
 }
+interface Human{
+    String getBelief();
+    void eat(String food);
+}
