@@ -2,8 +2,6 @@ package jdk8_newfeature.stream;
 
 import org.junit.Test;
 
-import javax.swing.*;
-import java.sql.ClientInfoStatus;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

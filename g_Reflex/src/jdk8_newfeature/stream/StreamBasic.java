@@ -16,7 +16,7 @@ import java.util.stream.Stream;
  */
 public class StreamBasic {
     @Test
-    // 通过集合创建
+    // 一、通过集合创建
     public void test1(){
         List<Integer> arr = Arrays.asList(20,30,40,50);
         //顺序流
@@ -28,7 +28,7 @@ public class StreamBasic {
     }
 
     @Test
-    // 通过数组创建
+    // 二、通过数组创建
     public void test2(){
         int[] in = new int[]{1,2,3,4,5};
         //基本数据类型 通过类判断
@@ -37,18 +37,18 @@ public class StreamBasic {
         //自定义类 通过泛型判断
         ReData r1 = new ReData("Jerry", 20);
         ReData r2 = new ReData("Tuling", 10);
-        ReData[] rd = new ReData[]{r1,r2};
+        ReData[] rd = {r1,r2};
         Stream<ReData> stream1 = Arrays.stream(rd);
     }
 
     @Test
-    // 通过自身方法创建
+    // 三、通过自身方法创建
     public void test3(){
         Stream<Integer> ism = Stream.of(1, 3, 5, 21, 42);
     }
 
     @Test
-    // 通过无限流
+    // 四、通过无限流
     public void test4(){
         // limit为条件限制 forEach为终止操作
         //迭代方式

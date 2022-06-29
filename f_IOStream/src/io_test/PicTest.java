@@ -15,8 +15,8 @@ public class PicTest {
     @Test
     public void Pic_Lock() throws IOException { //给图片加密
         //1.获取流对象
-        FileInputStream original = new FileInputStream("1.jpg");
-        FileOutputStream newone = new FileOutputStream("new.jpg");
+        FileInputStream original = new FileInputStream("old.png");
+        FileOutputStream newone = new FileOutputStream("new.png");
 
         //2.文件的读写操作
         byte[] bt = new byte[20];
@@ -37,8 +37,8 @@ public class PicTest {
     @Test
     public void Pic_UnLock() throws IOException{ ///给图片解密
         //1.获取流对象
-        FileInputStream original = new FileInputStream("new.jpg");
-        FileOutputStream newone = new FileOutputStream("unlock_new.jpg");
+        FileInputStream original = new FileInputStream("new.txt");
+        FileOutputStream newone = new FileOutputStream("unlock_new.txt");
 
         //2.文件的读写操作
         byte[] bt = new byte[20];
