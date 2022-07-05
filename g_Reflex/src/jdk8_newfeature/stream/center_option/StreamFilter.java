@@ -1,5 +1,7 @@
-package jdk8_newfeature.stream;
+package jdk8_newfeature.stream.center_option;
 
+import jdk8_newfeature.stream.Person;
+import jdk8_newfeature.stream.PersonDB;
 import org.junit.Test;
 
 import java.util.Arrays;

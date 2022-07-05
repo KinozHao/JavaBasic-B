@@ -8,7 +8,7 @@ import java.util.Properties;
 /**
  * @author kinoz
  * @Date 2022/6/29 - 15:44
- * @apiNote
+ * @apiNote 对创建数据库类的封装
  */
 public class JDBC_Util {
     private static String driver = null;

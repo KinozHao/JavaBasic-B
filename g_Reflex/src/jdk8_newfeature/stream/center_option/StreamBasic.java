@@ -1,4 +1,4 @@
-package jdk8_newfeature.stream;
+package jdk8_newfeature.stream.center_option;
 
 import org.junit.Test;
 import re_basic.ReData;

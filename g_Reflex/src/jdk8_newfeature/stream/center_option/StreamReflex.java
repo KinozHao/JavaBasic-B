@@ -1,5 +1,7 @@
-package jdk8_newfeature.stream;
+package jdk8_newfeature.stream.center_option;
 
+import jdk8_newfeature.stream.Person;
+import jdk8_newfeature.stream.PersonDB;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -37,7 +39,7 @@ public class StreamReflex {
 
         //flatMap(function f)  接收一个函数作为参数,将流中的每个值都转换成一个流,把所有流连接为一个流
         Stream<Character> csm = list.stream().flatMap(StreamReflex::fromStreamToStream);
-        csm.forEach(s -> System.out.println(s));
+        csm.forEach(System.out::println);
     }
 
     //将字符串中多个字符构成的集合转换为对应的Stream实例

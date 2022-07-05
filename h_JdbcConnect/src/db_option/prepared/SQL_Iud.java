@@ -1,10 +1,9 @@
-package db_option.safe;
+package db_option.prepared;
 
 import db_option.JDBC_Util;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.util.Date;
 
 /**

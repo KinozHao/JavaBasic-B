@@ -14,7 +14,7 @@ import java.net.Socket;
  * @Date 2022/6/14 - 10:28
  * @apiNote 通过Java实现数据在客户端和服务端的传输
  */
-public class    TCPBasic {
+public class TCPBasic {
     @Test
     //客户端
     public void client() throws Exception{

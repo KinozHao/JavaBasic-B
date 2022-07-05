@@ -11,7 +11,7 @@ import java.util.Properties;
 /**
  * @author kinoz
  * @Date 2022/6/29 - 20:12
- * @apiNote
+ * @apiNote apache基金会提供的一套数据库连接池
  */
 public class DBCP_Util {
     private static DataSource dse = null;
@@ -21,6 +21,7 @@ public class DBCP_Util {
             InputStream in = DBCP_Util.class.getClassLoader().getResourceAsStream("dbcp.properties");
             Properties pis = new Properties();
             pis.load(in);
+            //工厂代理模式
             dse = BasicDataSourceFactory.createDataSource(pis);
         } catch (Exception e) {
             e.printStackTrace();

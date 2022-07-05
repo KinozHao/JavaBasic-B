@@ -1,11 +1,10 @@
-package db_option.safe;
+package db_option.prepared;
 
 import db_option.JDBC_Util;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 
 /**
  * @author kinoz
@@ -18,9 +17,13 @@ public class Querys {
         user_login(" 'or ' 1=1","'or ' 1=1");
     }
     public static void select() throws Exception{
+        //1.通过工具类获取连接
         Connection con = JDBC_Util.getConnection();
+        //2.sql语句
         String sql = "select * from school.student";
+        //3.预编译
         PreparedStatement pst = con.prepareStatement(sql);
+        //4.正式查询
         ResultSet rst = pst.executeQuery();
         while (rst.next()){
             System.out.println(rst.getObject("StudentNo"));
