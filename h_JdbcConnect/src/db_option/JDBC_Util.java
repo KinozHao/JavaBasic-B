@@ -41,27 +41,17 @@ public class JDBC_Util {
     }
 
     //关闭流
-    public static void CloseConnection(Connection con, Statement sta, ResultSet rst){
-        if (con != null){
-            try {
-                con.close();
-            } catch (SQLException throwables) {
-                throwables.printStackTrace();
-            }
-        }
-        if (sta != null){
-            try {
-                sta.close();
-            } catch (SQLException throwables) {
-                throwables.printStackTrace();
-            }
-        }
-        if (rst != null){
-            try {
-                rst.close();
-            } catch (SQLException throwables) {
-                throwables.printStackTrace();
-            }
+    public static void CloseConnection(Connection con, Statement sta, ResultSet rst) {
+        try {
+            //断言 相当于if判断
+            assert con != null;
+            assert sta != null;
+            assert rst != null;
+            con.close();
+            sta.close();
+            rst.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 }

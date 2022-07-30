@@ -9,17 +9,18 @@ public class MapTraversA {
     @CollectionNote("使用key获取value的方式")
     public void ObjectMethod(){
         //1.创建Map集合
-        Map<String,Integer> datas = new HashMap<>();
-        datas.put("Po",13);
-        datas.put("Lo",14);
-        datas.put("Ho",15);
-        Set<String> sets = datas.keySet();
+        Map<String,Integer> data = new HashMap<>();
+        data.put("Po",13);
+        data.put("Lo",14);
+        data.put("Ho",15);
+        Set<String> sets = data.keySet();
         Iterator<String> iterator = sets.iterator();
+
         while (iterator.hasNext()){
             //key值
             Object key = iterator.next();
             //通过key获取value
-            Object value = datas.get(key);
+            Object value = data.get(key);
             System.out.println(key+"-->"+value);
         }
     }

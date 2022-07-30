@@ -26,6 +26,7 @@ public class MapTraversB {
         for (Object obj : mapV) {
             System.out.println(obj);
         }
+
     }
     @Test
     public void TraversAllKeys(){

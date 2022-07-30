@@ -18,6 +18,7 @@ public class DBCP_Util {
     //静态代码块 随着类的加载而加载
     static {
         try {
+            //反射获取配置文件
             InputStream in = DBCP_Util.class.getClassLoader().getResourceAsStream("dbcp.properties");
             Properties pis = new Properties();
             pis.load(in);
@@ -35,26 +36,16 @@ public class DBCP_Util {
 
     //关闭流
     public static void CloseConnection(Connection con, Statement sta, ResultSet rst){
-        if (con != null){
-            try {
-                con.close();
-            } catch (SQLException throwables) {
-                throwables.printStackTrace();
-            }
-        }
-        if (sta != null){
-            try {
-                sta.close();
-            } catch (SQLException throwables) {
-                throwables.printStackTrace();
-            }
-        }
-        if (rst != null){
-            try {
-                rst.close();
-            } catch (SQLException throwables) {
-                throwables.printStackTrace();
-            }
+        try {
+            //断言 相当于if判断
+            assert con != null;
+            assert sta != null;
+            assert rst != null;
+            con.close();
+            sta.close();
+            rst.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 }
