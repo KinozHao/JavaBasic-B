@@ -17,7 +17,7 @@ public class Drop_select {
     @Test
     public void WithPrepared() throws Exception{
         Connection con = DBCP_Util.getConnection();
-        String sql = "select * from jdbcstudy.users";
+        String sql = "select * from mybatisframe.user";
         PreparedStatement pst = con.prepareStatement(sql);
         ResultSet rst = pst.executeQuery();
         while (rst.next()){
@@ -33,7 +33,7 @@ public class Drop_select {
 
         Statement sta = con.createStatement();
 
-        String sql = "select * from jdbcstudy.users";
+        String sql = "select * from mybatisframe.user";
 
         ResultSet rst = sta.executeQuery(sql);
 

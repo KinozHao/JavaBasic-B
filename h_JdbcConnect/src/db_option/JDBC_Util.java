@@ -43,10 +43,6 @@ public class JDBC_Util {
     //关闭流
     public static void CloseConnection(Connection con, Statement sta, ResultSet rst) {
         try {
-            //断言 相当于if判断
-            assert con != null;
-            assert sta != null;
-            assert rst != null;
             con.close();
             sta.close();
             rst.close();

@@ -15,8 +15,8 @@ public class Dbcp_insert {
         Connection con = DBCP_Util.getConnection();
         Statement statement = con.createStatement();
 
-        String str ="insert into jdbcstudy.users (`id`, `NAME`, `PASSWORD`, `email`, `birthday`)" +
-                "values ('10','谭嘉庆','2021130850','1972690714@qq.com','2001-02-18')";
+        String str ="insert into mybatisframe.user (`id`, `username`, `password`, `email`)" +
+                "values ('10','谭嘉庆','2021130850','1972690714@qq.com')";
         int i = statement.executeUpdate(str);
         if (i>0){
             System.out.println("插入数据成功！");

@@ -41,7 +41,7 @@ public class Querys {
         Connection con = JDBC_Util.getConnection();
         //使用PreparedStatement可以很好的避免Sql注入
         //会把传入进来的参数当作字符,假设其中存在转义字符,会被直接转义
-        String sql = "select * from jdbcstudy.users where name =? and password=?";
+        String sql = "select * from mybatisframe.user where username =? and password=?";
         PreparedStatement pst = con.prepareStatement(sql);
         pst.setString(1,name);
         pst.setString(2,password);

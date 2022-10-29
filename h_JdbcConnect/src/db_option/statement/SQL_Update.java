@@ -18,7 +18,7 @@ public class SQL_Update {
         Statement sta = con.createStatement();
 
         //3.要执行的sql语句
-        String sql = "update jdbcstudy.users set `name` = '马妞' where id between 5 and 8";
+        String sql = "update mybatisframe.user set `username` = '马妞' where id between 1055 and 1057";
         //4.执行sql语句并做出判断
         int i = sta.executeUpdate(sql);
         if (i > 0 ){

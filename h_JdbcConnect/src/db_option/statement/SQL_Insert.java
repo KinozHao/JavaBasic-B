@@ -14,8 +14,8 @@ public class SQL_Insert {
         Connection con = JDBC_Util.getConnection();
         Statement statement = con.createStatement();
 
-        String str ="insert into jdbcstudy.users (`id`, `NAME`, `PASSWORD`, `email`, `birthday`)" +
-                "values ('8','Make','123456','Make@gmail.com','1980-12-08')";
+        String str ="insert into mybatisframe.user (`id`, `username`, `password`, `age`, `sex`,`email`)" +
+                "values ('1076','Make','123456','23','ƒ–','Make@gmail.com')";
         int i = statement.executeUpdate(str);
         if (i>0){
             System.out.println("≤Â»Î≥…π¶£°");

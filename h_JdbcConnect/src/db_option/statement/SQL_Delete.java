@@ -15,7 +15,7 @@ public class SQL_Delete {
         Connection con = JDBC_Util.getConnection();
         Statement sta = con.createStatement();
 
-        String sql = "delete from jdbcstudy.users where name='Âíæ¤'";
+        String sql = "delete from mybatisframe.user where username='king'";
         int i = sta.executeUpdate(sql);
         if (i>0){
             System.out.println("É¾³ý³É¹¦");

@@ -2,13 +2,13 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../h_JdbcConnect">
-      <sourceFolder url="file://$MODULE_DIR$/../h_JdbcConnect/src" isTestSource="false" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jdbc5.1" level="application" />
     <orderEntry type="library" name="Junit4" level="application" />
-    <orderEntry type="library" name="DBCP" level="application" />
+    <orderEntry type="library" name="DBCP2" level="application" />
   </component>
 </module>

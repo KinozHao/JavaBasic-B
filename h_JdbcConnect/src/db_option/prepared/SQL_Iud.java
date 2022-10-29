@@ -18,13 +18,15 @@ public class SQL_Iud {
     public static void insert() throws Exception {
         Connection con = JDBC_Util.getConnection();
 
-        String sql = "insert into jdbcstudy.users (id, NAME, PASSWORD, email, birthday) VALUES(?,?,?,?,?)";
+        String sql = "insert into mybatisframe.user (id, username, password, age, sex,email) VALUES(?,?,?,?,?,?)";
         PreparedStatement pst = con.prepareStatement(sql);
-        pst.setInt(1,6);
+        pst.setInt(1,1077);
         pst.setString(2,"ÂíË¹¿Ë");
         pst.setString(3,"12345678*");
-        pst.setString(4,"Mask.gmail");
-        pst.setDate(5,new java.sql.Date(new Date().getTime()));
+        pst.setInt(4,23);
+        pst.setString(5,"ÄÐ");
+        pst.setString(6,"Marks@qq.com");
+        //pst.setDate(6,new java.sql.Date(new Date().getTime()));
 
         int i = pst.executeUpdate();
         if (i>0){
@@ -36,7 +38,7 @@ public class SQL_Iud {
 
     public static void update() throws Exception{
         Connection con = JDBC_Util.getConnection();
-        String sql = "update jdbcstudy.users set PASSWORD=? where id=?";
+        String sql = "update mybatisframe.user set PASSWORD=? where id=?";
         PreparedStatement pst = con.prepareStatement(sql);
         pst.setString(1,"zsnb666wd88");
         pst.setInt(2,5);
@@ -51,7 +53,7 @@ public class SQL_Iud {
     public static void delete() throws Exception{
         Connection con = JDBC_Util.getConnection();
 
-        String sql = "delete from jdbcstudy.users where id=?";
+        String sql = "delete from mybatisframe.user where id=?";
         PreparedStatement pst = con.prepareStatement(sql);
         pst.setInt(1,6);
         int i = pst.executeUpdate();

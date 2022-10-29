@@ -19,7 +19,7 @@ public class SQL_Query {
         Connection con = JDBC_Util.getConnection();
         Statement statement = con.createStatement();
 
-        String sql = "select * from jdbcstudy.users";
+        String sql = "select * from mybatisframe.user";
         ResultSet rss = statement.executeQuery(sql);
         while (rss.next()) {
             System.out.println(rss.getObject("NAME"));
@@ -38,7 +38,7 @@ public class SQL_Query {
         Connection con = JDBC_Util.getConnection();
         Statement statement = con.createStatement();
 
-        String sql = "select * from jdbcstudy.users where name ='"+name+"' and password='"+pass+"'";
+        String sql = "select * from mybatisframe.user where username ='"+name+"' and password='"+pass+"'";
         ResultSet rss = statement.executeQuery(sql);
         while (rss.next()){
             System.out.println(rss.getObject("NAME"));
