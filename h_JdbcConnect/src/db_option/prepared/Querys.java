@@ -13,8 +13,9 @@ import java.sql.ResultSet;
  */
 public class Querys {
     public static void main(String[] args) throws Exception {
-        user_login("lisi","123456");
-        user_login(" 'or ' 1=1","'or ' 1=1");
+        user_login("admin","123456");
+        //sql注入测试
+        //user_login(" 'or ' 1=1","'or ' 1=1");
     }
     public static void select() throws Exception{
         //1.通过工具类获取连接
@@ -47,7 +48,7 @@ public class Querys {
         pst.setString(2,password);
         ResultSet rst = pst.executeQuery();
         if (rst.next()){
-            System.out.println(rst.getObject("NAME"));
+            System.out.println(rst.getObject("username"));
         }else {
             System.out.println("检验失败，请重新核对你的信息！！！");
         }
